@@ -1,0 +1,117 @@
+{
+    "collection": [
+        {
+            "content": [
+                {
+                    "position": 1,
+                    "readingDescription": "1. Your first draft is complete, but your paper is far from finished."
+                },
+                {
+                    "position": 2,
+                    "readingDescription": "2. The next step is to revise your paper – strengthen the content."
+                },
+                {
+                    "position": 5,
+                    "readingDescription": "3. You can revise individual paragraphs as you finish them as well."
+                },
+                {
+                    "position": 4,
+                    "readingDescription": "4. In fact, you don't need to wait until you have a complete first draft to start revising."
+                },
+                {
+                    "position": 3,
+                    "readingDescription": "5. Start this at least a week before your paper is due."
+                }
+            ],
+            "paragraphTitle": "Paper Draft:"
+        },
+        {
+            "content": [
+                {
+                    "position": 1,
+                    "readingDescription": "1. The Newnes railroad was closed in 1932 after 25 years of shipping oil shale."
+                },
+                {
+                    "position": 2,
+                    "readingDescription": "2. The rails were pulled out of the 600-meter tunnel, which had been bored through the sandstone in the Wollemi National Park, and the tunnel was left to its own devices."
+                },
+                {
+                    "position": 4,
+                    "readingDescription": "3. The glow worm is a catch-all name for the bioluminescent larvae of various species, in this case, the Arachnocampa richardsae, a type of fungus gnat. Found in massive numbers in caves, the fungus gnat larvae cling to the rocky walls of the abandoned tunnel and hunt with long, glowing strings of sticky mucus. "
+                },
+                {
+                    "position": 3,
+                    "readingDescription": "4. For Newnes, that meant becoming home to thousands and thousands of glow worms."
+                }
+            ],
+            "paragraphTitle": "Newnes railroad"
+        },
+        {
+            "content": [
+                {
+                    "position": 2,
+                    "readingDescription": "1. Before they started the experiment, they trained the calves to understand which of their choices would lead to a reward."
+                },
+                {
+                    "position": 5,
+                    "readingDescription": "2. The calves learned quickly which side of the pen held the milk reward."
+                },
+                {
+                    "position": 4,
+                    "readingDescription": "3. The hole at one end contained milk from a bottle, while the hole at the opposite end contained only an empty bottle and delivered a puff of air in calves' faces"
+                },
+                {
+                    "position": 3,
+                    "readingDescription": "4. In the training, each calf entered a small pen and found a wall with five holes arranged in a horizontal line, two-and-a-half feet apart"
+                },
+                {
+                    "position": 1,
+                    "readingDescription": "5. To gauge optimism and pessimism, the researchers set up an experiment involving 22 calves."
+                }
+            ],
+            "paragraphTitle": "Calves experiment"
+        },
+        {
+            "content": [
+                {
+                    "position": 1,
+                    "readingDescription": "1. International Economics: Theory and Policy is a proven approach in which each half of the book leads with an intuitive introduction to theory and follows with self-contained chapters to cover key policy application. "
+                },
+                {
+                    "position": 2,
+                    "readingDescription": "2. The Eighth Edition integrates the latest research, data, and policy in hot topics such as outsourcing, economic geography, trade and environment, financial derivatives, the subprime crisis, and China's exchange rate policies."
+                },
+                {
+                    "position": 4,
+                    "readingDescription": "3. Students get instant, targeted feedback, and instructors can encourage practice without needing to grade work by hand. For more information visit MyEconLab."
+                },
+                {
+                    "position": 3,
+                    "readingDescription": "4. New for the Eighth Edition, all end-of-chapter problems are integrated into MyEconLab, the online assessment and tutorial system that accompanies the text."
+                }
+            ],
+            "paragraphTitle": "International Economics"
+        },
+        {
+            "content": [
+                {
+                    "position": 3,
+                    "readingDescription": "1. It necessarily embodies and values resilience, understanding, community and social justice."
+                },
+                {
+                    "position": 5,
+                    "readingDescription": "2. Yet, the Hip Hop project is not yet free from these difficult circumstances."
+                },
+                {
+                    "position": 4,
+                    "readingDescription": "3. Without these, Hip Hop culture would never have been, and it is because these values remain at its core that Hip Hop is such a powerful agent of positive social change around the world. "
+                },
+                {
+                    "position": 2,
+                    "readingDescription": "4. Hip Hop culture emerged as a reaction to the gang culture and violence of the South Bronx in the 1970s, and daily experiences of poverty, racism, exclusion, crime, violence, and neglect."
+                }
+            ],
+            "paragraphTitle": "Hip Hop"
+        }
+    ]
+}

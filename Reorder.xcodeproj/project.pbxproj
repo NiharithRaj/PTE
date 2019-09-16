@@ -14,6 +14,8 @@
 		6A3042A4232BBA15009B8673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3042A3232BBA15009B8673 /* Assets.xcassets */; };
 		6A3042AC232BBC0B009B8673 /* ReorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3042AB232BBC0B009B8673 /* ReorderViewController.swift */; };
 		6A3042AE232BD0CA009B8673 /* ROP1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A3042AD232BD0CA009B8673 /* ROP1.json */; };
+		6A75084D232F636C00FC6C5E /* ROP2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A75084B232F636C00FC6C5E /* ROP2.json */; };
+		6A75084E232F636C00FC6C5E /* ROP3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A75084C232F636C00FC6C5E /* ROP3.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		6A3042A5232BBA15009B8673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A3042AB232BBC0B009B8673 /* ReorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderViewController.swift; sourceTree = "<group>"; };
 		6A3042AD232BD0CA009B8673 /* ROP1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ROP1.json; sourceTree = "<group>"; };
+		6A75084B232F636C00FC6C5E /* ROP2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ROP2.json; sourceTree = "<group>"; };
+		6A75084C232F636C00FC6C5E /* ROP3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ROP3.json; sourceTree = "<group>"; };
 		96F66BBB20C7801D160C1D1F /* Pods-Reorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reorder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reorder/Pods-Reorder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,12 +70,22 @@
 				6A30429C232BBA13009B8673 /* AppDelegate.swift */,
 				6A30429E232BBA13009B8673 /* ViewController.swift */,
 				6A3042AB232BBC0B009B8673 /* ReorderViewController.swift */,
-				6A3042AD232BD0CA009B8673 /* ROP1.json */,
+				6A75084F232F637900FC6C5E /* ROP */,
 				6A3042A0232BBA13009B8673 /* Main.storyboard */,
 				6A3042A3232BBA15009B8673 /* Assets.xcassets */,
 				6A3042A5232BBA15009B8673 /* Info.plist */,
 			);
 			path = Reorder;
+			sourceTree = "<group>";
+		};
+		6A75084F232F637900FC6C5E /* ROP */ = {
+			isa = PBXGroup;
+			children = (
+				6A3042AD232BD0CA009B8673 /* ROP1.json */,
+				6A75084B232F636C00FC6C5E /* ROP2.json */,
+				6A75084C232F636C00FC6C5E /* ROP3.json */,
+			);
+			path = ROP;
 			sourceTree = "<group>";
 		};
 		CB41D3DCF73F5C6DA7F2826F /* Frameworks */ = {
@@ -151,6 +165,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A75084D232F636C00FC6C5E /* ROP2.json in Resources */,
+				6A75084E232F636C00FC6C5E /* ROP3.json in Resources */,
 				6A3042A4232BBA15009B8673 /* Assets.xcassets in Resources */,
 				6A3042A2232BBA13009B8673 /* Main.storyboard in Resources */,
 				6A3042AE232BD0CA009B8673 /* ROP1.json in Resources */,
