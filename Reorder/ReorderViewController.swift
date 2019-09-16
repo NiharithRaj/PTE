@@ -25,7 +25,7 @@ class ReorderViewController: UIViewController {
     var count = 0.0
     let progressBar = GTProgressBar()
     weak var delegate:ReorderViewDelegate?
-    
+    var arrangedSubviews:[UIView] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,6 +50,8 @@ class ReorderViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         createStackView()
+        arrangedSubviews = stackview.arrangedSubviews
+        arrangedSubviews = arrangedSubviews.sorted(by: { $0.tag < $1.tag })
     }
     
     private func createStackView() {
@@ -71,7 +73,7 @@ class ReorderViewController: UIViewController {
 
         UIView.animate(withDuration: 2.0) { [weak self] in
             guard let strongSelf = self else { return }
-            for v in views {
+            for v in strongSelf.arrangedSubviews {
                 strongSelf.stackview.addArrangedSubview(v)
             }
         }
@@ -98,7 +100,7 @@ class ReorderViewController: UIViewController {
         label.numberOfLines = 0
         view.addSubview(label)
         label.attributedText = NSAttributedString(string:string,
-                                                  attributes:[NSAttributedString.Key.foregroundColor: rgb(r: 69, g: 69, b: 69),
+                                                  attributes:[NSAttributedString.Key.foregroundColor: rgb(r: 36, g: 36, b: 36),
                                                               NSAttributedString.Key.font: UIFont(name: "Times New Roman", size: CGFloat(viewModel.model.fontSize ?? 40)) as Any])
         label.attributedText = label.attributedText?.paragraphStyle(lineSpace: 2.0, textAlignment: .left)
         label.translatesAutoresizingMaskIntoConstraints = false
