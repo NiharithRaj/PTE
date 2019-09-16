@@ -1,0 +1,126 @@
+{
+  "collection": [
+    {
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "1. For one thing, the use of language is universal—all normally developing children learn to speak at least one language, and many learn more than one."
+        },
+        {
+          "position": 5,
+          "readingDescription": "2. But just the opposite is true—language is one of the most complex of all human cognitive abilities."
+        },
+        {
+          "position": 4,
+          "readingDescription": "3. Because everyone is capable of learning to speak and understand language, it may seem to be simple."
+        },
+        {
+          "position": 3,
+          "readingDescription": "4. By contrast, not everyone becomes proficient at complex mathematical reasoning, few people learn to paint well, and many people cannot carry a tune."
+        },
+        {
+          "position": 1,
+          "readingDescription": "5. It is wrong, however, to exaggerate the similarity between language and other cognitive skills, because language stands apart in several ways."
+        }
+      ],
+      "paragraphTitle": "Language cognitive skills:"
+    },
+    {
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "1. A note has a fundamental tone- the pitch we hear- and a series of overtones that occur at higher frequencies. Overtones are what give a sound its timbre, and enable us to distinguish an oboe from a trumpet from its sound alone."
+        },
+        {
+          "position": 5,
+          "readingDescription": "2. The team then took a fundamental tone pitched below 5 kHz and digitally filtered it to leave just the overtones above 6 kHz. Surprisingly, the volunteers were able to distinguish these Melodies."
+        },
+        {
+          "position": 1,
+          "readingDescription": "3. Humans are able to make sense of sounds at a much higher pitch than previously thought."
+        },
+        {
+          "position": 3,
+          "readingDescription": "4. Previous studies have shown that humans are unable to recognise melodies whose notes have a fundamental tone above 5 kilohertz."
+        },
+        {
+          "position": 4,
+          "readingDescription": "5. It was thought that, at frequencies this high, the rapidly cycling sound wave was too fast for the auditory nerve to cope with. To test this theory, Andrew Oxenham and his colleagues at the University of Minnesota in Minneapolis asked a group of six students whether two four-note melodies were identical or not. As in previous studies, the volunteers could not recognise melodies with fundamental tones above 5 kHz."
+        }
+      ],
+      "paragraphTitle": "High pitches:",
+      "fontSize":35
+    },
+    {
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "1. In so doing, they discover that these once remote worlds are themselves earth-like in character."
+        },
+        {
+          "position": 4,
+          "readingDescription": "2. Descriptions of these planetary bodies as terrestrial in kind demonstrate the seventeenth century intellectual shift from the Aristotelian to the Copernican framework."
+        },
+        {
+          "position": 2,
+          "readingDescription": "3. During this period of scientific revolution, a new literary genre arose, namely that of the scientific cosmic voyage. "
+        },
+        {
+          "position": 1,
+          "readingDescription": "4. The expanding influence of Copernicanism through the seventeenth century transformed not only the natural philosophic leanings of astronomers but also the store of conceptual material accessible to writers of fiction."
+        }
+      ],
+      "paragraphTitle": "Copernicanism:"
+    },
+    {
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "1. The European Union has two big fish problems.The European Union has two big fish problems."
+        },
+        {
+          "position": 3,
+          "readingDescription": "2. The other is that its governments won't confront their fishing lobbies and decommission all the surplus boats."
+        },
+        {
+          "position": 5,
+          "readingDescription": "3. As a result, Senegal's marine ecosystem has started to go the same way as ours."
+        },
+        {
+          "position": 4,
+          "readingDescription": "4. The EU has tried to solve both problems by sending its fishermen to West Africa. Since 1979 it has struck agreements with the government of Senegal, granting our fleets access to its waters."
+        },
+        {
+          "position": 2,
+          "readingDescription": "5. One is that, partly as a result of its failure to manage them properly, its own fisheries can no longer meet European demand."
+        }
+      ],
+      "paragraphTitle": "EU Fish Problems:"
+    },
+    {
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "1. Recently, researchers at the Cornell Lab of Ornithology sought to answer this question, analyzing nearly three decades' worth of data from a winter-long survey called Project FeederWatch."
+        },
+        {
+          "position": 5,
+          "readingDescription": "2. Still, what are the consequences of skewing the odds in favor of the small subset of species inclined to eat at feeders? What about when the bird we're aiding is invasive, like our house finch?"
+        },
+        {
+          "position": 4,
+          "readingDescription": "3. Preliminary results suggest the species visiting our feeders the most are faring exceptionally well in an age when one-third of the continent's birds need urgent conservation."
+        },
+        {
+          "position": 2,
+          "readingDescription": "4. Is what we're doing good or bad for birds?"
+        },
+        {
+          "position": 1,
+          "readingDescription": "5. According to experts, feeding birds is probably the most common way in which people interact with wild animals today. More than 50 million Americans engage in the practice, collectively undertaking an unwitting experiment on a vast scale."
+        }
+      ],
+      "paragraphTitle": "Feeding birds:"
+    }
+  ]
+}

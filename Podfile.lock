@@ -1,0 +1,20 @@
+PODS:
+  - GTProgressBar (0.3.3)
+  - Hero (1.4.0)
+
+DEPENDENCIES:
+  - GTProgressBar
+  - Hero
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GTProgressBar
+    - Hero
+
+SPEC CHECKSUMS:
+  GTProgressBar: a480283ecb0ada50de16c71e634892826928f640
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+
+PODFILE CHECKSUM: 24525990498726b35f7dd07e79a4beef72c486aa
+
+COCOAPODS: 1.5.3
