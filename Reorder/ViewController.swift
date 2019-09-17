@@ -11,6 +11,7 @@ import Hero
 class ViewController: UIViewController {
     var model: ReorderCollection!
     var currentReorder:Int = 0
+    var questionSet = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,13 +21,16 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         parsefromJson()
         pushReorderVC()
+
     }
     
+
     fileprivate func pushReorderVC() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "ReorderViewController") as? ReorderViewController {
             controller.hero.isEnabled = true
-            controller.viewModel = ReorderViewModel(collection: model.collection[currentReorder], set: currentReorder + 1, total: model.collection.count)
+            controller.viewModel = ReorderViewModel(collection: model.collection[currentReorder], set: questionSet, total: model.collection.count)
+            questionSet += 1
             controller.delegate = self
 //            controller.hero.modalAnimationType = .selectBy(presenting: .zoomSlide(direction: .left), dismissing: .zoomSlide(direction: .right))
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
@@ -52,7 +56,15 @@ extension ViewController: ReorderViewDelegate {
     func didReorderCompleted() {
         currentReorder += 1
         if model.collection.count > currentReorder {
-            pushReorderVC()
+            if questionSet == 5 {
+                questionSet = 1
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5, execute: {
+                    self.pushReorderVC()
+                })
+            } else {
+                pushReorderVC()
+            }
+
         }
     }
 }

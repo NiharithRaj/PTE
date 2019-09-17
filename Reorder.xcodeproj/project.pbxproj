@@ -16,6 +16,7 @@
 		6A3042AE232BD0CA009B8673 /* ROP1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A3042AD232BD0CA009B8673 /* ROP1.json */; };
 		6A75084D232F636C00FC6C5E /* ROP2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A75084B232F636C00FC6C5E /* ROP2.json */; };
 		6A75084E232F636C00FC6C5E /* ROP3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A75084C232F636C00FC6C5E /* ROP3.json */; };
+		6A9934B82330EF6B002156EA /* AnimateCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9934B72330EF6A002156EA /* AnimateCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		6A3042AD232BD0CA009B8673 /* ROP1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ROP1.json; sourceTree = "<group>"; };
 		6A75084B232F636C00FC6C5E /* ROP2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ROP2.json; sourceTree = "<group>"; };
 		6A75084C232F636C00FC6C5E /* ROP3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ROP3.json; sourceTree = "<group>"; };
+		6A9934B72330EF6A002156EA /* AnimateCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateCircleView.swift; sourceTree = "<group>"; };
 		96F66BBB20C7801D160C1D1F /* Pods-Reorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reorder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reorder/Pods-Reorder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 		6A30429B232BBA13009B8673 /* Reorder */ = {
 			isa = PBXGroup;
 			children = (
+				6A9934B72330EF6A002156EA /* AnimateCircleView.swift */,
 				6A30429C232BBA13009B8673 /* AppDelegate.swift */,
 				6A30429E232BBA13009B8673 /* ViewController.swift */,
 				6A3042AB232BBC0B009B8673 /* ReorderViewController.swift */,
@@ -223,6 +226,7 @@
 			files = (
 				6A30429F232BBA13009B8673 /* ViewController.swift in Sources */,
 				6A3042AC232BBC0B009B8673 /* ReorderViewController.swift in Sources */,
+				6A9934B82330EF6B002156EA /* AnimateCircleView.swift in Sources */,
 				6A30429D232BBA13009B8673 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

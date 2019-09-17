@@ -33,7 +33,7 @@ class ReorderViewController: UIViewController {
         view.backgroundColor = .white
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeProgressView), userInfo: nil, repeats: true)
         paragraphTitle.text = viewModel.model.paragraphTitle
-        questionNoText.text = "Question \(viewModel.questionSet) of \(viewModel.total)"
+        questionNoText.text = "Question \(viewModel.questionSet) of 5"
         answerLabel.isHidden = true
         createProgressBar()
     }
