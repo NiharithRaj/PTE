@@ -57,8 +57,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JwN-E5-eKV">
-                                <rect key="frame" x="120" y="240" width="1680" height="740"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JwN-E5-eKV">
+                                <rect key="frame" x="120" y="220" width="1680" height="810"/>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAe-3S-2Xo">
                                 <rect key="frame" x="120" y="30" width="1680" height="180"/>
@@ -87,13 +87,21 @@
                                         <color key="textColor" red="0.20000000000000001" green="0.38431372549019605" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ5-1h-UNT">
+                                        <rect key="frame" x="1441" y="29" width="89" height="43"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="38"/>
+                                        <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="NBc-8Z-zEo" firstAttribute="leading" secondItem="hAe-3S-2Xo" secondAttribute="leading" constant="60" id="1rq-6o-5OV"/>
                                     <constraint firstAttribute="height" constant="180" id="9ae-6s-zuT"/>
+                                    <constraint firstItem="PQ5-1h-UNT" firstAttribute="top" secondItem="NBc-8Z-zEo" secondAttribute="top" id="B5E-cd-XuP"/>
                                     <constraint firstItem="NBc-8Z-zEo" firstAttribute="top" secondItem="hAe-3S-2Xo" secondAttribute="top" constant="29" id="FEU-Gz-SCy"/>
                                     <constraint firstItem="w1d-Pe-f1N" firstAttribute="top" secondItem="TBK-Gr-Mss" secondAttribute="top" id="Ggr-aP-nNc"/>
+                                    <constraint firstAttribute="trailing" secondItem="PQ5-1h-UNT" secondAttribute="trailing" constant="150" id="TsA-Bo-WxQ"/>
                                     <constraint firstAttribute="trailing" secondItem="w1d-Pe-f1N" secondAttribute="trailing" constant="60" id="iAX-UE-tgR"/>
                                     <constraint firstItem="LOD-x7-2Lk" firstAttribute="centerX" secondItem="hAe-3S-2Xo" secondAttribute="centerX" id="jpv-nx-eyh"/>
                                     <constraint firstItem="TBK-Gr-Mss" firstAttribute="leading" secondItem="NBc-8Z-zEo" secondAttribute="leading" id="k27-ks-bqu"/>
@@ -101,7 +109,7 @@
                                     <constraint firstItem="LOD-x7-2Lk" firstAttribute="centerY" secondItem="TBK-Gr-Mss" secondAttribute="centerY" id="t6G-aU-CKA"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEx-aW-Zku">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEx-aW-Zku">
                                 <rect key="frame" x="120" y="1005" width="1680" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -120,10 +128,10 @@
                         <constraints>
                             <constraint firstItem="hAe-3S-2Xo" firstAttribute="leading" secondItem="Teb-Ig-rVM" secondAttribute="leading" constant="30" id="7VK-Zo-TaX"/>
                             <constraint firstItem="3V5-gs-cmk" firstAttribute="top" secondItem="Ufd-HA-C4Q" secondAttribute="top" id="8T4-AJ-tX4"/>
+                            <constraint firstItem="JwN-E5-eKV" firstAttribute="top" secondItem="hAe-3S-2Xo" secondAttribute="bottom" constant="10" id="DMY-yk-9y6"/>
                             <constraint firstItem="hAe-3S-2Xo" firstAttribute="top" secondItem="Ufd-HA-C4Q" secondAttribute="top" constant="30" id="IWB-fV-SCI"/>
                             <constraint firstAttribute="trailing" secondItem="3V5-gs-cmk" secondAttribute="trailing" constant="30" id="TXg-rR-Lrq"/>
                             <constraint firstItem="Teb-Ig-rVM" firstAttribute="trailing" secondItem="JwN-E5-eKV" secondAttribute="trailing" constant="30" id="WuF-y1-xsE"/>
-                            <constraint firstItem="JwN-E5-eKV" firstAttribute="top" secondItem="hAe-3S-2Xo" secondAttribute="bottom" constant="30" id="aeS-GD-rCi"/>
                             <constraint firstAttribute="bottom" secondItem="PEx-aW-Zku" secondAttribute="bottom" constant="25" id="iCA-0h-yd2"/>
                             <constraint firstItem="PEx-aW-Zku" firstAttribute="leading" secondItem="hAe-3S-2Xo" secondAttribute="leading" id="o57-I5-fs2"/>
                             <constraint firstItem="Teb-Ig-rVM" firstAttribute="trailing" secondItem="hAe-3S-2Xo" secondAttribute="trailing" constant="30" id="o5i-Tt-zSx"/>
@@ -135,6 +143,7 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="LOD-x7-2Lk" id="wqk-z1-jmp"/>
+                        <outlet property="countDownLabel" destination="PQ5-1h-UNT" id="HgC-OT-K9x"/>
                         <outlet property="paragraphTitle" destination="TBK-Gr-Mss" id="q4S-gN-utj"/>
                         <outlet property="progressContainerView" destination="PEx-aW-Zku" id="3mh-x3-PLK"/>
                         <outlet property="questionNoText" destination="w1d-Pe-f1N" id="chX-bP-VVe"/>

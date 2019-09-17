@@ -30,7 +30,6 @@ class ViewController: UIViewController {
         if let controller = storyboard.instantiateViewController(withIdentifier: "ReorderViewController") as? ReorderViewController {
             controller.hero.isEnabled = true
             controller.viewModel = ReorderViewModel(collection: model.collection[currentReorder], set: questionSet, total: model.collection.count)
-            questionSet += 1
             controller.delegate = self
 //            controller.hero.modalAnimationType = .selectBy(presenting: .zoomSlide(direction: .left), dismissing: .zoomSlide(direction: .right))
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
@@ -55,8 +54,9 @@ class ViewController: UIViewController {
 extension ViewController: ReorderViewDelegate {
     func didReorderCompleted() {
         currentReorder += 1
+        questionSet += 1
         if model.collection.count > currentReorder {
-            if questionSet == 5 {
+            if questionSet == 6 {
                 questionSet = 1
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5, execute: {
                     self.pushReorderVC()

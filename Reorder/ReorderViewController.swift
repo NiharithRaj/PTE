@@ -19,10 +19,11 @@ class ReorderViewController: UIViewController {
     @IBOutlet weak var progressContainerView: UIView!
     var timer:Timer?
 
+    @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var questionNoText: UILabel!
     @IBOutlet weak var paragraphTitle: UILabel!
-    var count = 0.0
+    var count = 120
     let progressBar = GTProgressBar()
     weak var delegate:ReorderViewDelegate?
     var arrangedSubviews:[UIView] = []
@@ -31,22 +32,27 @@ class ReorderViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeProgressView), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         paragraphTitle.text = viewModel.model.paragraphTitle
         questionNoText.text = "Question \(viewModel.questionSet) of 5"
         answerLabel.isHidden = true
-        createProgressBar()
     }
     
-    @objc private func changeProgressView() {
-        count += 1
-        progressBar.progress = CGFloat(count/120.0)
-        if count == 120 {
+    @objc private func updateTimer() {
+        count -= 1
+        countDownLabel.text = timeFormatted(count) // will show timer
+        if count == 0 {
             timer?.invalidate()
             correctArrage()
         }
     }
 
+    func timeFormatted(_ totalSeconds: Int) -> String {
+        let seconds: Int = totalSeconds % 60
+        let minutes: Int = (totalSeconds / 60) % 60
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         createStackView()
@@ -78,7 +84,7 @@ class ReorderViewController: UIViewController {
             }
         }
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 12) { [weak self] in
             self?.dismiss(animated: false, completion: nil)
             self?.delegate?.didReorderCompleted()
         }
@@ -113,21 +119,22 @@ class ReorderViewController: UIViewController {
         return view
     }
     
-    func createProgressBar() {
-        progressBar.progress = CGFloat(count/120.0)
-        progressBar.barBorderColor = UIColor.defaultBGColor
-        progressBar.barFillColor = UIColor.defaultBGColor
-        progressBar.barBackgroundColor = rgb(r: 148, g: 181, b: 246, alpha: 0.5)
-        progressBar.barBorderWidth = 1
-        progressBar.barFillInset = 2
-        progressBar.progressLabelInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        progressBar.font = UIFont.boldSystemFont(ofSize: 18)
-        progressBar.barMaxHeight = 20
-        progressBar.direction = GTProgressBarDirection.clockwise
-        progressBar.displayLabel = false
-        progressContainerView.addSubview(progressBar)
-        progressBar.addConstrainToSuperView(superView: progressContainerView,leading: 60, trailling: 60, top: 20)
-    }
+//    func createProgressBar() {
+//        progressBar.progress = CGFloat(count/120.0)
+//        progressBar.barBorderColor = UIColor.defaultBGColor
+//        progressBar.barFillColor = UIColor.defaultBGColor
+//        progressBar.barBackgroundColor = rgb(r: 148, g: 181, b: 246, alpha: 0.5)
+//        progressBar.barBorderWidth = 1
+//        progressBar.barFillInset = 2
+//        progressBar.progressLabelInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+//        progressBar.font = UIFont.boldSystemFont(ofSize: 18)
+//        progressBar.barMaxHeight = 20
+//        progressBar.direction = GTProgressBarDirection.clockwise
+//        progressBar.displayLabel = false
+//        progressContainerView.addSubview(progressBar)
+//        progressBar.addConstrainToSuperView(superView: progressContainerView,leading: 60, trailling: 60, top: 20)
+//    }
+
 }
 
 
