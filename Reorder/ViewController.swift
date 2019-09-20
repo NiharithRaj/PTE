@@ -19,13 +19,13 @@ class ViewController: UIViewController {
 //        self.hero.isEnabled = true
 //        self.view.hero.id = "Home"
         view.backgroundColor = .white
-        parsefromJson()
-        pushReorderVC()
-
+//        pushReorderVC()
+        pushRepeatSentence()
     }
     
 
     fileprivate func pushReorderVC() {
+        parsefromJson()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "ReorderViewController") as? ReorderViewController {
             controller.hero.isEnabled = true
@@ -38,6 +38,13 @@ class ViewController: UIViewController {
         }
     }
 
+    fileprivate func pushRepeatSentence() {
+        let storyboard = UIStoryboard(name: "RS", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "RSTimerViewController") as? RSTimerViewController {
+            present(controller, animated: true, completion: nil)
+        }
+    }
+    
     func parsefromJson() {
         if let path = Bundle.main.path(forResource: "ROP1", ofType: "json") {
             do {
