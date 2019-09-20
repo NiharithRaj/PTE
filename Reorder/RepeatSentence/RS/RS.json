@@ -1,0 +1,24 @@
+{
+    "collection": [
+        {
+            "time": 7,
+            "sentence": "This is the first repeat sentece"
+        },
+        {
+            "time": 5,
+            "sentence": "Mário de Andrade"
+        },
+        {
+            "time": 5,
+            "sentence": "Mário de Andrade"
+        },
+        {
+            "time": 5,
+            "sentence": "Mário de Andrade"
+        },
+        {
+            "time": 5,
+            "sentence": "Mário de Andrade"
+        }
+    ]
+}

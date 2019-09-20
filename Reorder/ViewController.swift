@@ -40,8 +40,10 @@ class ViewController: UIViewController {
 
     fileprivate func pushRepeatSentence() {
         let storyboard = UIStoryboard(name: "RS", bundle: nil)
-        if let controller = storyboard.instantiateViewController(withIdentifier: "RSTimerViewController") as? RSTimerViewController {
-            present(controller, animated: true, completion: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "RSViewController") as? RSViewController {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
+                self.navigationController?.present(controller, animated: true, completion: nil)
+            }
         }
     }
     
