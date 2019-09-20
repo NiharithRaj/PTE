@@ -49,8 +49,10 @@ class RSViewController: UIViewController {
 extension RSViewController:RSTimerDelegate {
     func didCompleted() {
         currentIndex += 1
-        DispatchQueue.main.async {
-            self.pushRepeatSentence()
+        if model.collection.count < currentIndex {
+            DispatchQueue.main.async {
+                self.pushRepeatSentence()
+            }
         }
     }
 }
