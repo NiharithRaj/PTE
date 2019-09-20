@@ -20,14 +20,14 @@ class RSTimerViewController: UIViewController {
     @IBOutlet weak var answerBeginningView: UILabel!
     @IBOutlet weak var answerProgressView: UIView!
     @IBOutlet weak var answerView: UIView!
-    var questionTime = 3
+    var questionTime = 5
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         var seconds = 3
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             DispatchQueue.main.async {

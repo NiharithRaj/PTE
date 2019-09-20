@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="XBP-Qj-Isq">
-                                        <rect key="frame" x="657" y="195" width="607" height="800"/>
+                                        <rect key="frame" x="657" y="225" width="607" height="800"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYm-ny-QzO">
                                                 <rect key="frame" x="0.0" y="0.0" width="607" height="350"/>
@@ -180,8 +180,14 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only one." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taK-Bb-B66">
-                                        <rect key="frame" x="30" y="70" width="1860" height="35"/>
+                                        <rect key="frame" x="30" y="100" width="1860" height="35"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1 of 60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmJ-jK-iTE">
+                                        <rect key="frame" x="1598" y="30" width="252" height="40"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -191,8 +197,10 @@
                                     <constraint firstItem="XBP-Qj-Isq" firstAttribute="centerX" secondItem="aQ8-Ba-TBh" secondAttribute="centerX" id="1av-Pf-BKT"/>
                                     <constraint firstItem="XBP-Qj-Isq" firstAttribute="top" secondItem="taK-Bb-B66" secondAttribute="bottom" constant="90" id="41Q-Gw-jUp"/>
                                     <constraint firstAttribute="trailing" secondItem="taK-Bb-B66" secondAttribute="trailing" constant="30" id="5Jb-zr-RKB"/>
-                                    <constraint firstItem="taK-Bb-B66" firstAttribute="top" secondItem="aQ8-Ba-TBh" secondAttribute="top" constant="70" id="5NH-zz-4Ue"/>
+                                    <constraint firstItem="taK-Bb-B66" firstAttribute="top" secondItem="aQ8-Ba-TBh" secondAttribute="top" constant="100" id="5NH-zz-4Ue"/>
                                     <constraint firstItem="taK-Bb-B66" firstAttribute="leading" secondItem="aQ8-Ba-TBh" secondAttribute="leading" constant="30" id="Vh8-P8-TuL"/>
+                                    <constraint firstAttribute="trailing" secondItem="xmJ-jK-iTE" secondAttribute="trailing" constant="70" id="Ykh-mp-t3M"/>
+                                    <constraint firstItem="xmJ-jK-iTE" firstAttribute="top" secondItem="aQ8-Ba-TBh" secondAttribute="top" constant="30" id="eLQ-68-EPF"/>
                                 </constraints>
                             </view>
                         </subviews>
