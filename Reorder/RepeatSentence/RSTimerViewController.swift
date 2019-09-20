@@ -47,6 +47,7 @@ class RSTimerViewController: UIViewController {
     fileprivate func beginQuestionProgress() {
         viewProgress(animationview: progressbarContainerView, seconds: questionTime) {[weak self] in
             guard let strongSelf = self else { return }
+            strongSelf.topViewBeginningLabel.text = "Completed"
             strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 10){
                 DispatchQueue.main.async {
                     strongSelf.answerBeginningView.text = "Completed"
@@ -55,7 +56,6 @@ class RSTimerViewController: UIViewController {
         }
         var seconds = questionTime
         answerBeginningView.isHidden = false
-        self.topViewBeginningLabel.text = "Completed"
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             DispatchQueue.main.async {
                 self.answerBeginningView.text = "Beginning in \(seconds) seconds."
