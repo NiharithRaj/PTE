@@ -9,7 +9,7 @@
 import UIKit
 
 class RSViewController: UIViewController {
-    var model:RepeatSentenceCollection!
+    var model: RepeatSentenceCollection!
     var currentIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class RSViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
     }
-    
+
     fileprivate func pushRepeatSentence() {
         let storyboard = UIStoryboard(name: "RS", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "RSTimerViewController") as? RSTimerViewController {
@@ -32,7 +32,7 @@ class RSViewController: UIViewController {
             }
         }
     }
-    
+
     func parsefromJson() {
         if let path = Bundle.main.path(forResource: "RS", ofType: "json") {
             do {
@@ -43,10 +43,10 @@ class RSViewController: UIViewController {
             }
         }
     }
- 
+
 }
 
-extension RSViewController:RSTimerDelegate {
+extension RSViewController: RSTimerDelegate {
     func didCompleted() {
         currentIndex += 1
         if model.collection.count > currentIndex {
@@ -57,11 +57,11 @@ extension RSViewController:RSTimerDelegate {
     }
 }
 
-struct RepeatSentenceCollection:Decodable {
-    let collection:[RepeatSentence]
+struct RepeatSentenceCollection: Decodable {
+    let collection: [RepeatSentence]
 }
 
-struct RepeatSentence:Decodable {
-    let sentence:String
-    let time:Int
+struct RepeatSentence: Decodable {
+    let sentence: String
+    let time: Int
 }

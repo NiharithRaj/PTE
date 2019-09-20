@@ -7,13 +7,13 @@
 //
 
 import UIKit
-protocol RSTimerDelegate:class {
+protocol RSTimerDelegate: class {
     func didCompleted()
 }
 
 class RSTimerViewController: UIViewController {
-    
-    var viewModel:RSTimerViewModel!
+
+    var viewModel: RSTimerViewModel!
     let count = 25.0
     @IBOutlet weak var dotview: UIView!
     @IBOutlet weak var progressbarContainerView: UIView!
@@ -21,32 +21,32 @@ class RSTimerViewController: UIViewController {
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var indicatorView: UIView!
     @IBOutlet weak var indicatorLineview: UIView!
-    
+
     @IBOutlet weak var answerTextLabel: UILabel!
-    
+
     @IBOutlet weak var answerBeginningView: UILabel!
     @IBOutlet weak var answerProgressView: UIView!
     @IBOutlet weak var answerView: UIView!
-    
-    
+
+
     @IBOutlet weak var answerTextView: UIView!
     @IBOutlet weak var questionView: UIView!
-    
-    weak var delegate:RSTimerDelegate?
-    
+
+    weak var delegate: RSTimerDelegate?
+
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         questionTime = viewModel.model.time
         setupUI()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         questionView(yes: false)
         changeQuestion()
     }
-    
+
     fileprivate func changeQuestion() {
         var seconds = 3
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
@@ -63,38 +63,38 @@ class RSTimerViewController: UIViewController {
             }
         }
     }
-    
-    fileprivate func questionView(yes:Bool) {
+
+    fileprivate func questionView(yes: Bool) {
         questionView.isHidden = yes
         answerTextView.isHidden = !yes
     }
-    
+
     fileprivate func beginQuestionProgress() {
-        viewProgress(animationview: progressbarContainerView, seconds: questionTime) {[weak self] in
+        viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
-            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 10){
+            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 10) {
 //                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: {
-                    strongSelf.answerBeginningView.text = "Completed"
-                    UIView.animate(withDuration: 1, animations: {
-                        UIView.transition(from: strongSelf.questionView, to: strongSelf.answerTextView, duration: 1.0
-                            , options: [[.transitionFlipFromRight,
-                                         .showHideTransitionViews]]) {_ in
-                                            strongSelf.questionView(yes: true)
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
+                strongSelf.answerBeginningView.text = "Completed"
+                UIView.animate(withDuration: 1, animations: {
+                    UIView.transition(from: strongSelf.questionView, to: strongSelf.answerTextView, duration: 1.0
+                        , options: [[.transitionFlipFromRight,
+                                .showHideTransitionViews]]) { _ in
+                        strongSelf.questionView(yes: true)
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
                             strongSelf.dismiss(animated: true, completion: nil)
                             strongSelf.delegate?.didCompleted()
                         })
-                    })
+                })
 //                })
             }
         }
-        
-        
+
+
         var seconds = questionTime + 1
         answerBeginningView.isHidden = false
-        
+
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             DispatchQueue.main.async {
                 self.answerBeginningView.text = "Beginning in \(seconds) seconds."
@@ -109,30 +109,30 @@ class RSTimerViewController: UIViewController {
         }
     }
     private func setupUI() {
-        
+
         topView.layer.borderColor = UIColor.gray.cgColor
         topView.layer.borderWidth = 2.0
         topView.layer.cornerRadius = 10.0
-        
+
         answerView.layer.borderColor = UIColor.gray.cgColor
         answerView.layer.borderWidth = 2.0
         answerView.layer.cornerRadius = 10.0
-        
+
         indicatorLineview.layer.cornerRadius = 5.0
         indicatorView.layer.cornerRadius = 20.0
 
         progressbarContainerView.layer.borderColor = UIColor.gray.cgColor
         progressbarContainerView.layer.borderWidth = 2.0
         progressbarContainerView.clipsToBounds = true
-        
+
         answerProgressView.layer.borderColor = UIColor.gray.cgColor
         answerProgressView.layer.borderWidth = 2.0
         answerProgressView.clipsToBounds = true
-        
-        var v:UIView
+
+        var v: UIView
         let index = 10
         for i in 0...11 {
-            v = UIView(frame: CGRect(x: index + (i * 39) , y: 15, width: 2, height: 8))
+            v = UIView(frame: CGRect(x: index + (i * 39), y: 15, width: 2, height: 8))
             v.backgroundColor = UIColor.gray
             dotview.addSubview(v)
         }
@@ -142,13 +142,13 @@ class RSTimerViewController: UIViewController {
         answerBeginningView.text = "Beginning in \(questionTime) seconds."
         answerTextLabel.text = viewModel.model.sentence
     }
-    
-    fileprivate func addIndicators(toView:UIView) {
+
+    fileprivate func addIndicators(toView: UIView) {
         let width = Double(toView.frame.width) / count
         let height = Double(toView.frame.height)
-        var v:UIView
+        var v: UIView
         for i in 0..<(Int(count)) {
-            v = UIView(frame: CGRect(x: (Double(i) * width) , y: 0.0, width: width, height: height))
+            v = UIView(frame: CGRect(x: (Double(i) * width), y: 0.0, width: width, height: height))
             v.backgroundColor = rgb(r: 118, g: 141, b: 241)
             v.layer.borderWidth = 1.0
             v.layer.borderColor = UIColor.black.cgColor
@@ -157,20 +157,20 @@ class RSTimerViewController: UIViewController {
             toView.addSubview(v)
         }
     }
-    
-    fileprivate func viewProgress(animationview:UIView, seconds:Int, completion:(()->())?) {
+
+    fileprivate func viewProgress(animationview: UIView, seconds: Int, completion: (() -> ())?) {
         var initial = 0
-        Timer.scheduledTimer(withTimeInterval: Double(seconds)/count , repeats: true) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: Double(seconds) / count, repeats: true) { (timer) in
             animationview.subviews[initial].isHidden = false
             initial += 1
             if initial > Int(self.count) - 1 {
                 timer.invalidate()
                 animationview.subviews.forEach({ $0.isHidden = false })
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                    if let c = completion {
-                        c()
-                    }
-                })
+                        if let c = completion {
+                            c()
+                        }
+                    })
             }
         }
     }
@@ -178,8 +178,8 @@ class RSTimerViewController: UIViewController {
 }
 
 struct RSTimerViewModel {
-    let model:RepeatSentence
-    init(model:RepeatSentence) {
+    let model: RepeatSentence
+    init(model: RepeatSentence) {
         self.model = model
     }
 }
