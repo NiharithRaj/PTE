@@ -14,7 +14,9 @@ class RSViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
-        pushRepeatSentence()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+            self.pushRepeatSentence()
+        })
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -25,7 +27,7 @@ class RSViewController: UIViewController {
     fileprivate func pushRepeatSentence() {
         let storyboard = UIStoryboard(name: "RS", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "RSTimerViewController") as? RSTimerViewController {
-            controller.viewModel = RSTimerViewModel(model: model.collection[currentIndex])
+            controller.viewModel = RSTimerViewModel(model: model.collection[currentIndex],questionNumber: currentIndex + 1, total: model.collection.count)
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
