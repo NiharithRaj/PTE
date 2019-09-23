@@ -46,7 +46,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFQ-M4-PCF">
-                                        <rect key="frame" x="30" y="507" width="1860" height="67"/>
+                                        <rect key="frame" x="100" y="507" width="1720" height="67"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -62,8 +62,8 @@
                                 <constraints>
                                     <constraint firstItem="UNl-AG-2nB" firstAttribute="top" secondItem="az0-Dg-5qI" secondAttribute="top" constant="68" id="8pu-dy-MjK"/>
                                     <constraint firstItem="TFQ-M4-PCF" firstAttribute="centerY" secondItem="az0-Dg-5qI" secondAttribute="centerY" id="Gyl-zq-6az"/>
-                                    <constraint firstItem="TFQ-M4-PCF" firstAttribute="leading" secondItem="az0-Dg-5qI" secondAttribute="leading" constant="30" id="Uhs-U2-Ltj"/>
-                                    <constraint firstAttribute="trailing" secondItem="TFQ-M4-PCF" secondAttribute="trailing" constant="30" id="pPT-bX-t47"/>
+                                    <constraint firstItem="TFQ-M4-PCF" firstAttribute="leading" secondItem="az0-Dg-5qI" secondAttribute="leading" constant="100" id="Uhs-U2-Ltj"/>
+                                    <constraint firstAttribute="trailing" secondItem="TFQ-M4-PCF" secondAttribute="trailing" constant="100" id="pPT-bX-t47"/>
                                     <constraint firstItem="UNl-AG-2nB" firstAttribute="leading" secondItem="az0-Dg-5qI" secondAttribute="leading" constant="98" id="zcI-uG-5gx"/>
                                 </constraints>
                             </view>
@@ -181,8 +181,8 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beginning in 3 seconds." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQb-bX-Pq4">
-                                                        <rect key="frame" x="25" y="186" width="557" height="32"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beginning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQb-bX-Pq4">
+                                                        <rect key="frame" x="25" y="186" width="522" height="32"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -210,7 +210,7 @@
                                                     <constraint firstItem="1ej-1M-A6d" firstAttribute="top" secondItem="lcW-9U-eqm" secondAttribute="top" constant="25" id="f1j-CE-rg4"/>
                                                     <constraint firstItem="l6C-Wu-VUL" firstAttribute="leading" secondItem="lcW-9U-eqm" secondAttribute="leading" constant="25" id="gN8-xZ-VuE"/>
                                                     <constraint firstItem="QQb-bX-Pq4" firstAttribute="leading" secondItem="lcW-9U-eqm" secondAttribute="leading" constant="25" id="geo-zJ-G2X"/>
-                                                    <constraint firstAttribute="trailing" secondItem="QQb-bX-Pq4" secondAttribute="trailing" constant="25" id="lqy-gz-G5f"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QQb-bX-Pq4" secondAttribute="trailing" constant="60" id="lqy-gz-G5f"/>
                                                     <constraint firstItem="KJE-bP-G0A" firstAttribute="leading" secondItem="lcW-9U-eqm" secondAttribute="leading" constant="25" id="s10-sO-k8G"/>
                                                     <constraint firstAttribute="trailing" secondItem="KJE-bP-G0A" secondAttribute="trailing" constant="25" id="wM6-pz-xxp"/>
                                                     <constraint firstItem="QQb-bX-Pq4" firstAttribute="top" secondItem="KJE-bP-G0A" secondAttribute="bottom" constant="8" id="yx7-ou-fXB"/>
@@ -248,6 +248,13 @@
                                     <constraint firstItem="xmJ-jK-iTE" firstAttribute="top" secondItem="aQ8-Ba-TBh" secondAttribute="top" constant="30" id="eLQ-68-EPF"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="iNc-VA-A1m">
+                                <rect key="frame" x="1520" y="850" width="393" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="boP-tn-kma"/>
+                                    <constraint firstAttribute="width" constant="393" id="jfm-5G-QDV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -255,9 +262,11 @@
                             <constraint firstAttribute="bottom" secondItem="az0-Dg-5qI" secondAttribute="bottom" id="CHS-yJ-vtQ"/>
                             <constraint firstAttribute="trailing" secondItem="aQ8-Ba-TBh" secondAttribute="trailing" id="Ke9-m4-l5S"/>
                             <constraint firstItem="aQ8-Ba-TBh" firstAttribute="top" secondItem="wF3-3L-y8Y" secondAttribute="top" id="MTz-Mx-e6v"/>
+                            <constraint firstItem="6MU-29-Mah" firstAttribute="trailing" secondItem="iNc-VA-A1m" secondAttribute="trailing" constant="-83" id="Miv-Ea-S1H"/>
                             <constraint firstAttribute="trailing" secondItem="az0-Dg-5qI" secondAttribute="trailing" id="aqc-WD-F8E"/>
                             <constraint firstItem="aQ8-Ba-TBh" firstAttribute="leading" secondItem="wF3-3L-y8Y" secondAttribute="leading" id="nvQ-Bq-QVg"/>
                             <constraint firstAttribute="bottom" secondItem="aQ8-Ba-TBh" secondAttribute="bottom" id="r8G-ar-aFu"/>
+                            <constraint firstItem="6MU-29-Mah" firstAttribute="bottom" secondItem="iNc-VA-A1m" secondAttribute="bottom" constant="-86" id="wiJ-ul-Zim"/>
                             <constraint firstItem="az0-Dg-5qI" firstAttribute="leading" secondItem="wF3-3L-y8Y" secondAttribute="leading" id="zmS-4p-Xgf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6MU-29-Mah"/>
@@ -302,4 +311,7 @@
             <point key="canvasLocation" x="-198" y="-73"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="1920" height="1920"/>
+    </resources>
 </document>

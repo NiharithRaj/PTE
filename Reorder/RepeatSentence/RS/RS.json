@@ -1,164 +1,244 @@
 {
     "collection": [
         {
-            "time": 5,
-            "sentence": "The technician left the new microscope in the biology lab"
-        },
-        {
-            "time": 5,
-            "sentence": "I will start with a brief history of the district and then focus on life in the first half of this century"
-        },
-        {
-            "time": 5,
-            "sentence": "Fees are heavily discounted and bursaries are available for delegates"
-        },
-        {
-            "time": 5,
-            "sentence": "During the next few centuries London will become one of the most powerful and prosperous cities in Europe"
-        },
-        {
-            "time": 5,
-            "sentence": "Try to work with each other to build up a sense of team spirit"
-        },
-        {
-            "time": 5,
-            "sentence": "All lectures and learning materials can be found on the Internet"
-        },
-        {
-            "time": 5,
-            "sentence": "The poster of this play is hung in the large Hall"
-        },
-        {
-            "time": 5,
-            "sentence": "Read safety instructions before using the equipment during the workshop"
-        },
-        {
-            "time": 5,
-            "sentence": "An introduction is an essential element of presentation"
-        },
-        {
-            "time": 5,
-            "sentence": "The site is designed to be interactive"
-        },
-        {
-            "time": 5,
-            "sentence": "The date of the invention of the first clock is disputed among historians"
-        },
-        {
-            "time": 5,
-            "sentence": "Students are held accountable for adhering to establish community standard"
-        },
-        {
-            "time": 5,
-            "sentence": "The history of the movement is recorded by several writers"
-        },
-        {
-            "time": 5,
-            "sentence": "The dining hall will be under renovation during the full break"
-        },
-        {
-            "time": 5,
-            "sentence": "Novelists have a major role to play in reflecting their time to their readers"
-        },
-        {
-            "time": 5,
-            "sentence": "Many of the urban poor lived in an extremely cramped condition"
-        },
-        {
-            "time": 5,
-            "sentence": "The key findings seem to contradict our initial hypothesis"
-        },
-        {
-            "time": 5,
-            "sentence": "The schedule allows a lot of time for independent study"
-        },
-        {
-            "time": 5,
-            "sentence": "The effect of advertising is open to much debate"
-        },
-        {
-            "time": 5,
-            "sentence": "The smoke from these contributed to a great deal to the air pollution"
-        },
-        {
-            "time": 5,
-            "sentence": "The Commissioner will collect the fines for the sovereignty"
-        },
-        {
-            "time": 5,
-            "sentence": "The final year will consist of four tort courses and one project"
-        },
-        {
-            "time": 5,
-            "sentence": "The country suffered a series of invasions by tribes from present-day Germany and Denmark"
-        },
-        {
-            "time": 5,
-            "sentence": "We've decided to ask you to write four short pieces of written coursework of this year"
-        },
-        {
-            "time": 5,
-            "sentence": "We like people to write a case study describing an organization they know"
-        },
-        {
-            "time": 5,
-            "sentence": "We are warning the clients that the rates are increasing the technology"
-        },
-        {
-            "time": 5,
-            "sentence": "The change meant that metal and leather goods were produced that for the first time"
-        },
-        {
-            "time": 5,
-            "sentence": "The student welfare officer can help with questions about exam techniques"
-        },
-        {
-            "time": 5,
-            "sentence": "I must see him before he flies out to London for about a week"
-        },
-        {
-            "time": 5,
-            "sentence": "The recent technical advances have not only been big they have also been fast"
-        },
-        {
-            "time": 5,
-            "sentence": "Very little of the work of today's mechanical firms is repetitive"
-        },
-        {
-            "time": 5,
-            "sentence": "Information is being given to readers in a format that looks familiar"
-        },
-        {
-            "time": 5,
-            "sentence": "The interaction of climate change and soiled egg we'll probably aggravate conditions"
-        },
-        {
-            "time": 5,
-            "sentence": "Many of his research objectives are driven by his natural curiosity and instincts"
-        },
-        {
-            "time": 5,
-            "sentence": "New York City is famous for its ethnic diversity"
-        },
-        {
-            "time": 5,
-            "sentence": "Newspapers are supported primarily by the sale of advertising space"
-        },
-        {
-            "time": 5,
-            "sentence": "Next time we will discuss the influence of the media in public policy"
-        },
-        {
-            "time": 5,
-            "sentence": "Novelists have a major role to play in reflecting their time to their readers"
-        },
-        {
-            "time": 5,
-            "sentence": "Of course you can also choose to your grades emailed to you"
-        },
-        {
-            "sentence": "Opposition to the government tax policies are widespread across business sectors",
+            "fileName": 86,
+            "sentence": "Important details in the article are missing from the summary.",
+            "No": 81,
             "time": 5
-        }
-    ]
+        },
+        {
+            "sentence": "The commission will be pooled into funds among authorities.",
+            "time": 5,
+            "fileName": 137,
+            "No": 82
+        },
+        {
+            "No": 83,
+            "time": 5,
+            "fileName": 864,
+            "sentence": "The tutorial is held on the 8th of April"
+        },
+        {
+            "No": 84,
+            "sentence": "Could you please prepare a medical certificate for me to submit to my manager?",
+            "fileName": 120,
+            "time": 5
+        },
+        {
+            "No": 85,
+            "fileName": 394,
+            "time": 5,
+            "sentence": "Hundred years ago, albert Einstein first published his theory of general relativity."
+        },
+        {
+            "fileName": 466,
+            "sentence": "A person's education level is closely related to their economic background.",
+            "time": 5,
+            "No": 86
+        },
+        {
+            "sentence": "Some island nations in the Pacific will become uninhabitable before long.",
+            "time": 5,
+            "No": 87,
+            "fileName": 56
+        },
+        {
+            "fileName": 787,
+            "time": 5,
+            "sentence": "Archaeologists' new discovery stand out in previously overlooked foundations.",
+            "No": 88
+        },
+        {
+            "fileName": 821,
+            "sentence": "The first few sentences of an essay captured the reader's attention.",
+            "time": 5,
+            "No": 89
+        },
+        {
+            "fileName": 15,
+            "No": 90,
+            "sentence": "The English word typhoon comes from the Chinese word big wind.",
+            "time": 5
+        },
+        {
+            "time": 5,
+            "No": 91,
+            "fileName": 676,
+            "sentence": "Scientists are getting closer to the answers of this questions."
+        },
+        {
+            "sentence": "Companies want to protect their brand from negative comments.",
+            "fileName": 501,
+            "time": 5,
+            "No": 92
+        },
+        {
+            "sentence": "The most popular courses still have a few places left.",
+            "time": 5,
+            "No": 93,
+            "fileName": 173
+        },
+        {
+            "time": 5,
+            "No": 94,
+            "fileName": 511,
+            "sentence": "Education level is related to the economic background."
+        },
+        {
+            "time": 5,
+            "No": 95,
+            "fileName": 321,
+            "sentence": "The time of the math lecture has been changed to ten thirty."
+        },
+        {
+            "time": 5,
+            "sentence": "No more than four people are allowed in the lab to do something.",
+            "fileName": 340,
+            "No": 96
+        },
+        {
+            "sentence": "A periodical is a publication that is issued regularly.",
+            "time": 5,
+            "No": 97,
+            "fileName": 667
+        },
+        {
+            "time": 5,
+            "fileName": 103,
+            "sentence": "Rivers provide habitats for fish and other aquatic species.",
+            "No": 98
+        },
+        {
+            "fileName": 578,
+            "sentence": "Politics is not usually a safe topic for conversation.",
+            "time": 5,
+            "No": 99
+        },
+        {
+            "time": 5,
+            "No": 100,
+            "fileName": 382,
+            "sentence": "The university supply a number of scholarships for qualified students."
+        },
+        {
+            "fileName": 467,
+            "time": 5,
+            "sentence": "A recent article shows a number of interesting experiments.",
+            "No": 101
+        },
+        {
+            "sentence": "You can find a lot more information on the university website.",
+            "fileName": 415,
+            "time": 5,
+            "No": 102
+        },
+        {
+            "fileName": 292,
+            "sentence": "And in this regard, as well as in other regard this consideration is important.",
+            "time": 5,
+            "No": 103
+        },
+        {
+            "fileName": 796,
+            "time": 5,
+            "No": 104,
+            "sentence": "The railways made long-distance travel possible for everyone."
+        },
+        {
+            "time": 5,
+            "fileName": 838,
+            "sentence": "For writing bibliography, you need to use italic fonts.",
+            "No": 105
+        },
+        {
+            "fileName": 562,
+            "No": 106,
+            "sentence": "Neurons are principally involved in chemical processes.",
+            "time": 5
+        },
+        {
+            "sentence": "A celebrated theory is still the source of great controversy.",
+            "time": 5,
+            "No": 107,
+            "fileName": 91
+        },
+        {
+            "fileName": 625,
+            "sentence": "That country's economy is primarily based on tourism.",
+            "time": 5,
+            "No": 108
+        },
+        {
+            "No": 109,
+            "fileName": 238,
+            "time": 5,
+            "sentence": "The book was supported by many faculty members."
+        },
+        {
+            "No": 110,
+            "fileName": 75,
+            "time": 5,
+            "sentence": "The railways were made to make distant travel possible."
+        },
+        {
+            "sentence": "Scientific beneficiary to space exploration is frequently questioned.",
+            "fileName": 592,
+            "time": 5,
+            "No": 111
+        },
+        {
+            "time": 5,
+            "sentence": "The clear evidence between brain events and behaviour events is fascinating",
+            "fileName": 909,
+            "No": 112
+        },
+        {
+            "sentence": "We are also going to be more prescriptive about what you focus on in your presentation.",
+            "time": 5,
+            "fileName": 274,
+            "No": 113
+        },
+        {
+            "sentence": "A party is thrown in the small meeting room.",
+            "time": 5,
+            "No": 114,
+            "fileName": 465
+        },
+        {
+            "time": 5,
+            "No": 115,
+            "fileName": 563,
+            "sentence": "Nurses specialize in clinical work and management."
+        },
+        {
+            "No": 116,
+            "sentence": "Hundreds of scientific papers have been published on global warming.",
+            "fileName": 127,
+            "time": 5
+        },
+        {
+            "fileName": 122,
+            "No": 117,
+            "sentence": "Create a playlist of your favourite music to help you relax in difficult situations.",
+            "time": 5
+        },
+        {
+            "time": 5,
+            "fileName": 472,
+            "sentence": "All staff must leave from the fire hydrant exit.",
+            "No": 118
+        },
+        {
+            "fileName": 529,
+            "No": 119,
+            "sentence": "Heavy rain will fall through the country next week.",
+            "time": 5
+        },
+        {
+            "fileName": 716,
+            "No": 120,
+            "sentence": "Applicants for the course preferably have a preference over English or journalism.",
+            "time": 5
+        }]
 }
+

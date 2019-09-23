@@ -39,7 +39,7 @@ class RSTimerViewController: UIViewController {
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTime = viewModel.model.time
+        questionTime = Utils.audioLength(fileName: "\(viewModel.model.fileName)")
         setupUI()
     }
 
@@ -72,10 +72,11 @@ class RSTimerViewController: UIViewController {
     }
 
     fileprivate func beginQuestionProgress() {
+
         viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
-            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 10) {
+            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 8) {
                 DispatchQueue.main.async {
                     strongSelf.answerBeginningView.text = "Completed"
                     UIView.animate(withDuration: 1, animations: {
@@ -84,6 +85,9 @@ class RSTimerViewController: UIViewController {
                                          .showHideTransitionViews]]) { _ in
                                             strongSelf.questionView(yes: true)
                         }
+                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+                           let _ = Utils.playAudio(fileName: "\(strongSelf.viewModel.model.fileName)")
+                        })
                         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
                             strongSelf.dismiss(animated: true, completion: nil)
                             strongSelf.delegate?.didCompleted()
@@ -93,10 +97,9 @@ class RSTimerViewController: UIViewController {
             }
         }
 
-
-        var seconds = questionTime + 1
         answerBeginningView.isHidden = false
-
+        var seconds = questionTime + 1
+        self.answerBeginningView.text = "Beginning in \(seconds) seconds."
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             DispatchQueue.main.async {
                 self.answerBeginningView.text = "Beginning in \(seconds) seconds."
@@ -108,6 +111,9 @@ class RSTimerViewController: UIViewController {
                     self.answerBeginningView.text = "Recording"
                 }
             }
+        }
+        DispatchQueue.main.async {
+            Utils.playAudio(fileName: "\(self.viewModel.model.fileName)")
         }
     }
     private func setupUI() {
@@ -141,7 +147,6 @@ class RSTimerViewController: UIViewController {
         addIndicators(toView: progressbarContainerView)
         addIndicators(toView: answerProgressView)
         answerBeginningView.isHidden = true
-        answerBeginningView.text = "Beginning in \(questionTime) seconds."
         answerTextLabel.text = viewModel.model.sentence
         questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
     }
@@ -171,6 +176,8 @@ class RSTimerViewController: UIViewController {
                 animationview.subviews.forEach({ $0.isHidden = false })
                 if animationview == self.answerProgressView {
                     self.answerBeginningView.text = "Completed"
+                } else if animationview == self.progressbarContainerView {
+                    self.topViewBeginningLabel.text = "Completed"
                 }
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
                         if let c = completion {
@@ -181,6 +188,7 @@ class RSTimerViewController: UIViewController {
         }
     }
 
+    
 }
 
 struct RSTimerViewModel {
