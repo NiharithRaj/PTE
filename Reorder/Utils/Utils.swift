@@ -41,4 +41,30 @@ struct Utils {
         
         return 6
     }
+    
+
+    //English (Australia) - en-AU
+    //English (Ireland) - en-IE
+    //English (South Africa) - en-ZA
+    //English (United Kingdom) - en-GB
+    //English (United States) - en-US
+
+}
+
+class Speech :NSObject, AVSpeechSynthesizerDelegate {
+    
+    let speechSynthesizer = AVSpeechSynthesizer()
+
+    func voiceOver(sentence: String, language: String? = "en-US") {
+        print(language)
+        // Do any additional setup after loading the view.
+        // Line 1. Create an instance of AVSpeechSynthesizer.
+        // Line 2. Create an instance of AVSpeechUtterance and pass in a String to be spoken.
+        let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: sentence)
+        //Line 3. Specify the speech utterance rate. 1 = speaking extremely the higher the values the slower speech patterns. The default rate, AVSpeechUtteranceDefaultSpeechRate is 0.5
+        speechUtterance.rate = 0.50
+        // Line 4. Specify the voice. It is explicitly set to English here, but it will use the device default if not specified.
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: language)
+        speechSynthesizer.speak(speechUtterance)
+    }
 }

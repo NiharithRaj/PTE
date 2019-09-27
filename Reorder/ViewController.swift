@@ -20,7 +20,8 @@ class ViewController: UIViewController {
 //        self.view.hero.id = "Home"
         view.backgroundColor = .white
 //        pushReorderVC()
-        pushRepeatSentence()
+//        pushRepeatSentence()
+          pushWFD()
     }
     
 
@@ -41,6 +42,15 @@ class ViewController: UIViewController {
     fileprivate func pushRepeatSentence() {
         let storyboard = UIStoryboard(name: "RS", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "RSViewController") as? RSViewController {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
+                self.navigationController?.present(controller, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    fileprivate func pushWFD() {
+        let storyboard = UIStoryboard(name: "WFD", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "WFDViewController") as? WFDViewController {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
             }

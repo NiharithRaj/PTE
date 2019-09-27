@@ -1,22 +1,21 @@
 //
-//  RSViewController.swift
+//  WFDInitialViewController.swift
 //  Reorder
 //
-//  Created by Ganesan Rajasekarapandian on 20/9/19.
+//  Created by Ganesan Rajasekarapandian on 25/9/19.
 //  Copyright © 2019 Raj. All rights reserved.
 //
 
 import UIKit
-let languagues = ["en-US","en-GB","en-AU"]
 
-class RSViewController: UIViewController {
+class WFDInitialViewController: UIViewController {
     var model: RepeatSentenceCollection!
     var currentIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-            self.pushRepeatSentence()
+            self.pushWFD()
         })
     }
 
@@ -25,9 +24,9 @@ class RSViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
 
-    fileprivate func pushRepeatSentence() {
-        let storyboard = UIStoryboard(name: "RS", bundle: nil)
-        if let controller = storyboard.instantiateViewController(withIdentifier: "RSTimerViewController") as? RSTimerViewController {
+    fileprivate func pushWFD() {
+        let storyboard = UIStoryboard(name: "WFD", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "WFDViewController") as? WFDViewController {
             controller.viewModel = RSTimerViewModel(model: model.collection[currentIndex],questionNumber: currentIndex + 1, total: model.collection.count)
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
@@ -49,23 +48,14 @@ class RSViewController: UIViewController {
 
 }
 
-extension RSViewController: RSTimerDelegate {
+
+extension WFDInitialViewController: RSTimerDelegate {
     func didCompleted() {
         currentIndex += 1
         if model.collection.count > currentIndex {
             DispatchQueue.main.async {
-                self.pushRepeatSentence()
+                self.pushWFD()
             }
         }
     }
-}
-
-struct RepeatSentenceCollection: Decodable {
-    let collection: [RepeatSentence]
-}
-
-struct RepeatSentence: Decodable {
-    let sentence: String
-    let time: Int
-    let fileName: Int
 }
