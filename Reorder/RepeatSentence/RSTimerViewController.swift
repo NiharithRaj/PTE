@@ -208,9 +208,9 @@ struct RSTimerViewModel {
     var speechTime:Int {
         var time = 5
         let arr = model.sentence.components(separatedBy: CharacterSet.init(charactersIn: " "))
-        if arr.count > 10 && arr.count <= 15 {
+        if arr.count > 10 && arr.count <= 13 {
             time = 6
-        } else if arr.count > 15 {
+        } else if arr.count > 13 {
             time = 7
         }
         return time

@@ -11,8 +11,9 @@ import UIKit
 class WFDViewController: UIViewController {
     var viewModel: RSTimerViewModel!
     let count = 25.0
-    let recordTime = 8
-    var answerCount = 40
+    let recordTime = 6
+    var answerCount = 30
+    let speech = Speech()
 
     @IBOutlet weak var dotview: UIView!
     @IBOutlet weak var progressbarContainerView: UIView!
@@ -34,7 +35,7 @@ class WFDViewController: UIViewController {
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTime = Utils.audioLength(fileName: "\(viewModel.model.fileName)")
+        questionTime = 6
         setupUI()
     }
     
@@ -59,6 +60,9 @@ class WFDViewController: UIViewController {
             wordCountLabel.isHidden = false
             answerLabel.text = viewModel.model.sentence
             wordCountLabel.text = "Total Word Count: \(wordCount())"
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+                self.speakNow()
+            })
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
                 self.dismiss(animated: true, completion: nil)
                 self.delegate?.didCompleted()
@@ -95,12 +99,18 @@ class WFDViewController: UIViewController {
         viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
-            DispatchQueue.main.async {
+//            DispatchQueue.main.async {
                 strongSelf.timerLabel.isHidden = false
                 strongSelf.timerEvent()
-            }
+//            }
         }
+        speakNow()
     }
+    
+    private func speakNow() {
+        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 3])
+    }
+    
     private func setupUI() {
         
         topView.layer.borderColor = UIColor.gray.cgColor
@@ -157,12 +167,9 @@ class WFDViewController: UIViewController {
                 timer.invalidate()
                 animationview.subviews.forEach({ $0.isHidden = false })
                 self.topViewBeginningLabel.text = "Completed"
-
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                    if let c = completion {
-                        c()
-                    }
-                })
+                if let c = completion {
+                    c()
+                }
             }
         }
     }

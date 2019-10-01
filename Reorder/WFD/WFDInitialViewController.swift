@@ -36,7 +36,7 @@ class WFDInitialViewController: UIViewController {
     }
 
     func parsefromJson() {
-        if let path = Bundle.main.path(forResource: "RS", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "WFD", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 model = try JSONDecoder().decode(RepeatSentenceCollection.self, from: data)

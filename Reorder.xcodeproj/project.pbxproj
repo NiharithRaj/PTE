@@ -20,6 +20,7 @@
 		6A925761233987B400860891 /* WFD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A925760233987B400860891 /* WFD.storyboard */; };
 		6A925763233987E900860891 /* WFDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A925762233987E900860891 /* WFDViewController.swift */; };
 		6A9934B82330EF6B002156EA /* AnimateCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9934B72330EF6A002156EA /* AnimateCircleView.swift */; };
+		6AB0144F2340463600418CEA /* WFD.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AB0144E2340463600418CEA /* WFD.json */; };
 		6ABB4D622334AAED00461B19 /* RS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB4D612334AAED00461B19 /* RS.storyboard */; };
 		6ABB4D642334B1D900461B19 /* RSTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4D632334B1D900461B19 /* RSTimerViewController.swift */; };
 		6ABB4D882335036900461B19 /* RSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4D872335036900461B19 /* RSViewController.swift */; };
@@ -44,6 +45,7 @@
 		6A925760233987B400860891 /* WFD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WFD.storyboard; sourceTree = "<group>"; };
 		6A925762233987E900860891 /* WFDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFDViewController.swift; sourceTree = "<group>"; };
 		6A9934B72330EF6A002156EA /* AnimateCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateCircleView.swift; sourceTree = "<group>"; };
+		6AB0144E2340463600418CEA /* WFD.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WFD.json; sourceTree = "<group>"; };
 		6ABB4D612334AAED00461B19 /* RS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RS.storyboard; sourceTree = "<group>"; };
 		6ABB4D632334B1D900461B19 /* RSTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTimerViewController.swift; sourceTree = "<group>"; };
 		6ABB4D872335036900461B19 /* RSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		6A92575F2339879E00860891 /* WFD */ = {
 			isa = PBXGroup;
 			children = (
+				6AB0144E2340463600418CEA /* WFD.json */,
 				6A925760233987B400860891 /* WFD.storyboard */,
 				6AF60088233B2A7000BE6A67 /* WFDInitialViewController.swift */,
 				6A925762233987E900860891 /* WFDViewController.swift */,
@@ -252,6 +255,7 @@
 				6A75084E232F636C00FC6C5E /* ROP3.json in Resources */,
 				6A3042A4232BBA15009B8673 /* Assets.xcassets in Resources */,
 				6A3042A2232BBA13009B8673 /* Main.storyboard in Resources */,
+				6AB0144F2340463600418CEA /* WFD.json in Resources */,
 				6A3042AE232BD0CA009B8673 /* ROP1.json in Resources */,
 				6ABB4D622334AAED00461B19 /* RS.storyboard in Resources */,
 				6ABB4D8B233503DF00461B19 /* RS.json in Resources */,
