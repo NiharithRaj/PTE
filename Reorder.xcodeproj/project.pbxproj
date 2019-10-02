@@ -25,6 +25,8 @@
 		6ABB4D642334B1D900461B19 /* RSTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4D632334B1D900461B19 /* RSTimerViewController.swift */; };
 		6ABB4D882335036900461B19 /* RSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4D872335036900461B19 /* RSViewController.swift */; };
 		6ABB4D8B233503DF00461B19 /* RS.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB4D8A233503DF00461B19 /* RS.json */; };
+		6ADA7DD22343746F00D39253 /* ReadAloud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA7DD12343746F00D39253 /* ReadAloud.storyboard */; };
+		6ADA7DD4234375BF00D39253 /* ReadAloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA7DD3234375BF00D39253 /* ReadAloudViewController.swift */; };
 		6AF60089233B2A7000BE6A67 /* WFDInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF60088233B2A7000BE6A67 /* WFDInitialViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		6ABB4D632334B1D900461B19 /* RSTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTimerViewController.swift; sourceTree = "<group>"; };
 		6ABB4D872335036900461B19 /* RSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSViewController.swift; sourceTree = "<group>"; };
 		6ABB4D8A233503DF00461B19 /* RS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RS.json; sourceTree = "<group>"; };
+		6ADA7DD12343746F00D39253 /* ReadAloud.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReadAloud.storyboard; sourceTree = "<group>"; };
+		6ADA7DD3234375BF00D39253 /* ReadAloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAloudViewController.swift; sourceTree = "<group>"; };
 		6AF60088233B2A7000BE6A67 /* WFDInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFDInitialViewController.swift; sourceTree = "<group>"; };
 		96F66BBB20C7801D160C1D1F /* Pods-Reorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reorder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reorder/Pods-Reorder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +174,8 @@
 		6AF6008A233B842600BE6A67 /* ReadAloud */ = {
 			isa = PBXGroup;
 			children = (
+				6ADA7DD12343746F00D39253 /* ReadAloud.storyboard */,
+				6ADA7DD3234375BF00D39253 /* ReadAloudViewController.swift */,
 			);
 			path = ReadAloud;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 				6A75084E232F636C00FC6C5E /* ROP3.json in Resources */,
 				6A3042A4232BBA15009B8673 /* Assets.xcassets in Resources */,
 				6A3042A2232BBA13009B8673 /* Main.storyboard in Resources */,
+				6ADA7DD22343746F00D39253 /* ReadAloud.storyboard in Resources */,
 				6AB0144F2340463600418CEA /* WFD.json in Resources */,
 				6A3042AE232BD0CA009B8673 /* ROP1.json in Resources */,
 				6ABB4D622334AAED00461B19 /* RS.storyboard in Resources */,
@@ -311,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADA7DD4234375BF00D39253 /* ReadAloudViewController.swift in Sources */,
 				6A30429F232BBA13009B8673 /* ViewController.swift in Sources */,
 				6ABB4D642334B1D900461B19 /* RSTimerViewController.swift in Sources */,
 				6A925763233987E900860891 /* WFDViewController.swift in Sources */,
