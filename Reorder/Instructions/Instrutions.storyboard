@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xKt-sq-CIM">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Instructions View Controller-->
+        <scene sceneID="wiM-uH-FF9">
+            <objects>
+                <viewController id="xKt-sq-CIM" customClass="InstructionsViewController" customModule="Reorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UxQ-o5-erQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="maJ-xS-7xr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vwi-F6-Kne">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write from dictation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kA-YZ-zXf">
+                                <rect key="frame" x="130" y="90" width="513" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9Zz-jI-8rx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="60"/>
+                                <color key="textColor" red="0.33687815069999999" green="0.482935369" blue="0.76081818339999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tips" translatesAutoresizingMaskIntoConstraints="NO" id="M4C-i9-rK5">
+                                <rect key="frame" x="1565" y="-64" width="379" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="379" id="7rn-Rf-DKh"/>
+                                    <constraint firstAttribute="height" constant="256" id="Vbf-ve-zxh"/>
+                                    <constraint firstAttribute="width" constant="379" id="mvG-tW-oOU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="256" id="upl-bu-C3p"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm1-BC-o4g">
+                                <rect key="frame" x="130" y="200" width="1660" height="349"/>
+                                <string key="text">As soon as the audio starts you should be ready to write. Use the booklet given for you.
+Write down the first letter of each word in correct order vertically (recommended).
+Once you finish writing letter, complete all the words ASAP.
+Verify the answer and type it in the text box. 
+You shouldn’t take more than a minute for a question.
+Practice these most repeated exam questions (950+). 
+95% of exam questions are repeated questions.</string>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9G-Kw-PP4">
+                                <rect key="frame" x="1798" y="204" width="52" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">O
+g
+m
+w
+b
+h
+t
+i
+t
+l
+c
+r</string>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qm1-BC-o4g" firstAttribute="leading" secondItem="DuO-k1-yma" secondAttribute="leading" constant="40" id="AYr-Dl-65h"/>
+                            <constraint firstItem="9kA-YZ-zXf" firstAttribute="top" secondItem="UxQ-o5-erQ" secondAttribute="bottom" constant="30" id="Cnf-Fv-swP"/>
+                            <constraint firstItem="qm1-BC-o4g" firstAttribute="top" secondItem="9kA-YZ-zXf" secondAttribute="bottom" constant="30" id="E0v-6d-3vu"/>
+                            <constraint firstItem="DuO-k1-yma" firstAttribute="trailing" secondItem="qm1-BC-o4g" secondAttribute="trailing" constant="40" id="PNj-J8-skB"/>
+                            <constraint firstAttribute="trailing" secondItem="M4C-i9-rK5" secondAttribute="trailing" constant="-24" id="TMG-XM-2rh"/>
+                            <constraint firstItem="qm1-BC-o4g" firstAttribute="top" secondItem="M4C-i9-rK5" secondAttribute="bottom" constant="8" id="TPg-pS-rXD"/>
+                            <constraint firstItem="9kA-YZ-zXf" firstAttribute="leading" secondItem="DuO-k1-yma" secondAttribute="leading" constant="40" id="WQv-D4-gkp"/>
+                            <constraint firstItem="M4C-i9-rK5" firstAttribute="top" secondItem="vwi-F6-Kne" secondAttribute="top" constant="28" id="aYR-ec-UIf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DuO-k1-yma"/>
+                    </view>
+                    <connections>
+                        <outlet property="instructionlabel" destination="qm1-BC-o4g" id="b96-it-Ugu"/>
+                        <outlet property="tipsimg" destination="M4C-i9-rK5" id="fQX-zS-DX8"/>
+                        <outlet property="titleLabel" destination="9kA-YZ-zXf" id="uZF-FL-8eH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zs6-NX-hYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tips" width="1000" height="1000"/>
+    </resources>
+</document>

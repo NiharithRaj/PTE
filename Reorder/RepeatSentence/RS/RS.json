@@ -1,244 +1,243 @@
 {
-    "collection": [
-        {
-            "fileName": 86,
-            "sentence": "Important details in the article are missing from the summary.",
-            "No": 81,
-            "time": 5
-        },
-        {
-            "sentence": "The commission will be pooled into funds among authorities.",
-            "time": 5,
-            "fileName": 137,
-            "No": 82
-        },
-        {
-            "No": 83,
-            "time": 5,
-            "fileName": 864,
-            "sentence": "The tutorial is held on the 8th of April"
-        },
-        {
-            "No": 84,
-            "sentence": "Could you please prepare a medical certificate for me to submit to my manager?",
-            "fileName": 120,
-            "time": 5
-        },
-        {
-            "No": 85,
-            "fileName": 394,
-            "time": 5,
-            "sentence": "Hundred years ago, albert Einstein first published his theory of general relativity."
-        },
-        {
-            "fileName": 466,
-            "sentence": "A person's education level is closely related to their economic background.",
-            "time": 5,
-            "No": 86
-        },
-        {
-            "sentence": "Some island nations in the Pacific will become uninhabitable before long.",
-            "time": 5,
-            "No": 87,
-            "fileName": 56
-        },
-        {
-            "fileName": 787,
-            "time": 5,
-            "sentence": "Archaeologists' new discovery stand out in previously overlooked foundations.",
-            "No": 88
-        },
-        {
-            "fileName": 821,
-            "sentence": "The first few sentences of an essay captured the reader's attention.",
-            "time": 5,
-            "No": 89
-        },
-        {
-            "fileName": 15,
-            "No": 90,
-            "sentence": "The English word typhoon comes from the Chinese word big wind.",
-            "time": 5
-        },
-        {
-            "time": 5,
-            "No": 91,
-            "fileName": 676,
-            "sentence": "Scientists are getting closer to the answers of this questions."
-        },
-        {
-            "sentence": "Companies want to protect their brand from negative comments.",
-            "fileName": 501,
-            "time": 5,
-            "No": 92
-        },
-        {
-            "sentence": "The most popular courses still have a few places left.",
-            "time": 5,
-            "No": 93,
-            "fileName": 173
-        },
-        {
-            "time": 5,
-            "No": 94,
-            "fileName": 511,
-            "sentence": "Education level is related to the economic background."
-        },
-        {
-            "time": 5,
-            "No": 95,
-            "fileName": 321,
-            "sentence": "The time of the math lecture has been changed to ten thirty."
-        },
-        {
-            "time": 5,
-            "sentence": "No more than four people are allowed in the lab to do something.",
-            "fileName": 340,
-            "No": 96
-        },
-        {
-            "sentence": "A periodical is a publication that is issued regularly.",
-            "time": 5,
-            "No": 97,
-            "fileName": 667
-        },
-        {
-            "time": 5,
-            "fileName": 103,
-            "sentence": "Rivers provide habitats for fish and other aquatic species.",
-            "No": 98
-        },
-        {
-            "fileName": 578,
-            "sentence": "Politics is not usually a safe topic for conversation.",
-            "time": 5,
-            "No": 99
-        },
-        {
-            "time": 5,
-            "No": 100,
-            "fileName": 382,
-            "sentence": "The university supply a number of scholarships for qualified students."
-        },
-        {
-            "fileName": 467,
-            "time": 5,
-            "sentence": "A recent article shows a number of interesting experiments.",
-            "No": 101
-        },
-        {
-            "sentence": "You can find a lot more information on the university website.",
-            "fileName": 415,
-            "time": 5,
-            "No": 102
-        },
-        {
-            "fileName": 292,
-            "sentence": "And in this regard, as well as in other regard this consideration is important.",
-            "time": 5,
-            "No": 103
-        },
-        {
-            "fileName": 796,
-            "time": 5,
-            "No": 104,
-            "sentence": "The railways made long-distance travel possible for everyone."
-        },
-        {
-            "time": 5,
-            "fileName": 838,
-            "sentence": "For writing bibliography, you need to use italic fonts.",
-            "No": 105
-        },
-        {
-            "fileName": 562,
-            "No": 106,
-            "sentence": "Neurons are principally involved in chemical processes.",
-            "time": 5
-        },
-        {
-            "sentence": "A celebrated theory is still the source of great controversy.",
-            "time": 5,
-            "No": 107,
-            "fileName": 91
-        },
-        {
-            "fileName": 625,
-            "sentence": "That country's economy is primarily based on tourism.",
-            "time": 5,
-            "No": 108
-        },
-        {
-            "No": 109,
-            "fileName": 238,
-            "time": 5,
-            "sentence": "The book was supported by many faculty members."
-        },
-        {
-            "No": 110,
-            "fileName": 75,
-            "time": 5,
-            "sentence": "The railways were made to make distant travel possible."
-        },
-        {
-            "sentence": "Scientific beneficiary to space exploration is frequently questioned.",
-            "fileName": 592,
-            "time": 5,
-            "No": 111
-        },
-        {
-            "time": 5,
-            "sentence": "The clear evidence between brain events and behaviour events is fascinating",
-            "fileName": 909,
-            "No": 112
-        },
-        {
-            "sentence": "We are also going to be more prescriptive about what you focus on in your presentation.",
-            "time": 5,
-            "fileName": 274,
-            "No": 113
-        },
-        {
-            "sentence": "A party is thrown in the small meeting room.",
-            "time": 5,
-            "No": 114,
-            "fileName": 465
-        },
-        {
-            "time": 5,
-            "No": 115,
-            "fileName": 563,
-            "sentence": "Nurses specialize in clinical work and management."
-        },
-        {
-            "No": 116,
-            "sentence": "Hundreds of scientific papers have been published on global warming.",
-            "fileName": 127,
-            "time": 5
-        },
-        {
-            "fileName": 122,
-            "No": 117,
-            "sentence": "Create a playlist of your favourite music to help you relax in difficult situations.",
-            "time": 5
-        },
-        {
-            "time": 5,
-            "fileName": 472,
-            "sentence": "All staff must leave from the fire hydrant exit.",
-            "No": 118
-        },
-        {
-            "fileName": 529,
-            "No": 119,
-            "sentence": "Heavy rain will fall through the country next week.",
-            "time": 5
-        },
-        {
-            "fileName": 716,
-            "No": 120,
-            "sentence": "Applicants for the course preferably have a preference over English or journalism.",
-            "time": 5
-        }]
+    "collection": [{
+        "fileName": 141,
+        "No": 121,
+        "time": 5,
+        "sentence": "Books which are overdue will incur daily fine."
+    },
+    {
+        "time": 5,
+        "sentence": "At the 1830, periodicals appeared in large numbers in America.",
+        "No": 122,
+        "fileName": 81
+    },
+    {
+        "sentence": "There is limited funding in this department to support qualified students.",
+        "No": 123,
+        "fileName": 44,
+        "time": 5
+    },
+    {
+        "time": 5,
+        "sentence": "The bookshop is located at the north of main campus.",
+        "fileName": 15,
+        "No": 124
+    },
+    {
+        "No": 125,
+        "fileName": 96,
+        "sentence": "The small Indian island is made up of forests and snowy valleys.",
+        "time": 5
+    },
+    {
+        "fileName": 91,
+        "sentence": "Vessels carry blood from the heart to other organs of the body.",
+        "time": 5,
+        "No": 126
+    },
+    {
+        "No": 127,
+        "time": 5,
+        "sentence": "For writing bibliography, you need to use Italic fonts.",
+        "fileName": 14
+    },
+    {
+        "No": 128,
+        "sentence": "I need more quotations to back up my argument.",
+        "fileName": 73,
+        "time": 5
+    },
+    {
+        "time": 5,
+        "No": 129,
+        "fileName": 16,
+        "sentence": "The chief economist has radical ideas for the economy."
+    },
+    {
+        "fileName": 110,
+        "No": 130,
+        "time": 5,
+        "sentence": "During the 1960s, several biologists made decisive contributions to the development of theoretical biology."
+    },
+    {
+        "fileName": 159,
+        "time": 5,
+        "No": 131,
+        "sentence": "Much of the evidence been used has only recently become available."
+    },
+    {
+        "fileName": 20,
+        "time": 5,
+        "sentence": "By clicking this button, you agree with the terms and conditions of this website.",
+        "No": 132
+    },
+    {
+        "fileName": 138,
+        "No": 133,
+        "time": 5,
+        "sentence": "Without doubt, his primary motive was economic growth."
+    },
+    {
+        "sentence": "Students who selected two to three courses may need an extension.",
+        "time": 5,
+        "fileName": 85,
+        "No": 134
+    },
+    {
+        "No": 135,
+        "fileName": 109,
+        "time": 5,
+        "sentence": "The problem with this is that it fails to answer the basic question."
+    },
+    {
+        "No": 136,
+        "sentence": "Proteins constitute at least thirty percent of the total mass of all living organism.",
+        "fileName": 122,
+        "time": 5
+    },
+    {
+        "fileName": 41,
+        "No": 137,
+        "time": 5,
+        "sentence": "Meteorology is a detailed study of earth's atmosphere."
+    },
+    {
+        "time": 5,
+        "fileName": 161,
+        "sentence": "There are no places left in the morning tutorial.",
+        "No": 138
+    },
+    {
+        "fileName": 140,
+        "sentence": "Does the university have an ice hockey team?",
+        "No": 139,
+        "time": 5
+    },
+    {
+        "fileName": 61,
+        "sentence": "The chemistry building is still open during vacation.",
+        "No": 140,
+        "time": 5
+    },
+    {
+        "No": 141,
+        "time": 5,
+        "sentence": "There is no entrance fee for tonight's lecture.",
+        "fileName": 8
+    },
+    {
+        "sentence": "In English, the month of the year are always capitalized.",
+        "fileName": 103,
+        "No": 142,
+        "time": 5
+    },
+    {
+        "time": 5,
+        "sentence": "You need to write a proposal for your research.",
+        "No": 143,
+        "fileName": 164
+    },
+    {
+        "fileName": 59,
+        "time": 5,
+        "sentence": "Hemoglobin carries oxygen from lungs to other parts of the body.",
+        "No": 144
+    },
+    {
+        "time": 5,
+        "No": 145,
+        "sentence": "Process intensification provides a key competitive advantage in the market.",
+        "fileName": 111
+    },
+    {
+        "fileName": 95,
+        "time": 5,
+        "sentence": "The timetable for the next/new term will be available next week.",
+        "No": 146
+    },
+    {
+        "fileName": 116,
+        "No": 147,
+        "time": 5,
+        "sentence": "A key feature in drug development is the examination of pharmacological effects."
+    },
+    {
+        "sentence": "The university will introduce several new courses in the coming year.",
+        "No": 148,
+        "time": 5,
+        "fileName": 128
+    },
+    {
+        "fileName": 37,
+        "time": 5,
+        "sentence": "Newspapers across the world are reporting stories of presidents.",
+        "No": 149
+    },
+    {
+        "sentence": "The doctor is not here today.",
+        "No": 150,
+        "fileName": 21,
+        "time": 5
+    },
+    {
+        "No": 151,
+        "fileName": 165,
+        "sentence": "Extra seminars will be scheduled to assist you with revision.",
+        "time": 5
+    },
+    {
+        "No": 152,
+        "time": 5,
+        "sentence": "There is a position available for assistant lecturer for mathematics.",
+        "fileName": 32
+    },
+    {
+        "sentence": "Measuring distance could take as long as three weeks.",
+        "time": 5,
+        "fileName": 157,
+        "No": 153
+    },
+    {
+        "time": 5,
+        "fileName": 4,
+        "sentence": "Number the beakers and put them away until tomorrow.",
+        "No": 154
+    },
+    {
+        "time": 5,
+        "fileName": 172,
+        "No": 155,
+        "sentence": "Here is only one example, but there are lots of others."
+    },
+    {
+        "fileName": 76,
+        "sentence": "Biographic information should be removed before the publication of the results.",
+        "No": 156,
+        "time": 5
+    },
+    {
+        "time": 5,
+        "sentence": "You can find the student service center on level one of Home Building.",
+        "No": 157,
+        "fileName": 152
+    },
+    {
+        "time": 5,
+        "sentence": "The current and conventional method have many disadvantages including the side effects.",
+        "No": 158,
+        "fileName": 121
+    },
+    {
+        "No": 159,
+        "fileName": 119,
+        "time": 5,
+        "sentence": "Cellular engineering strategies are highly desirable."
+    },
+    {
+        "sentence": "Assignments should be submitted to the department office before the deadline.",
+        "time": 5,
+        "fileName": 105,
+        "No": 160
+    }]
 }
 

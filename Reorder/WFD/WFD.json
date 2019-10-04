@@ -1,182 +1,183 @@
 {
     "collection": [{
-        "fileName": 153,
         "time": 5,
-        "No": 121,
-        "sentence": "Studying medicine offers a wide range of opportunities."
+        "No": 151,
+        "fileName": 91,
+        "sentence": "Implementation figures are expected to be improved in the next few years."
     },
     {
-        "time": 5,
-        "No": 122,
-        "fileName": 153,
-        "sentence": "Philosophy uses logics and reasons to analyze human and experience."
-    },
-    {
-        "fileName": 150,
-        "No": 123,
-        "sentence": "Children acquire their first language without any conscious effort.",
+        "fileName": 64,
+        "sentence": "Firm conclusions can be established through rigorous experiments.",
+        "No": 152,
         "time": 5
     },
     {
-        "fileName": 153,
-        "sentence": "The university provides different facilities for students and staff.",
+        "fileName": 134,
         "time": 5,
-        "No": 124
+        "No": 153,
+        "sentence": "Studying history can help you better understand the present."
     },
     {
-        "sentence": "It takes a long time to walk to university.",
-        "fileName": 142,
-        "time": 5,
-        "No": 125
-    },
-    {
-        "No": 126,
-        "time": 5,
-        "fileName": 135,
-        "sentence": "Our study program equips students with essential skills for university."
-    },
-    {
-        "fileName": 107,
-        "No": 127,
-        "sentence": "Agriculture development is vital for poor rural areas.",
+        "sentence": "Food has become a political issue in the world.",
+        "No": 154,
+        "fileName": 90,
         "time": 5
     },
     {
-        "fileName": 74,
-        "sentence": "Children conquer their first language without any efforts.",
-        "time": 5,
-        "No": 128
-    },
-    {
-        "No": 129,
-        "time": 5,
-        "fileName": 16,
-        "sentence": "Make sure you choose a course that provides great career opportunities."
-    },
-    {
-        "No": 130,
-        "time": 5,
-        "fileName": 2,
-        "sentence": "The book was supported by many faculty members."
-    },
-    {
-        "time": 5,
-        "sentence": "More graduate training is often needed after the university study has finished.",
-        "fileName": 93,
-        "No": 131
-    },
-    {
-        "No": 132,
-        "sentence": "You will study two courses and three modules.",
-        "time": 5,
-        "fileName": 101
-    },
-    {
-        "time": 5,
-        "fileName": 52,
-        "No": 133,
-        "sentence": "Advanced technology will create growth in the economy."
-    },
-    {
-        "No": 134,
-        "sentence": "The department is doing research on biology.",
+        "sentence": "The bank is hoping to tap into a fast-growing market.",
+        "No": 155,
         "fileName": 153,
         "time": 5
     },
     {
+        "fileName": 114,
+        "sentence": "A good architectural structure should be usable, durable and beautiful.",
         "time": 5,
-        "No": 135,
-        "fileName": 4,
-        "sentence": "Much of the research is carried out in the laboratory."
+        "No": 156
     },
     {
-        "fileName": 153,
+        "fileName": 106,
+        "sentence": "You need to put these books on the table over there.",
         "time": 5,
-        "sentence": "Honey can be used the food and health product.",
-        "No": 136
+        "No": 157
     },
     {
-        "fileName": 53,
         "time": 5,
-        "No": 137,
-        "sentence": "Momentum is defined as a combination of mass and velocity."
+        "No": 158,
+        "sentence": "Technology is changing the way media is used and studied.",
+        "fileName": 108
     },
     {
-        "No": 138,
-        "sentence": "The project is divided into four main intersections.",
+        "No": 159,
+        "time": 5,
+        "sentence": "His appointment as a culture minister was seen as a demotion.",
+        "fileName": 94
+    },
+    {
+        "sentence": "People have been independent by using phones in everyday life.",
+        "No": 160,
         "time": 5,
         "fileName": 153
     },
     {
-        "No": 139,
-        "fileName": 148,
+        "sentence": "The university has invested in new technology designed for learning.",
+        "fileName": 11,
         "time": 5,
-        "sentence": "Make sure you've saved all files before turning off the computer."
+        "No": 161
     },
     {
-        "No": 140,
-        "sentence": "A good structure shows the key points of a paper.",
+        "time": 5,
+        "fileName": 153,
+        "sentence": "The food crops require a large amount of water and fertilizer.",
+        "No": 162
+    },
+    {
+        "time": 5,
+        "No": 163,
+        "fileName": 105,
+        "sentence": "The news is not received until the following week."
+    },
+    {
+        "fileName": 86,
+        "time": 5,
+        "No": 164,
+        "sentence": "Speed is defined as how fast a person or an object moves."
+    },
+    {
+        "fileName": 123,
+        "time": 5,
+        "No": 165,
+        "sentence": "Plants are able to continue grow throughout their lives."
+    },
+    {
+        "No": 166,
+        "sentence": "This course aims to develop your knowledge of statistics.",
         "fileName": 153,
         "time": 5
     },
     {
-        "ztime": 5,
-        "fileName": 85,
-        "sentence": "Time and distance are used to calculate the speed.",
-        "No": 141
-    },
-    {
-        "sentence": "Graphs and charts allow data to be more easily understood.",
+        "sentence": "Some of the vocational courses are provided by many private enterprises.",
         "time": 5,
-        "fileName": 36,
-        "No": 142
+        "fileName": 35,
+        "No": 167
     },
     {
-        "No": 143,
-        "fileName": 8,
+        "No": 168,
         "time": 5,
-        "sentence": "Growing population has posed a challenge to many governments."
-    },
-    {
         "fileName": 153,
-        "sentence": "The history course is assessed via three written assignments.",
-        "time": 5,
-        "No": 144
+        "sentence": "We are dealing with the most challenges that we face today."
     },
     {
+        "No": 169,
+        "sentence": "The department works closely with its partners in the business community.",
+        "time": 5,
+        "fileName": 153
+    },
+    {
+        "No": 170,
         "fileName": 153,
-        "sentence": "Information technology has changed the way people work today.",
-        "time": 5,
-        "No": 145
-    },
-    {
-        "fileName": 103,
-        "sentence": "The task tomorrow will require higher level skills.",
-        "time": 5,
-        "No": 146
-    },
-    {
-        "No": 147,
-        "fileName": 3,
-        "time": 5,
-        "sentence": "The new chemistry professor will deliver his first lecture tomorrow."
-    },
-    {
-        "fileName": 153,
-        "sentence": "Critical thinking is one part of a broad education.",
-        "time": 5,
-        "No": 148
-    },
-    {
-        "fileName": 153,
-        "No": 149,
-        "sentence": "Many universities' lectures can now be viewed on the Internet.",
+        "sentence": "History of economics can be a tricky subject to research.",
         "time": 5
     },
     {
-        "fileName": 153,
-        "sentence": "Practical experiments are essential parts of chemistry classes.",
+        "fileName": 20,
+        "sentence": "Sugar is a compound, which consist of carbon, oxygen, and hydrogen.",
+        "No": 171,
+        "time": 5
+    },
+    {
+        "sentence": "Students must attend the safety course before entering the engineering workshop.",
+        "No": 172,
         "time": 5,
-        "No": 150
+        "fileName": 153
+    },
+    {
+        "fileName": 153,
+        "sentence": "New developments in manufacturing are constantly changing the way we live.",
+        "No": 173,
+        "time": 5
+    },
+    {
+        "fileName": 33,
+        "sentence": "Astronauts are using light years to measure distance in the space.",
+        "No": 174,
+        "time": 5
+    },
+    {
+        "fileName": 13,
+        "sentence": "All medical students must clean their hands before entering this/the room.",
+        "No": 175,
+        "time": 5
+    },
+    {
+        "fileName": 120,
+        "No": 176,
+        "time": 5,
+        "sentence": "Castle was designed to intimidate both local people and the enemies."
+    },
+    {
+        "sentence": "In any written assignment, a detailed literature review is very important.",
+        "fileName": 153,
+        "time": 5,
+        "No": 177
+    },
+    {
+        "No": 178,
+        "time": 5,
+        "fileName": 153,
+        "sentence": "A new collection of articles has just been published."
+    },
+    {
+        "time": 5,
+        "sentence": "There is an accounting assessment for finance students.",
+        "No": 179,
+        "fileName": 153
+    },
+    {
+        "fileName": 102,
+        "sentence": "Being bilingual does not necessarily mean of having the ability of understanding two languages.",
+        "time": 5,
+        "No": 180
     }]
 }
+
