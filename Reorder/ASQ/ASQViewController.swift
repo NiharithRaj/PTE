@@ -34,7 +34,7 @@ class ASQViewController: UIViewController {
     
     weak var delegate: RSTimerDelegate?
     
-    var questionTime = 0
+    var questionTime:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         questionTime = viewModel.speechTime // Utils.audioLength(fileName: "\(viewModel.model.fileName)")
@@ -86,7 +86,9 @@ class ASQViewController: UIViewController {
                         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
                             strongSelf.speakNow()
                         })
-                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 9, execute: {
+                        
+                        let time = strongSelf.questionTime > 9 ? DispatchTime.now() + 12 : strongSelf.questionTime > 7 ? DispatchTime.now() + 10 : DispatchTime.now() + 9
+                        DispatchQueue.main.asyncAfter(deadline: time, execute: {
                             strongSelf.dismiss(animated: true, completion: nil)
                             strongSelf.delegate?.didCompleted()
                         })
@@ -214,8 +216,12 @@ struct ASQViewModel {
             time = 6
         } else if arr.count > 15  && arr.count <= 18 {
             time = 7
-        } else if arr.count > 18 {
+        } else if arr.count > 18 && arr.count <= 21{
             time = 9
+        }else if arr.count > 21 && arr.count <= 25 {
+            time = 10
+        }else if arr.count > 25{
+            time = 11
         }
         return time
     }

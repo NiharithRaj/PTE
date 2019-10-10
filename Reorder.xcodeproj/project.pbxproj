@@ -26,6 +26,9 @@
 		6AA3FE3E23461A0600DAE9B9 /* ASQ.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3FE3D23461A0600DAE9B9 /* ASQ.json */; };
 		6AA3FE412346C79800DAE9B9 /* Instrutions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3FE402346C79800DAE9B9 /* Instrutions.storyboard */; };
 		6AA3FE432346CE2300DAE9B9 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3FE422346CE2300DAE9B9 /* InstructionsViewController.swift */; };
+		6AA3FE45234EEE8500DAE9B9 /* ReadAloudInititalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3FE44234EEE8500DAE9B9 /* ReadAloudInititalViewController.swift */; };
+		6AA3FE4B234EF3F600DAE9B9 /* RA.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3FE4A234EF3F500DAE9B9 /* RA.json */; };
+		6AA3FE4D234F01DE00DAE9B9 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3FE4C234F01DE00DAE9B9 /* Manager.swift */; };
 		6AB0144F2340463600418CEA /* WFD.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AB0144E2340463600418CEA /* WFD.json */; };
 		6ABB4D622334AAED00461B19 /* RS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB4D612334AAED00461B19 /* RS.storyboard */; };
 		6ABB4D642334B1D900461B19 /* RSTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4D632334B1D900461B19 /* RSTimerViewController.swift */; };
@@ -59,6 +62,9 @@
 		6AA3FE3D23461A0600DAE9B9 /* ASQ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ASQ.json; sourceTree = "<group>"; };
 		6AA3FE402346C79800DAE9B9 /* Instrutions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instrutions.storyboard; sourceTree = "<group>"; };
 		6AA3FE422346CE2300DAE9B9 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		6AA3FE44234EEE8500DAE9B9 /* ReadAloudInititalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAloudInititalViewController.swift; sourceTree = "<group>"; };
+		6AA3FE4A234EF3F500DAE9B9 /* RA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RA.json; sourceTree = "<group>"; };
+		6AA3FE4C234F01DE00DAE9B9 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		6AB0144E2340463600418CEA /* WFD.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WFD.json; sourceTree = "<group>"; };
 		6ABB4D612334AAED00461B19 /* RS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RS.storyboard; sourceTree = "<group>"; };
 		6ABB4D632334B1D900461B19 /* RSTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTimerViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 				6A3042A0232BBA13009B8673 /* Main.storyboard */,
 				6A3042A3232BBA15009B8673 /* Assets.xcassets */,
 				6A3042A5232BBA15009B8673 /* Info.plist */,
+				6AA3FE4C234F01DE00DAE9B9 /* Manager.swift */,
 			);
 			path = Reorder;
 			sourceTree = "<group>";
@@ -208,8 +215,10 @@
 		6AF6008A233B842600BE6A67 /* ReadAloud */ = {
 			isa = PBXGroup;
 			children = (
+				6AA3FE4A234EF3F500DAE9B9 /* RA.json */,
 				6ADA7DD12343746F00D39253 /* ReadAloud.storyboard */,
 				6ADA7DD3234375BF00D39253 /* ReadAloudViewController.swift */,
+				6AA3FE44234EEE8500DAE9B9 /* ReadAloudInititalViewController.swift */,
 			);
 			path = ReadAloud;
 			sourceTree = "<group>";
@@ -300,6 +309,7 @@
 				6AA3FE412346C79800DAE9B9 /* Instrutions.storyboard in Resources */,
 				6AA3FE3A234618DC00DAE9B9 /* ASQ.storyboard in Resources */,
 				6AA3FE3E23461A0600DAE9B9 /* ASQ.json in Resources */,
+				6AA3FE4B234EF3F600DAE9B9 /* RA.json in Resources */,
 				6A3042AE232BD0CA009B8673 /* ROP1.json in Resources */,
 				6ABB4D622334AAED00461B19 /* RS.storyboard in Resources */,
 				6ABB4D8B233503DF00461B19 /* RS.json in Resources */,
@@ -359,6 +369,8 @@
 				6A30429F232BBA13009B8673 /* ViewController.swift in Sources */,
 				6ABB4D642334B1D900461B19 /* RSTimerViewController.swift in Sources */,
 				6AA3FE38234618CF00DAE9B9 /* ASQinitialViewController.swift in Sources */,
+				6AA3FE4D234F01DE00DAE9B9 /* Manager.swift in Sources */,
+				6AA3FE45234EEE8500DAE9B9 /* ReadAloudInititalViewController.swift in Sources */,
 				6A925763233987E900860891 /* WFDViewController.swift in Sources */,
 				6A3042AC232BBC0B009B8673 /* ReorderViewController.swift in Sources */,
 				6A924FEB233863ED00860891 /* Utils.swift in Sources */,

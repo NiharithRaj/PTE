@@ -13,13 +13,13 @@ class ReadAloudViewController: UIViewController {
     var viewModel: RSTimerViewModel!
     let count = 25.0
     let recordTime = 8
-    @IBOutlet weak var dotview: UIView!
-    @IBOutlet weak var progressbarContainerView: UIView!
+//    @IBOutlet weak var dotview: UIView!
+//    @IBOutlet weak var progressbarContainerView: UIView!
     @IBOutlet weak var questionNumberLabel: UILabel!
-    @IBOutlet weak var topViewBeginningLabel: UILabel!
-    @IBOutlet weak var topView: UIView!
-    @IBOutlet weak var indicatorView: UIView!
-    @IBOutlet weak var indicatorLineview: UIView!
+//    @IBOutlet weak var topViewBeginningLabel: UILabel!
+//    @IBOutlet weak var topView: UIView!
+//    @IBOutlet weak var indicatorView: UIView!
+//    @IBOutlet weak var indicatorLineview: UIView!
 
     @IBOutlet weak var answerTextLabel: UILabel!
 
@@ -30,13 +30,15 @@ class ReadAloudViewController: UIViewController {
 
     @IBOutlet weak var answerTextView: UIView!
     @IBOutlet weak var questionView: UIView!
-
+    @IBOutlet weak var answerContainerView: UIView!
+    
     weak var delegate: RSTimerDelegate?
 
+    @IBOutlet weak var questionLabel: UILabel!
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTime = viewModel.speechTime // Utils.audioLength(fileName: "\(viewModel.model.fileName)")
+        questionTime = 40 // Utils.audioLength(fileName: "\(viewModel.model.fileName)")
         setupUI()
     }
 
@@ -47,20 +49,9 @@ class ReadAloudViewController: UIViewController {
     }
 
     fileprivate func changeQuestion() {
-        var seconds = 3
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
-            DispatchQueue.main.async {
-                self.topViewBeginningLabel.text = "Beginning in \(seconds) seconds."
-            }
-            seconds -= 1
-            if seconds == 0 {
-                timer.invalidate()
-                DispatchQueue.main.async {
-                    self.topViewBeginningLabel.text = "Playing"
-                    self.beginQuestionProgress()
-                }
-            }
-        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+            self.beginQuestionProgress()
+        })
     }
 
     fileprivate func questionView(yes: Bool) {
@@ -70,22 +61,13 @@ class ReadAloudViewController: UIViewController {
 
     fileprivate func beginQuestionProgress() {
 
-        viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
-            guard let strongSelf = self else { return }
-            strongSelf.topViewBeginningLabel.text = "Completed"
-            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 8) {
-                DispatchQueue.main.async {
+        func answer() {
+            viewProgress(animationview: answerProgressView, seconds: 40) {
+                DispatchQueue.main.async { [weak self] in
+                    guard let strongSelf = self else {return}
                     strongSelf.answerBeginningView.text = "Completed"
                     UIView.animate(withDuration: 1, animations: {
-                        UIView.transition(from: strongSelf.questionView, to: strongSelf.answerTextView, duration: 1.0
-                            , options: [[.transitionFlipFromRight,
-                                         .showHideTransitionViews]]) { _ in
-                                            strongSelf.questionView(yes: true)
-                        }
                         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
-                            strongSelf.speakNow()
-                        })
-                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
                             strongSelf.dismiss(animated: true, completion: nil)
                             strongSelf.delegate?.didCompleted()
                         })
@@ -95,7 +77,7 @@ class ReadAloudViewController: UIViewController {
         }
 
         answerBeginningView.isHidden = false
-        var seconds = questionTime + 1
+        var seconds = questionTime
         self.answerBeginningView.text = "Beginning in \(seconds) seconds."
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             DispatchQueue.main.async {
@@ -105,12 +87,10 @@ class ReadAloudViewController: UIViewController {
             if seconds == 0 {
                 timer.invalidate()
                 DispatchQueue.main.async {
-                    self.answerBeginningView.text = "Recording"
+                    self.answerBeginningView.text = "Recording..."
+                    answer()
                 }
             }
-        }
-        DispatchQueue.main.async {
-            self.speakNow()
         }
     }
     
@@ -119,37 +99,37 @@ class ReadAloudViewController: UIViewController {
     }
     private func setupUI() {
 
-        topView.layer.borderColor = UIColor.gray.cgColor
-        topView.layer.borderWidth = 2.0
-        topView.layer.cornerRadius = 10.0
 
         answerView.layer.borderColor = UIColor.gray.cgColor
         answerView.layer.borderWidth = 2.0
         answerView.layer.cornerRadius = 10.0
 
-        indicatorLineview.layer.cornerRadius = 5.0
-        indicatorView.layer.cornerRadius = 20.0
-
-        progressbarContainerView.layer.borderColor = UIColor.gray.cgColor
-        progressbarContainerView.layer.borderWidth = 2.0
-        progressbarContainerView.clipsToBounds = true
-
         answerProgressView.layer.borderColor = UIColor.gray.cgColor
         answerProgressView.layer.borderWidth = 2.0
         answerProgressView.clipsToBounds = true
+        
+//        answerContainerView.layer.borderColor = UIColor.gray.cgColor
+//        answerContainerView.layer.borderWidth = 2.0
+//        answerContainerView.clipsToBounds = true
+//        answerContainerView.layer.cornerRadius = 10.0
+//        questionLabel.padding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
 
-        var v: UIView
-        let index = 10
-        for i in 0...11 {
-            v = UIView(frame: CGRect(x: index + (i * 39), y: 15, width: 2, height: 8))
-            v.backgroundColor = UIColor.gray
-            dotview.addSubview(v)
-        }
-        addIndicators(toView: progressbarContainerView)
+
+//        var v: UIView
+//        let index = 10
+//        for i in 0...11 {
+//            v = UIView(frame: CGRect(x: index + (i * 39), y: 15, width: 2, height: 8))
+//            v.backgroundColor = UIColor.gray
+//            dotview.addSubview(v)
+//        }
+
         addIndicators(toView: answerProgressView)
         answerBeginningView.isHidden = true
         answerTextLabel.text = viewModel.model.sentence
         questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
+        
+        questionLabel.attributedText = NSAttributedString(string: viewModel.model.sentence).paragraphStyle(lineSpace: 10.0, textAlignment: .left)
+
     }
 
     fileprivate func addIndicators(toView: UIView) {
@@ -177,8 +157,8 @@ class ReadAloudViewController: UIViewController {
                 animationview.subviews.forEach({ $0.isHidden = false })
                 if animationview == self.answerProgressView {
                     self.answerBeginningView.text = "Completed"
-                } else if animationview == self.progressbarContainerView {
-                    self.topViewBeginningLabel.text = "Completed"
+                } else if animationview == self.answerProgressView {
+                    self.answerBeginningView.text = "Completed"
                 }
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
                         if let c = completion {
