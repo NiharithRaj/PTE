@@ -1,66 +1,72 @@
 //
-//  ReadAloudViewController.swift
+//  DIViewController.swift
 //  Reorder
 //
-//  Created by Ganesan Rajasekarapandian on 1/10/19.
+//  Created by Ganesan Rajasekarapandian on 10/10/19.
 //  Copyright © 2019 Raj. All rights reserved.
 //
 
 import UIKit
+class DIViewModel:NSObject {
+    var imageName:String = ""
+    convenience init(name:String) {
+        self.init()
+        imageName = name
+    }
+}
 
-class ReadAloudViewController: UIViewController {
+class DIViewController: UIViewController {
     let speech = Speech()
-    var viewModel: RSTimerViewModel!
+    var viewModel: DIViewModel!
     let count = 25.0
     let recordTime = 8
-//    @IBOutlet weak var dotview: UIView!
-//    @IBOutlet weak var progressbarContainerView: UIView!
+    @IBOutlet weak var diImageView: UIImageView!
+    //    @IBOutlet weak var dotview: UIView!
+    //    @IBOutlet weak var progressbarContainerView: UIView!
     @IBOutlet weak var questionNumberLabel: UILabel!
-//    @IBOutlet weak var topViewBeginningLabel: UILabel!
-//    @IBOutlet weak var topView: UIView!
-//    @IBOutlet weak var indicatorView: UIView!
-//    @IBOutlet weak var indicatorLineview: UIView!
-
+    //    @IBOutlet weak var topViewBeginningLabel: UILabel!
+    //    @IBOutlet weak var topView: UIView!
+    //    @IBOutlet weak var indicatorView: UIView!
+    //    @IBOutlet weak var indicatorLineview: UIView!
+    
     @IBOutlet weak var answerTextLabel: UILabel!
-
+    
     @IBOutlet weak var answerBeginningView: UILabel!
     @IBOutlet weak var answerProgressView: UIView!
     @IBOutlet weak var answerView: UIView!
-
-
+    
+    
     @IBOutlet weak var answerTextView: UIView!
     @IBOutlet weak var questionView: UIView!
-    @IBOutlet weak var answerContainerView: UIView!
     
     weak var delegate: RSTimerDelegate?
-
-    @IBOutlet weak var questionLabel: UILabel!
+    
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTime = 40 // Utils.audioLength(fileName: "\(viewModel.model.fileName)")
+        questionTime = 25 // Utils.audioLength(fileName: "\(viewModel.model.fileName)")
         setupUI()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         questionView(yes: false)
         changeQuestion()
     }
-
+    
     fileprivate func changeQuestion() {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
             self.beginQuestionProgress()
         })
     }
-
+    
     fileprivate func questionView(yes: Bool) {
         questionView.isHidden = yes
         answerTextView.isHidden = !yes
     }
-
+    
     fileprivate func beginQuestionProgress() {
-
+        
         func answer() {
             viewProgress(animationview: answerProgressView, seconds: 40) {
                 DispatchQueue.main.async { [weak self] in
@@ -75,7 +81,7 @@ class ReadAloudViewController: UIViewController {
                 }
             }
         }
-
+        
         answerBeginningView.isHidden = false
         var seconds = questionTime
         self.answerBeginningView.text = "Beginning in \(seconds) seconds."
@@ -87,6 +93,7 @@ class ReadAloudViewController: UIViewController {
             if seconds == 0 {
                 timer.invalidate()
                 DispatchQueue.main.async {
+                    Utils.playAudio(fileName: "beep")
                     self.answerBeginningView.text = "Recording"
                     answer()
                 }
@@ -94,44 +101,37 @@ class ReadAloudViewController: UIViewController {
         }
     }
     
-    private func speakNow() {
-        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 3])
-    }
+
     private func setupUI() {
-
-
+        
+        diImageView.image = UIImage(named: viewModel.imageName)
         answerView.layer.borderColor = UIColor.gray.cgColor
         answerView.layer.borderWidth = 2.0
         answerView.layer.cornerRadius = 10.0
-
+        
         answerProgressView.layer.borderColor = UIColor.gray.cgColor
         answerProgressView.layer.borderWidth = 2.0
         answerProgressView.clipsToBounds = true
         
-//        answerContainerView.layer.borderColor = UIColor.gray.cgColor
-//        answerContainerView.layer.borderWidth = 2.0
-//        answerContainerView.clipsToBounds = true
-//        answerContainerView.layer.cornerRadius = 10.0
-//        questionLabel.padding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
-
-
-//        var v: UIView
-//        let index = 10
-//        for i in 0...11 {
-//            v = UIView(frame: CGRect(x: index + (i * 39), y: 15, width: 2, height: 8))
-//            v.backgroundColor = UIColor.gray
-//            dotview.addSubview(v)
-//        }
-
+        //        answerContainerView.layer.borderColor = UIColor.gray.cgColor
+        //        answerContainerView.layer.borderWidth = 2.0
+        //        answerContainerView.clipsToBounds = true
+        //        answerContainerView.layer.cornerRadius = 10.0
+        //        questionLabel.padding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
+        
+        //        var v: UIView
+        //        let index = 10
+        //        for i in 0...11 {
+        //            v = UIView(frame: CGRect(x: index + (i * 39), y: 15, width: 2, height: 8))
+        //            v.backgroundColor = UIColor.gray
+        //            dotview.addSubview(v)
+        //        }
+        
         addIndicators(toView: answerProgressView)
         answerBeginningView.isHidden = true
-        answerTextLabel.text = viewModel.model.sentence
-        questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
-        
-        questionLabel.attributedText = NSAttributedString(string: viewModel.model.sentence).paragraphStyle(lineSpace: 10.0, textAlignment: .left)
-
     }
-
+    
     fileprivate func addIndicators(toView: UIView) {
         let width = Double(toView.frame.width) / count
         let height = Double(toView.frame.height)
@@ -146,7 +146,7 @@ class ReadAloudViewController: UIViewController {
             toView.addSubview(v)
         }
     }
-
+    
     fileprivate func viewProgress(animationview: UIView, seconds: Int, completion: (() -> ())?) {
         var initial = 0
         Timer.scheduledTimer(withTimeInterval: Double(seconds) / count, repeats: true) { (timer) in
@@ -161,13 +161,13 @@ class ReadAloudViewController: UIViewController {
                     self.answerBeginningView.text = "Completed"
                 }
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                        if let c = completion {
-                            c()
-                        }
-                    })
+                    if let c = completion {
+                        c()
+                    }
+                })
             }
         }
     }
-
+    
     
 }

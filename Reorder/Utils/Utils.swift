@@ -23,7 +23,11 @@ struct Utils {
             try AVAudioSession.sharedInstance().setActive(true)
             player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else { return }
+            if fileName == "beep" {
+                player.rate = 2.0
+            }
             player.play()
+        
         } catch  {
         }
     }
