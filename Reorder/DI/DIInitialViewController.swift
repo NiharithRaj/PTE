@@ -10,7 +10,7 @@ import UIKit
 
 class DIInitialViewController: UIViewController {
     var currentIndex = 0
-    let collection = ["1"]
+    let collection = ["1","2","3","4","5","6"]
     var callBack:(()->())?
 
     override func viewDidLoad() {

@@ -38,7 +38,7 @@ class ReadAloudViewController: UIViewController {
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTime = 5 // Utils.audioLength(fileName: "\(viewModel.model.fileName)")
+        questionTime = 40 // Utils.audioLength(fileName: "\(viewModel.model.fileName)")
         setupUI()
     }
 
@@ -62,7 +62,7 @@ class ReadAloudViewController: UIViewController {
     fileprivate func beginQuestionProgress() {
 
         func answer() {
-            viewProgress(animationview: answerProgressView, seconds: 5) {
+            viewProgress(animationview: answerProgressView, seconds: 40) {
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else {return}
                     strongSelf.answerBeginningView.text = "Completed"
@@ -128,7 +128,7 @@ class ReadAloudViewController: UIViewController {
         answerTextLabel.text = viewModel.model.sentence
         if Manager.isMockText {
             questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalQuestions)"
-        } else {
+        }else {
             questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
         }
         
