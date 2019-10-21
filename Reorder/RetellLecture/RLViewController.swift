@@ -137,6 +137,9 @@ class RLViewController: UIViewController {
         addIndicators(toView: progressbarContainerView)
         addIndicators(toView: answerProgressView)
         answerBeginningView.isHidden = true
+        if Manager.isMockText {
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalQuestions)"
+        }
     }
     
     fileprivate func addIndicators(toView: UIView) {
@@ -180,8 +183,10 @@ class RLViewController: UIViewController {
 }
 
 struct RLViewModel {
+    var questionNumber:Int = 0
     let name:String
-    init(fileName:String) {
+    init(fileName:String,qnumber:Int) {
         name = fileName
+        questionNumber = qnumber
     }
 }

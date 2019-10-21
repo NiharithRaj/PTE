@@ -11,6 +11,8 @@ import UIKit
 class DIInitialViewController: UIViewController {
     var currentIndex = 0
     let collection = ["1"]
+    var callBack:(()->())?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,7 +31,7 @@ class DIInitialViewController: UIViewController {
     fileprivate func pushRepeatSentence() {
         let storyboard = UIStoryboard(name: "DI", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "DIViewController") as? DIViewController {
-            controller.viewModel = DIViewModel(name: collection[currentIndex])
+            controller.viewModel = DIViewModel(name: collection[currentIndex], questionNumber: Manager.isMockText ? Manager.DIstart + currentIndex : currentIndex + 1)
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
@@ -44,6 +46,11 @@ extension DIInitialViewController: RSTimerDelegate {
         if collection.count > currentIndex {
             DispatchQueue.main.async {
                 self.pushRepeatSentence()
+            }
+        }else {
+            if let c = callBack {
+                navigationController?.popViewController(animated: false)
+                c()
             }
         }
     }

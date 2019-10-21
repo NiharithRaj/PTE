@@ -1,183 +1,183 @@
 {
     "collection": [{
+        "No": 14,
+        "fileName": 202,
         "time": 5,
-        "No": 151,
-        "fileName": 91,
-        "sentence": "Implementation figures are expected to be improved in the next few years."
+        "sentence": "A balanced diet and regular exercise are necessary for good health."
     },
     {
-        "fileName": 64,
-        "sentence": "Firm conclusions can be established through rigorous experiments.",
-        "No": 152,
+        "fileName": 181,
+        "No": 15,
+        "time": 5,
+        "sentence": "The new art gallery can only be visited on Fridays."
+    },
+    {
+        "fileName": 4,
+        "time": 5,
+        "No": 16,
+        "sentence": "A celebrated theory is still the source of great controversy."
+    },
+    {
+        "time": 5,
+        "sentence": "The seminar provides an opportunity to exchange ideas with other students.",
+        "No": 17,
+        "fileName": 132
+    },
+    {
+        "time": 5,
+        "fileName": 14,
+        "sentence": "Those seeking for formal extension should contact their faculty for information.",
+        "No": 18
+    },
+    {
+        "time": 5,
+        "fileName": 7,
+        "sentence": "The economy is now showing its first signs of recovery.",
+        "No": 19
+    },
+    {
+        "fileName": 155,
+        "sentence": "Unemployment rate has fallen to its lowest level in years.",
+        "No": 20,
         "time": 5
     },
     {
-        "fileName": 134,
+        "sentence": "Research shows exercising makes us feel better.",
+        "fileName": 58,
         "time": 5,
-        "No": 153,
-        "sentence": "Studying history can help you better understand the present."
+        "No": 21
     },
     {
-        "sentence": "Food has become a political issue in the world.",
-        "No": 154,
-        "fileName": 90,
+        "time": 5,
+        "fileName": 48,
+        "No": 22,
+        "sentence": "We have not yet achieved equality in our society."
+    },
+    {
+        "time": 5,
+        "fileName": 69,
+        "sentence": "There are many good reasons to grow trees in more cities.",
+        "No": 23
+    },
+    {
+        "fileName": 143,
+        "time": 5,
+        "sentence": "Read safety instructions before using the equipment during the workshop.",
+        "No": 24
+    },
+    {
+        "No": 25,
+        "time": 5,
+        "fileName": 176,
+        "sentence": "It would be extremely beneficial to work together."
+    },
+    {
+        "time": 5,
+        "No": 26,
+        "fileName": 17,
+        "sentence": "Students have the options to live in college residences or apartments."
+    },
+    {
+        "sentence": "Everyone must evacuate the premises during the fire drill.",
+        "fileName": 17,
+        "No": 27,
         "time": 5
     },
     {
-        "sentence": "The bank is hoping to tap into a fast-growing market.",
-        "No": 155,
-        "fileName": 153,
+        "fileName": 74,
+        "time": 5,
+        "sentence": "Governments need to make solar energy more affordable to everyone.",
+        "No": 28
+    },
+    {
+        "No": 29,
+        "sentence": "New credit cards will soon use the finger press technology.",
+        "fileName": 58,
         "time": 5
     },
     {
-        "fileName": 114,
-        "sentence": "A good architectural structure should be usable, durable and beautiful.",
         "time": 5,
-        "No": 156
-    },
-    {
-        "fileName": 106,
-        "sentence": "You need to put these books on the table over there.",
-        "time": 5,
-        "No": 157
+        "No": 30,
+        "sentence": "This problem is complex and difficult to explain.",
+        "fileName": 6
     },
     {
         "time": 5,
-        "No": 158,
-        "sentence": "Technology is changing the way media is used and studied.",
-        "fileName": 108
+        "No": 31,
+        "fileName": 113,
+        "sentence": "Becoming a good actor requires persistence and motivation."
     },
     {
-        "No": 159,
+        "fileName": 172,
         "time": 5,
-        "sentence": "His appointment as a culture minister was seen as a demotion.",
-        "fileName": 94
+        "No": 32,
+        "sentence": "In this book, the author discussed the role of cultural differences."
     },
     {
-        "sentence": "People have been independent by using phones in everyday life.",
-        "No": 160,
+        "fileName": 207,
         "time": 5,
-        "fileName": 153
-    },
-    {
         "sentence": "The university has invested in new technology designed for learning.",
-        "fileName": 11,
-        "time": 5,
-        "No": 161
+        "No": 33
     },
     {
+        "fileName": 16,
         "time": 5,
-        "fileName": 153,
-        "sentence": "The food crops require a large amount of water and fertilizer.",
-        "No": 162
+        "sentence": "The summer course has been cancelled due to insufficient enrolment.",
+        "No": 34
     },
     {
+        "sentence": "Please click the logo above to enter the site.",
         "time": 5,
-        "No": 163,
-        "fileName": 105,
-        "sentence": "The news is not received until the following week."
+        "fileName": 38,
+        "No": 35
     },
     {
-        "fileName": 86,
-        "time": 5,
-        "No": 164,
-        "sentence": "Speed is defined as how fast a person or an object moves."
-    },
-    {
-        "fileName": 123,
-        "time": 5,
-        "No": 165,
-        "sentence": "Plants are able to continue grow throughout their lives."
-    },
-    {
-        "No": 166,
-        "sentence": "This course aims to develop your knowledge of statistics.",
-        "fileName": 153,
+        "sentence": "Your application for a research grant has been received.",
+        "No": 36,
+        "fileName": 189,
         "time": 5
     },
     {
-        "sentence": "Some of the vocational courses are provided by many private enterprises.",
+        "sentence": "The body fat keeps internal organs warm.",
         "time": 5,
-        "fileName": 35,
-        "No": 167
+        "fileName": 71,
+        "No": 37
     },
     {
-        "No": 168,
-        "time": 5,
-        "fileName": 153,
-        "sentence": "We are dealing with the most challenges that we face today."
-    },
-    {
-        "No": 169,
-        "sentence": "The department works closely with its partners in the business community.",
-        "time": 5,
-        "fileName": 153
-    },
-    {
-        "No": 170,
-        "fileName": 153,
-        "sentence": "History of economics can be a tricky subject to research.",
+        "No": 38,
+        "fileName": 173,
+        "sentence": "The office hours will be changed from next term.",
         "time": 5
     },
     {
-        "fileName": 20,
-        "sentence": "Sugar is a compound, which consist of carbon, oxygen, and hydrogen.",
-        "No": 171,
+        "sentence": "It was the dinosaurs that interested people the most.",
+        "fileName": 111,
+        "No": 39,
         "time": 5
     },
     {
-        "sentence": "Students must attend the safety course before entering the engineering workshop.",
-        "No": 172,
+        "fileName": 116,
         "time": 5,
-        "fileName": 153
-    },
-    {
-        "fileName": 153,
-        "sentence": "New developments in manufacturing are constantly changing the way we live.",
-        "No": 173,
-        "time": 5
-    },
-    {
-        "fileName": 33,
-        "sentence": "Astronauts are using light years to measure distance in the space.",
-        "No": 174,
-        "time": 5
-    },
-    {
-        "fileName": 13,
-        "sentence": "All medical students must clean their hands before entering this/the room.",
-        "No": 175,
-        "time": 5
-    },
-    {
-        "fileName": 120,
-        "No": 176,
-        "time": 5,
-        "sentence": "Castle was designed to intimidate both local people and the enemies."
-    },
-    {
-        "sentence": "In any written assignment, a detailed literature review is very important.",
-        "fileName": 153,
-        "time": 5,
-        "No": 177
-    },
-    {
-        "No": 178,
-        "time": 5,
-        "fileName": 153,
-        "sentence": "A new collection of articles has just been published."
+        "No": 40,
+        "sentence": "I am optimistic about the future of space flight."
     },
     {
         "time": 5,
-        "sentence": "There is an accounting assessment for finance students.",
-        "No": 179,
-        "fileName": 153
+        "No": 41,
+        "fileName": 150,
+        "sentence": "Farming methods across the world have greatly developed recently."
     },
     {
-        "fileName": 102,
-        "sentence": "Being bilingual does not necessarily mean of having the ability of understanding two languages.",
+        "fileName": 149,
         "time": 5,
-        "No": 180
+        "sentence": "Please write the name of author and the year of publication.",
+        "No": 42
+    },
+    {
+        "time": 5,
+        "sentence": "Students who study overseas can significantly improve work chances.",
+        "No": 43,
+        "fileName": 152
     }]
 }
 

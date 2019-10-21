@@ -8,10 +8,12 @@
 
 import UIKit
 class DIViewModel:NSObject {
+    var questionNumber:Int = 0
     var imageName:String = ""
-    convenience init(name:String) {
+    convenience init(name:String,questionNumber:Int) {
         self.init()
         imageName = name
+        self.questionNumber = questionNumber
     }
 }
 
@@ -130,6 +132,9 @@ class DIViewController: UIViewController {
         
         addIndicators(toView: answerProgressView)
         answerBeginningView.isHidden = true
+        if Manager.isMockText {
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalQuestions)"
+        }
     }
     
     fileprivate func addIndicators(toView: UIView) {

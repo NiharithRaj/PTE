@@ -77,22 +77,29 @@ class ASQViewController: UIViewController {
             strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 5) {
                 DispatchQueue.main.async {
                     strongSelf.answerBeginningView.text = "Completed"
-                    UIView.animate(withDuration: 1, animations: {
-                        UIView.transition(from: strongSelf.questionView, to: strongSelf.answerTextView, duration: 1.0
-                            , options: [[.transitionFlipFromRight,
-                                         .showHideTransitionViews]]) { _ in
-                                            strongSelf.questionView(yes: true)
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
-                            strongSelf.speakNow()
-                        })
-                        
-                        let time = strongSelf.questionTime > 9 ? DispatchTime.now() + 12 : strongSelf.questionTime > 7 ? DispatchTime.now() + 10 : DispatchTime.now() + 9
-                        DispatchQueue.main.asyncAfter(deadline: time, execute: {
+                    if Manager.isMockText {
+                        DispatchQueue.main.async {
                             strongSelf.dismiss(animated: true, completion: nil)
                             strongSelf.delegate?.didCompleted()
+                        }   
+                    }else {
+                        UIView.animate(withDuration: 1, animations: {
+                            UIView.transition(from: strongSelf.questionView, to: strongSelf.answerTextView, duration: 1.0
+                                , options: [[.transitionFlipFromRight,
+                                             .showHideTransitionViews]]) { _ in
+                                                strongSelf.questionView(yes: true)
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+                                strongSelf.speakNow()
+                            })
+                            
+                            let time = strongSelf.questionTime > 9 ? DispatchTime.now() + 12 : strongSelf.questionTime > 7 ? DispatchTime.now() + 10 : DispatchTime.now() + 9
+                            DispatchQueue.main.asyncAfter(deadline: time, execute: {
+                                strongSelf.dismiss(animated: true, completion: nil)
+                                strongSelf.delegate?.didCompleted()
+                            })
                         })
-                    })
+                    }
                 }
             }
         }
@@ -153,7 +160,11 @@ class ASQViewController: UIViewController {
         answerBeginningView.isHidden = true
         answerTextLabel.text = viewModel.model.answer
         questionLabel.text = viewModel.model.question
-        questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
+        if Manager.isMockText {
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalQuestions)"
+        } else {
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
+        }
     }
     
     fileprivate func addIndicators(toView: UIView) {

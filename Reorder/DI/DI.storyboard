@@ -73,13 +73,17 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3UP-MN-WfK">
                                         <rect key="frame" x="125" y="268" width="831" height="677"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jwO-ZO-yip">
-                                                <rect key="frame" x="295" y="274" width="240" height="128"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jwO-ZO-yip">
+                                                <rect key="frame" x="0.0" y="0.0" width="831" height="677"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="jwO-ZO-yip" secondAttribute="bottom" id="4NO-nP-nU6"/>
                                             <constraint firstItem="jwO-ZO-yip" firstAttribute="centerX" secondItem="3UP-MN-WfK" secondAttribute="centerX" id="77S-ap-fJD"/>
+                                            <constraint firstItem="jwO-ZO-yip" firstAttribute="top" secondItem="3UP-MN-WfK" secondAttribute="top" id="JVd-o7-o7f"/>
+                                            <constraint firstItem="jwO-ZO-yip" firstAttribute="leading" secondItem="3UP-MN-WfK" secondAttribute="leading" id="aav-Js-Gdq"/>
+                                            <constraint firstAttribute="trailing" secondItem="jwO-ZO-yip" secondAttribute="trailing" id="hop-jD-0mX"/>
                                             <constraint firstItem="jwO-ZO-yip" firstAttribute="centerY" secondItem="3UP-MN-WfK" secondAttribute="centerY" id="v7A-j9-0Pn"/>
                                         </constraints>
                                     </view>
@@ -188,7 +192,7 @@
         <!--Initial View Controller-->
         <scene sceneID="JM4-0m-A7v">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Ws-tl-s8z" customClass="DIInitialViewController" customModule="Reorder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DIInitialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Ws-tl-s8z" customClass="DIInitialViewController" customModule="Reorder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8cu-8a-S5e"/>
                         <viewControllerLayoutGuide type="bottom" id="kYA-1d-gix"/>

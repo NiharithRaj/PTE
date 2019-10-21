@@ -11,6 +11,7 @@ import UIKit
 class ReadAloudInititalViewController: UIViewController {
     var model: RepeatSentenceCollection!
     var currentIndex = 0
+    var callBack:(()->())?
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
@@ -54,6 +55,11 @@ extension ReadAloudInititalViewController: RSTimerDelegate {
         if model.collection.count > currentIndex {
             DispatchQueue.main.async {
                 self.pushRepeatSentence()
+            }
+        }else {
+            if let c = callBack {
+                navigationController?.popViewController(animated: false)
+                c()
             }
         }
     }

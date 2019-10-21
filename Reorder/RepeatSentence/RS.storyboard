@@ -278,9 +278,12 @@
                         <outlet property="answerTextLabel" destination="TFQ-M4-PCF" id="beR-NV-63i"/>
                         <outlet property="answerTextView" destination="az0-Dg-5qI" id="aeh-39-Ibl"/>
                         <outlet property="answerView" destination="lcW-9U-eqm" id="bSQ-8l-4XZ"/>
+                        <outlet property="answerViewHeightConstriant" destination="o3h-dC-YET" id="eJd-A0-476"/>
+                        <outlet property="anwerViewTopConstraint" destination="41Q-Gw-jUp" id="uRz-kU-scB"/>
                         <outlet property="dotview" destination="MbJ-G4-A6a" id="AA7-ng-8CL"/>
                         <outlet property="indicatorLineview" destination="iDZ-1W-C0i" id="6Tu-o8-ncQ"/>
                         <outlet property="indicatorView" destination="ImT-dC-yqh" id="nzs-Eb-g7T"/>
+                        <outlet property="instructionLabel" destination="taK-Bb-B66" id="1ZE-kR-Pnq"/>
                         <outlet property="progressbarContainerView" destination="bE2-4b-kzK" id="NK6-mn-jIC"/>
                         <outlet property="questionNumberLabel" destination="xmJ-jK-iTE" id="JKH-cp-dOt"/>
                         <outlet property="questionView" destination="aQ8-Ba-TBh" id="VtU-i3-pp3"/>

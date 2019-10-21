@@ -1,302 +1,77 @@
 {
     "collection": [{
-        "No": 151,
-        "fileName": 411,
-        "question": "What is the opposite of maximize?",
-        "answer": "Minimize"
-    },
-    {
-        "fileName": 348,
-        "No": 152,
-        "answer": "bilingual",
-        "question": "What do we call the person who can speak two languages?"
-    },
-    {
-        "fileName": 68,
-        "No": 153,
-        "question": "If you are feeling 'fed up, is it a positive or negative feeling?",
-        "answer": "A negative feeling"
-    },
-    {
-        "No": 154,
-        "fileName": 121,
-        "answer": "Six",
-        "question": "If a figure is hexagonal, how many sides does it have?"
-    },
-    {
-        "No": 155,
-        "fileName": 16,
-        "answer": "Scale",
-        "question": "What device do you use to measure your weight?"
-    },
-    {
-        "fileName": 380,
-        "No": 156,
-        "answer": "Chef",
-        "question": "The job title for someone who cooks food in a kitchen to?"
-    },
-    {
-        "No": 157,
-        "fileName": 74,
-        "answer": "Gym/Gymnasium",
-        "question": "Where would you go to work out on a treadmill?"
-    },
-    {
-        "fileName": 13,
-        "No": 158,
-        "answer": "Compass",
-        "question": "What piece of equipment shows people which direction they are traveling to?"
-    },
-    {
-        "fileName": 24,
-        "No": 159,
-        "question": "What do we call a great lover of books?",
-        "answer": "Bookworm/Bibliophile"
-    },
-    {
-        "No": 160,
-        "fileName": 97,
-        "answer": "Anonymous",
-        "question": "When the writer of the book is unknown, what word do we use for the writer?"
-    },
-    {
-        "fileName": 69,
-        "No": 161,
-        "answer": "Decade",
-        "question": "What do we call a period of ten years?"
-    },
-    {
-        "fileName": 416,
-        "No": 162,
-        "answer": "Glass",
-        "question": "What material is used both on window and light bulb?"
-    },
-    {
-        "No": 163,
-        "fileName": 67,
-        "answer": "Keyboard",
-        "question": "What features do pianos and computers have in common?"
-    },
-    {
-        "fileName": 377,
-        "No": 164,
-        "answer": "The United States of America/Canada",
-        "question": "Name a country located in North America?"
-    },
-    {
-        "fileName": 128,
-        "No": 165,
-        "question": "Would it be better jogging at noon or in the early morning, if you want to avoid the hottest part of the day?",
-        "answer": "In the early morning"
-    },
-    {
-        "fileName": 289,
-        "No": 166,
-        "answer": "running",
-        "question": "Which one is quicker?"
-    },
-    {
-        "fileName": 371,
-        "No": 167,
-        "answer": "Two",
-        "question": "How many countries are involved in a mutual agreement?"
-    },
-    {
+        "question": "The people who protect the public from criminals are called?",
         "fileName": 52,
-        "No": 168,
-        "answer": "Outdoor jacket/Jacket",
-        "question": "What clothes are used to hike mountains and are used to keep dry?"
+        "No": 448,
+        "answer": "Police"
     },
     {
-        "No": 169,
-        "fileName": 230,
-        "question": "Which one is more fuel efficient?",
-        "answer": "Car"
+        "fileName": 16,
+        "answer": "Shoe",
+        "No": 449,
+        "question": "Dog, cat, horse, shoe—which is the odd one out?"
     },
     {
-        "fileName": 224,
-        "No": 170,
-        "answer": "wedding",
-        "question": "What is the ceremony called for marriage?"
+        "No": 450,
+        "question": "What do we call a company or organization that gives money to a sport or art event in exchange for advertising?",
+        "fileName": 127,
+        "answer": "Sponsorship"
     },
     {
-        "fileName": 39,
-        "No": 171,
-        "question": "Name the month that falls between April and June?",
-        "answer": "May"
+        "fileName": 48,
+        "answer": "Proposal",
+        "question": "What is the document you submit before your assignment at university?",
+        "No": 451
     },
     {
-        "No": 172,
-        "fileName": 233,
-        "answer": "Elevator",
-        "question": "Which is the fastest way to go to level 15- escalator or elevator?"
+        "question": "Who left this footprint, a bear or a wolf / bird?",
+        "answer": "Bear",
+        "No": 452,
+        "fileName": 218
     },
     {
-        "No": 173,
-        "fileName": 88,
-        "question": "What is the name of the instrument used to measure variations in temperature?",
-        "answer": "Thermometer"
+        "question": "What general part of the day is known as dawn?",
+        "No": 453,
+        "answer": "Sunrise",
+        "fileName": 54
     },
     {
-        "fileName": 312,
-        "No": 174,
-        "question": "What material is used for most of vehicles and crafts?",
-        "answer": "metal"
+        "answer": "Century",
+        "fileName": 59,
+        "No": 454,
+        "question": "What do we call a period of 100 years?"
     },
     {
-        "No": 175,
-        "fileName": 396,
-        "question": "Where is the \"Power\" button?",
-        "answer": "Upper left"
+        "question": "Profit means gain or loss?",
+        "answer": "Gain",
+        "No": 455,
+        "fileName": 134
     },
     {
-        "No": 176,
-        "fileName": 227,
-        "answer": "Immune related",
-        "question": "What is the term immunology?"
+        "fileName": 4,
+        "No": 456,
+        "answer": "The Nobel Prize",
+        "question": "What do we call the prize sponsored by Sweden which sets many prizes in literal and physics field?"
     },
     {
-        "No": 177,
-        "fileName": 293,
-        "answer": "Subtraction",
-        "question": "In mathematics and arithmetic, there are addition, multiplication, division. what is the other one?"
+        "answer": "Radiology",
+        "No": 457,
+        "question": "Which hospital department would you go for an X-ray? radiology or cardiology?",
+        "fileName": 77
     },
     {
-        "No": 178,
-        "fileName": 99,
-        "question": "If something such as fabric or medicine is artificially made, we say it is ___?",
-        "answer": "Synthetic"
+        "answer": "Ocean",
+        "question": "Where would you find a whale? tropical forest or ocean?",
+        "fileName": 49,
+        "No": 458
     },
     {
-        "fileName": 413,
-        "No": 179,
-        "question": "When your bone is injured and broken, what would you say you have?",
-        "answer": "Fracture"
-    },
-    {
-        "fileName": 5,
-        "No": 180,
-        "answer": "Airplane",
-        "question": "Which one needs the most complicated mechanism: car, ship or air plane?"
-    },
-    {
-        "No": 181,
-        "fileName": 51,
-        "answer": "Eggs",
-        "question": "What are the things that hens lay?"
-    },
-    {
-        "fileName": 18,
-        "No": 182,
-        "answer": "War",
-        "question": "What is a violent conflict between two or more countries?"
-    },
-    {
-        "fileName": 361,
-        "No": 183,
-        "question": "Colloquial phrases are not normally used in the academic language, is tolerate or put up with more appropriate in the academic writing?",
-        "answer": "tolerate"
-    },
-    {
-        "fileName": 13,
-        "No": 184,
-        "question": "How do you describe a situation that is precarious?",
-        "answer": "Dangerous"
-    },
-    {
-        "No": 185,
-        "fileName": 28,
-        "answer": "Siblings",
-        "question": "What do we say if we call brothers and sisters in a same way?"
-    },
-    {
-        "No": 186,
-        "fileName": 34,
-        "answer": "Sleeping pills/Hypnotics",
-        "question": "What is the medicine that induces sleep?"
-    },
-    {
-        "fileName": 298,
-        "No": 187,
-        "question": "Which of the following is real animals, unicorn, giraffe, dragon or mermaid?",
-        "answer": "giraffe"
-    },
-    {
-        "fileName": 297,
-        "No": 188,
-        "question": "What does the letter \"C\" represent for in brands?",
-        "answer": "Copyright"
-    },
-    {
-        "No": 189,
-        "fileName": 95,
-        "answer": "Lungs",
-        "question": "What do we call the organ in our chest that we need to breath?"
-    },
-    {
-        "fileName": 418,
-        "No": 190,
-        "answer": "Alarm clock",
-        "question": "What electronic device wakes you up in the morning?"
-    },
-    {
-        "fileName": 383,
-        "No": 191,
-        "question": "What's the 26th alphabet in English?",
-        "answer": "Z"
-    },
-    {
-        "No": 192,
-        "fileName": 26,
-        "answer": "Ante meridian (A.M.)",
-        "question": "What is the time period before noon called?"
-    },
-    {
-        "No": 193,
-        "fileName": 290,
-        "answer": "",
-        "question": "What do you call a person who make a living by serving people food?"
-    },
-    {
-        "No": 194,
-        "fileName": 6,
-        "answer": "Autobiography",
-        "question": "What kind of book is written by a person about their own life?"
-    },
-    {
-        "fileName": 327,
-        "No": 195,
-        "question": "What does a sundial measure?",
-        "answer": "time"
-    },
-    {
-        "No": 196,
-        "fileName": 79,
-        "answer": "Liters",
-        "question": "Would you measure volume of water in liters or kilos?"
-    },
-    {
-        "fileName": 360,
-        "No": 197,
-        "answer": "Headline",
-        "question": "What is the name for the tile of a newspaper, often in large bold print?"
-    },
-    {
-        "fileName": 18,
-        "No": 198,
-        "answer": "Grapes",
-        "question": "What fruit is used in a winery?"
-    },
-    {
-        "No": 199,
-        "fileName": 292,
-        "question": "What's the occurrence of leap year?",
-        "answer": "every four years"
-    },
-    {
-        "fileName": 98,
-        "No": 200,
-        "answer": "Cattle",
-        "question": "What is the collective term for cows and bulls, especially on the farm?"
+        "fileName": 353,
+        "No": 459,
+        "answer": "signature",
+        "question": "If you are happy with the agreement, what would you like to put at the bottom of the contract with the date?"
     }]
 }
+
+
+

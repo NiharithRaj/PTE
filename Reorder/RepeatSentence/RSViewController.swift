@@ -12,6 +12,12 @@ let languagues = ["en-US","en-GB","en-AU"]
 class RSViewController: UIViewController {
     var model: RepeatSentenceCollection!
     var currentIndex = 0
+    let fileName = "RS"
+    var callBack:(()->())?
+
+    var isWFD: Bool {
+        return fileName == "WFD_Listen"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
@@ -28,7 +34,7 @@ class RSViewController: UIViewController {
     fileprivate func pushRepeatSentence() {
         let storyboard = UIStoryboard(name: "RS", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "RSTimerViewController") as? RSTimerViewController {
-            controller.viewModel = RSTimerViewModel(model: model.collection[currentIndex],questionNumber: currentIndex + 1, total: model.collection.count)
+            controller.viewModel = RSTimerViewModel(model: model.collection[currentIndex],questionNumber: Manager.isMockText ? (Manager.rpeatstart + currentIndex) : currentIndex + 1, total: model.collection.count, isWFDInstrucion: isWFD)
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
@@ -37,7 +43,7 @@ class RSViewController: UIViewController {
     }
 
     func parsefromJson() {
-        if let path = Bundle.main.path(forResource: "RS", ofType: "json") {
+        if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 model = try JSONDecoder().decode(RepeatSentenceCollection.self, from: data)
@@ -55,6 +61,11 @@ extension RSViewController: RSTimerDelegate {
         if model.collection.count > currentIndex {
             DispatchQueue.main.async {
                 self.pushRepeatSentence()
+            }
+        }else {
+            if let c = callBack {
+                navigationController?.popViewController(animated: false)
+                c()
             }
         }
     }

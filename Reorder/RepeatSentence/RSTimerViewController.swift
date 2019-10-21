@@ -15,11 +15,14 @@ class RSTimerViewController: UIViewController {
     let speech = Speech()
     var viewModel: RSTimerViewModel!
     let count = 25.0
+    @IBOutlet weak var instructionLabel: UILabel!
     let recordTime = 8
     @IBOutlet weak var dotview: UIView!
     @IBOutlet weak var progressbarContainerView: UIView!
     @IBOutlet weak var questionNumberLabel: UILabel!
+    @IBOutlet weak var answerViewHeightConstriant: NSLayoutConstraint!
     @IBOutlet weak var topViewBeginningLabel: UILabel!
+    @IBOutlet weak var anwerViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var indicatorView: UIView!
     @IBOutlet weak var indicatorLineview: UIView!
@@ -39,6 +42,12 @@ class RSTimerViewController: UIViewController {
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        instructionLabel.text =  viewModel.isWFDInstrucion ? "You will hear a sentence. Type the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once." : "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only one."
+        if viewModel.isWFDInstrucion {
+            answerView.isHidden = true
+            answerViewHeightConstriant.constant = answerViewHeightConstriant.constant * 0.45
+            anwerViewTopConstraint.constant = anwerViewTopConstraint.constant * 3
+        }
         questionTime = viewModel.speechTime // Utils.audioLength(fileName: "\(viewModel.model.fileName)")
         setupUI()
     }
@@ -76,9 +85,16 @@ class RSTimerViewController: UIViewController {
         viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
-            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 8) {
+            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: (strongSelf.viewModel.isWFDInstrucion ? 6 : 8)) {
                 DispatchQueue.main.async {
                     strongSelf.answerBeginningView.text = "Completed"
+
+                    if Manager.isMockText {
+                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+                            strongSelf.dismiss(animated: true, completion: nil)
+                            strongSelf.delegate?.didCompleted()
+                        })
+                    } else {
                     UIView.animate(withDuration: 1, animations: {
                         UIView.transition(from: strongSelf.questionView, to: strongSelf.answerTextView, duration: 1.0
                             , options: [[.transitionFlipFromRight,
@@ -93,6 +109,8 @@ class RSTimerViewController: UIViewController {
                             strongSelf.delegate?.didCompleted()
                         })
                     })
+                    }
+
                 }
             }
         }
@@ -153,6 +171,9 @@ class RSTimerViewController: UIViewController {
         answerBeginningView.isHidden = true
         answerTextLabel.text = viewModel.model.sentence
         questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
+        if Manager.isMockText {
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalQuestions)"
+        }
     }
 
     fileprivate func addIndicators(toView: UIView) {
@@ -199,10 +220,12 @@ struct RSTimerViewModel {
     let model: RepeatSentence
     let questionNumber:Int
     let total:Int
-    init(model: RepeatSentence, questionNumber:Int, total:Int) {
+    let isWFDInstrucion:Bool
+    init(model: RepeatSentence, questionNumber:Int, total:Int, isWFDInstrucion:Bool = false) {
         self.model = model
         self.questionNumber = questionNumber
         self.total = total
+        self.isWFDInstrucion = isWFDInstrucion
     }
     
     var speechTime:Int {

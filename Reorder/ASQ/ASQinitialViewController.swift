@@ -14,6 +14,8 @@ class ASQinitialViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     var model: ASQCollection!
     var currentIndex = 0
+    var callBack:(()->())?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
@@ -38,7 +40,7 @@ class ASQinitialViewController: UIViewController {
     fileprivate func pushRepeatSentence() {
         let storyboard = UIStoryboard(name: "ASQ", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "ASQViewController") as? ASQViewController {
-            controller.viewModel = ASQViewModel(model: model.collection[currentIndex],questionNumber: currentIndex + 1, total: model.collection.count)
+            controller.viewModel = ASQViewModel(model: model.collection[currentIndex],questionNumber: Manager.isMockText ? Manager.ASQstart + currentIndex : currentIndex + 1, total: model.collection.count)
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
@@ -78,6 +80,11 @@ extension ASQinitialViewController: RSTimerDelegate {
         if model.collection.count > currentIndex {
             DispatchQueue.main.async {
                 self.pushRepeatSentence()
+            }
+        }else {
+            if let c = callBack {
+                navigationController?.popViewController(animated: false)
+                c()
             }
         }
     }

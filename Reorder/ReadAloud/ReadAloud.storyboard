@@ -193,7 +193,7 @@
         <!--Read Aloud Initital View Controller-->
         <scene sceneID="JM4-0m-A7v">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Ws-tl-s8z" customClass="ReadAloudInititalViewController" customModule="Reorder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReadAloudInititalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Ws-tl-s8z" customClass="ReadAloudInititalViewController" customModule="Reorder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8cu-8a-S5e"/>
                         <viewControllerLayoutGuide type="bottom" id="kYA-1d-gix"/>
