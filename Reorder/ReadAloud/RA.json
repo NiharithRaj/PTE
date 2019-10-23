@@ -1,10 +1,39 @@
 {
-    "collection": [
-        {
-            "fileName": 13,
-            "No": 1,
-            "sentence": "The department determines whether or not the candidate has passed the examination. In cases where an appearance for the final public oral examination would constitute a substantial financial hardship for the candidate, the director of graduate studies may recommend to the dean of the Graduate School that the examination be waived.",
-            "time": 5
-        }
-    ]
+    "collection": [{
+        "sentence": "Using more than fifty interviews, award-winning writer Danny Danziger creates a fascinating mosaic of the people behind New York's magnificent Metropolitan Museum of Art from the aristocratic, acerbic director of the museum, Philippe de Motebello, to the curators who have a deep knowledge and passionate appreciation of their collections from the security guards to the philanthropists who keep the museum's financial life blood flowing.",
+        "fileName": 66,
+        "No": 1,
+        "time": 5
+    },
+    {
+        "No": 2,
+        "sentence": "In the photo, the wild cat's huge paws are clamped onto the side of the white safari Jeep in which Chappell was a passenger. Almost as tall as the Jeep on her hind legs, she appears to be forcing her muzzle into the back window.",
+        "time": 5,
+        "fileName": 10
+    },
+    {
+        "sentence": "If bonus or incentive pay schemes work so well for chief executive and bankers, why does everyone not get them? After all, many jobs involve making important decisions or taking risks is there anything about corporate decision and financial risks that makes these categories of work special in terms of how they need to be incentivized and rewarded?",
+        "No": 3,
+        "fileName": 141,
+        "time": 5
+    },
+    {
+        "fileName": 73,
+        "sentence": "The climate for doing business improved in Egypt more than in any other country last year, according to a global study that revealed a wave of company-oriented reforms across the Middle East. The World Bank rankings, which look at business regulations, also showed that the pace of business reforms in Eastern Europe was overtaking East Asia.",
+        "time": 5,
+        "No": 4
+    },
+    {
+        "time": 5,
+        "sentence": "In a genuine republic the will of the government is dependent on the will of the society, and the will of the society is dependent on the reason of the society. In Federalist 51, for example, James Madison claimed that the extent and structure of the government of the United States make it dependent on the will of the society.",
+        "fileName": 71,
+        "No": 5
+    },
+    {
+        "No": 6,
+        "sentence": "Many people believe that employers discriminate against older people because youths have more energy and creativity. This is not true. The main reason for hiring younger workers is payroll. In most countries, your salary is dependent on how many years of work experience you have. It is far more cost efficient to hire postgraduates, fresh out of university, than senior staff with over twenty years of industry knowledge.",
+        "time": 5,
+        "fileName": 123
+    }]
 }
+

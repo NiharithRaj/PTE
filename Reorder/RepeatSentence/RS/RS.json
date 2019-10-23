@@ -4,6 +4,80 @@
         "No": 167,
         "fileName": 35,
         "sentence": "We need to read the first five chapters to prepare for next week's tutorial."
+    },
+    {
+        "fileName": 60,
+        "time": 5,
+        "sentence": "Our professor is hosting the business development conference.",
+        "No": 168
+    },
+    {
+        "No": 169,
+        "fileName": 86,
+        "time": 5,
+        "sentence": "How can we inspire people and ourselves to be self-motivated?"
+    },
+    {
+        "No": 170,
+        "sentence": "Environmental friendliness is a new category in which campuses are competing.",
+        "time": 5,
+        "fileName": 8
+    },
+    {
+        "sentence": "They say Professor James's lectures are always interesting and fun.",
+        "time": 5,
+        "fileName": 22,
+        "No": 171
+    },
+    {
+        "No": 172,
+        "sentence": "There are a range of housing options near the university.",
+        "fileName": 117,
+        "time": 5
+    },
+    {
+        "time": 5,
+        "fileName": 80,
+        "No": 173,
+        "sentence": "Unfortunately, their immune systems were not strong enough to fight off common bacteria."
+    },
+    {
+        "No": 174,
+        "fileName": 65,
+        "time": 5,
+        "sentence": "You can only choose one subject from biology or media."
+    },
+    {
+        "fileName": 8,
+        "No": 175,
+        "time": 5,
+        "sentence": "Expertise in particular areas distinguishes you from other graduates."
+    },
+    {
+        "fileName": 43,
+        "time": 5,
+        "No": 176,
+        "sentence": "Meeting with mentors could be arranged for students who need additional help."
+    },
+    {
+        "time": 5,
+        "sentence": "Economy of scale is the increase in efficiency that occurs when more goods are produced.",
+        "No": 177,
+        "fileName": 69
+    },
+    {
+        "time": 5,
+        "fileName": 97,
+        "sentence": "Don't underestimate the stress that plays importance in exam performance.",
+        "No": 178
+    },
+    {
+        "time": 5,
+        "fileName": 10,
+        "sentence": "In 1880, cycling became a major phenomenon in the United States.",
+        "No": 179
     }]
 }
+
+
 
