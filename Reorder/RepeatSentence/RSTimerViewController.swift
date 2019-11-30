@@ -85,7 +85,7 @@ class RSTimerViewController: UIViewController {
         viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
-            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: (strongSelf.viewModel.isWFDInstrucion ? 6 : 8)) {
+            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: (strongSelf.viewModel.isWFDInstrucion ? 6 : strongSelf.questionTime + 1)) {
                 DispatchQueue.main.async {
                     strongSelf.answerBeginningView.text = "Completed"
 
@@ -229,11 +229,13 @@ struct RSTimerViewModel {
     }
     
     var speechTime:Int {
-        var time = 5
+        var time = 4
         let arr = model.sentence.components(separatedBy: CharacterSet.init(charactersIn: " "))
         if arr.count > 10 && arr.count <= 13 {
+            time = 5
+        } else if arr.count > 13 && arr.count <= 16 {
             time = 6
-        } else if arr.count > 13 {
+        } else if arr.count > 16 {
             time = 7
         }
         return time
