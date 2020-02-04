@@ -1,18 +1,18 @@
 //
-//  WFDViewController.swift
+//  LFIBViewController.swift
 //  Reorder
 //
-//  Created by Ganesan Rajasekarapandian on 24/9/19.
-//  Copyright © 2019 Raj. All rights reserved.
+//  Created by Ganesan Rajasekarapandian on 4/2/20.
+//  Copyright © 2020 Raj. All rights reserved.
 //
 
 import UIKit
 
-class WFDViewController: UIViewController {
-    var viewModel: RSTimerViewModel!
+class LFIBViewController: UIViewController {
+    var viewModel: LFIBViewModel!
     let count = 25.0
     let recordTime = 6
-    var answerCount = 15
+    var answerCount = 10
     let speech = Speech()
 
     @IBOutlet weak var dotview: UIView!
@@ -23,10 +23,9 @@ class WFDViewController: UIViewController {
     @IBOutlet weak var indicatorView: UIView!
     @IBOutlet weak var indicatorLineview: UIView!
     
-    @IBOutlet weak var answerView: UIView!
+//    @IBOutlet weak var answerView: UIView!
     
     @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var wordCountLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var questionView: UIView!
     
@@ -35,7 +34,7 @@ class WFDViewController: UIViewController {
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTime = viewModel.speechTime + 1
+        questionTime =  Utils.audioLength(fileName: "\(viewModel.model.order)", fileType: "aifc") + 1
         setupUI()
     }
     
@@ -57,25 +56,38 @@ class WFDViewController: UIViewController {
             //Do here
             timer.invalidate()
             answerLabel.isHidden = false
-            wordCountLabel.isHidden = false
-            answerLabel.text = viewModel.model.sentence
-            wordCountLabel.text = "Total Word Count: \(wordCount())"
+//            answerLabel.text = viewModel.model.sentence
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                self.speakNow()
+                self.displayCorrectAnswer()
             })
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 8, execute: {
                 self.dismiss(animated: true, completion: nil)
                 self.delegate?.didCompleted()
             })
         }
     }
     
-    private func wordCount() -> Int {
-        let chararacterSet = CharacterSet.whitespacesAndNewlines
-        var components = viewModel.model.sentence.components(separatedBy: chararacterSet)
-        components = components.filter { !$0.isEmpty }
-        return components.count
+    private func displayCorrectAnswer() {
+        var question = viewModel.model.question
+        var ranges:[NSRange] = []
+        for index in 0..<viewModel.model.answer.count {
+            let tupple = question.replaceFirst(of: "_______", with: viewModel.model.answer[index])
+            question = tupple.0
+            if let r = tupple.1 {
+                ranges.append(r)
+            }
+
+        }
+        let attri = NSMutableAttributedString(string: question)
+        for range in ranges {
+            attri.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.red,NSAttributedString.Key.underlineStyle : NSUnderlineStyle.single.rawValue], range: range)
+        }
+
+        UIView.animate(withDuration: 3.0) {
+            self.answerLabel.attributedText = attri.paragraphStyle(lineSpace: 15.0, textAlignment: .left)
+        }        
     }
+   
     
     fileprivate func changeQuestion() {
         var seconds = 3
@@ -108,7 +120,7 @@ class WFDViewController: UIViewController {
     }
     
     private func speakNow() {
-        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 3])
+        Utils.playAudio(fileName: "\(viewModel.model.order)", fileType: "aifc")
     }
     
     private func setupUI() {
@@ -117,9 +129,9 @@ class WFDViewController: UIViewController {
         topView.layer.borderWidth = 2.0
         topView.layer.cornerRadius = 10.0
         
-        answerView.layer.borderColor = UIColor.gray.cgColor
-        answerView.layer.borderWidth = 2.0
-        answerView.layer.cornerRadius = 10.0
+//        answerView.layer.borderColor = UIColor.gray.cgColor
+//        answerView.layer.borderWidth = 2.0
+//        answerView.layer.cornerRadius = 10.0
         
         indicatorLineview.layer.cornerRadius = 5.0
         indicatorView.layer.cornerRadius = 20.0
@@ -128,9 +140,11 @@ class WFDViewController: UIViewController {
         progressbarContainerView.layer.borderWidth = 2.0
         progressbarContainerView.clipsToBounds = true
         
-        answerView.layer.borderColor = UIColor.gray.cgColor
-        answerView.layer.borderWidth = 2.0
-        answerView.clipsToBounds = true
+//        answerView.layer.borderColor = UIColor.gray.cgColor
+//        answerView.layer.borderWidth = 2.0
+//        answerView.clipsToBounds = true
+        
+        answerLabel.attributedText = NSAttributedString(string: viewModel.model.question).paragraphStyle(lineSpace: 15.0, textAlignment: .left)
         
         var v: UIView
         let index = 10
@@ -175,4 +189,51 @@ class WFDViewController: UIViewController {
     }
     
     
+}
+
+
+struct LFIBViewModel {
+    let model: LFIB
+    let questionNumber:Int
+    let total:Int
+    init(model: LFIB, questionNumber:Int, total:Int) {
+        self.model = model
+        self.questionNumber = questionNumber
+        self.total = total
+    }
+}
+
+extension String {
+
+public func replaceFirst(of pattern:String,
+                         with replacement:String) -> (String, NSRange?) {
+  if let range = self.range(of: pattern){
+    print(range.lowerBound)
+    var range1 = NSRange(range: range, in: self)
+    range1.length = range1.length + replacement.count - pattern.count
+    return (self.replacingCharacters(in: range, with: replacement), range1)
+  }else{
+    return (self, nil)
+  }
+}
+}
+public extension NSRange {
+    private init(string: String, lowerBound: String.Index, upperBound: String.Index) {
+        let utf16 = string.utf16
+
+        let lowerBound = lowerBound.samePosition(in: utf16)!
+            let location = utf16.distance(from: utf16.startIndex, to: lowerBound)
+            let length = utf16.distance(from: lowerBound, to: upperBound.samePosition(in: utf16)!)
+
+            self.init(location: location, length: length)
+        
+    }
+
+    init(range: Range<String.Index>, in string: String) {
+        self.init(string: string, lowerBound: range.lowerBound, upperBound: range.upperBound)
+    }
+
+    init(range: ClosedRange<String.Index>, in string: String) {
+        self.init(string: string, lowerBound: range.lowerBound, upperBound: range.upperBound)
+    }
 }

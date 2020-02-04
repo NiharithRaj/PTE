@@ -78,5 +78,5 @@ struct RepeatSentenceCollection: Decodable {
 struct RepeatSentence: Decodable {
     let sentence: String
     let time: Int
-    let fileName: Int
+    let fileName: Int?
 }

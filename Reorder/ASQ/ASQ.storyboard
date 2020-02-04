@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lv0-uu-ccW">
-    <device id="appleTV" orientation="landscape">
-        <adaptation id="light"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lv0-uu-ccW">
+    <device id="appleTV" appearance="light"/>
     <dependencies>
         <deployment identifier="tvOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +28,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer short question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjU-Ce-BOL">
-                                <rect key="frame" x="170" y="150" width="585" height="72"/>
+                                <rect key="frame" x="170" y="150" width="586" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="60"/>
                                 <color key="textColor" red="0.33687815070152283" green="0.48293536901473999" blue="0.76081818342208862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -85,7 +83,7 @@ Speaking for a purpose (to repeat, to inform, to explain); using words and phras
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18E-TD-ofp">
-                                        <rect key="frame" x="100" y="507" width="1720" height="67"/>
+                                        <rect key="frame" x="100" y="506.5" width="1720" height="67"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -97,7 +95,7 @@ Speaking for a purpose (to repeat, to inform, to explain); using words and phras
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZg-sm-fvP">
-                                        <rect key="frame" x="100" y="380" width="1720" height="67"/>
+                                        <rect key="frame" x="100" y="379.5" width="1720" height="67"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -119,7 +117,7 @@ Speaking for a purpose (to repeat, to inform, to explain); using words and phras
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="2yD-gg-YHu">
-                                        <rect key="frame" x="657" y="226" width="607" height="800"/>
+                                        <rect key="frame" x="656.5" y="226" width="607" height="800"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovY-Yz-0xx">
                                                 <rect key="frame" x="0.0" y="0.0" width="607" height="350"/>
@@ -284,6 +282,13 @@ Speaking for a purpose (to repeat, to inform, to explain); using words and phras
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="NAU-xN-8ty">
+                                        <rect key="frame" x="1397" y="794" width="463" height="312"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="312" id="6Xf-zx-CB2"/>
+                                            <constraint firstAttribute="width" constant="463" id="8e9-sQ-peM"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -291,31 +296,24 @@ Speaking for a purpose (to repeat, to inform, to explain); using words and phras
                                     <constraint firstItem="ku0-il-Gjz" firstAttribute="leading" secondItem="bNk-hi-aUw" secondAttribute="leading" constant="30" id="Eae-lq-sZd"/>
                                     <constraint firstItem="ku0-il-Gjz" firstAttribute="top" secondItem="bNk-hi-aUw" secondAttribute="top" constant="100" id="FJe-Kx-A3r"/>
                                     <constraint firstAttribute="trailing" secondItem="WPq-nA-aCb" secondAttribute="trailing" constant="70" id="YfJ-2d-7i8"/>
+                                    <constraint firstAttribute="trailing" secondItem="NAU-xN-8ty" secondAttribute="trailing" constant="60" id="kcn-IM-rUc"/>
                                     <constraint firstItem="2yD-gg-YHu" firstAttribute="centerX" secondItem="bNk-hi-aUw" secondAttribute="centerX" id="l9k-Ld-9QT"/>
+                                    <constraint firstAttribute="bottom" secondItem="NAU-xN-8ty" secondAttribute="bottom" constant="-26" id="lHa-9M-d86"/>
                                     <constraint firstItem="2yD-gg-YHu" firstAttribute="top" secondItem="ku0-il-Gjz" secondAttribute="bottom" constant="90" id="lRd-Up-Kwb"/>
                                     <constraint firstItem="WPq-nA-aCb" firstAttribute="top" secondItem="bNk-hi-aUw" secondAttribute="top" constant="30" id="pw1-af-yEw"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bb7-J1-2N8">
-                                <rect key="frame" x="1520" y="850" width="393" height="256"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="393" id="JTS-T9-EFN"/>
-                                    <constraint firstAttribute="height" constant="256" id="Ttq-XM-0wY"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="NKk-5d-5TO" secondAttribute="bottom" id="A0O-ou-jwk"/>
                             <constraint firstAttribute="bottom" secondItem="bNk-hi-aUw" secondAttribute="bottom" id="Ew9-eY-kxj"/>
                             <constraint firstItem="bNk-hi-aUw" firstAttribute="top" secondItem="9fE-O8-R4W" secondAttribute="top" id="Lg2-GG-erf"/>
-                            <constraint firstItem="Oel-hu-B65" firstAttribute="trailing" secondItem="bb7-J1-2N8" secondAttribute="trailing" constant="-83" id="TLL-SX-zOI"/>
                             <constraint firstItem="bNk-hi-aUw" firstAttribute="leading" secondItem="9fE-O8-R4W" secondAttribute="leading" id="UhC-jm-pzf"/>
                             <constraint firstItem="NKk-5d-5TO" firstAttribute="leading" secondItem="9fE-O8-R4W" secondAttribute="leading" id="YXo-NJ-aDp"/>
                             <constraint firstAttribute="trailing" secondItem="NKk-5d-5TO" secondAttribute="trailing" id="ht1-8U-zrm"/>
                             <constraint firstItem="NKk-5d-5TO" firstAttribute="top" secondItem="9fE-O8-R4W" secondAttribute="top" id="m7M-Eu-pG5"/>
                             <constraint firstAttribute="trailing" secondItem="bNk-hi-aUw" secondAttribute="trailing" id="nqk-OZ-NHx"/>
-                            <constraint firstItem="Oel-hu-B65" firstAttribute="bottom" secondItem="bb7-J1-2N8" secondAttribute="bottom" constant="-86" id="srh-ZT-TFi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oel-hu-B65"/>
                     </view>
@@ -347,7 +345,7 @@ Speaking for a purpose (to repeat, to inform, to explain); using words and phras
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lv0-uu-ccW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iDe-eO-rZZ">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <rect key="frame" x="0.0" y="60" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -361,7 +359,7 @@ Speaking for a purpose (to repeat, to inform, to explain); using words and phras
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="1920" height="1920"/>
+        <image name="Logo" width="2878" height="686"/>
         <image name="Tips" width="1000" height="1000"/>
     </resources>
 </document>

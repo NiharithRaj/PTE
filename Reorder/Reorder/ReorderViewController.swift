@@ -23,7 +23,7 @@ class ReorderViewController: UIViewController {
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var questionNoText: UILabel!
     @IBOutlet weak var paragraphTitle: UILabel!
-    var count = 120
+    var count = 60
     let progressBar = GTProgressBar()
     weak var delegate:ReorderViewDelegate?
     var arrangedSubviews:[UIView] = []
@@ -34,7 +34,7 @@ class ReorderViewController: UIViewController {
         view.backgroundColor = .white
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         paragraphTitle.text = viewModel.model.paragraphTitle
-        questionNoText.text = "Question \(viewModel.questionSet) of 5"
+        questionNoText.text = "Question \(viewModel.questionSet) of \(viewModel.total)"
         answerLabel.isHidden = true
     }
     
@@ -52,6 +52,7 @@ class ReorderViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         createStackView()
+        stackview.distribution = .fill
         arrangedSubviews = stackview.arrangedSubviews
         arrangedSubviews = arrangedSubviews.sorted(by: { $0.tag < $1.tag })
     }
@@ -61,9 +62,7 @@ class ReorderViewController: UIViewController {
             let view = createView(string: content.readingDescription)
             view.tag = content.position
             stackview.addArrangedSubview(view)
-            view.translatesAutoresizingMaskIntoConstraints = false
-            view.leadingAnchor.constraint(equalTo: stackview.leadingAnchor, constant: 10).isActive = true
-            view.trailingAnchor.constraint(equalTo: stackview.trailingAnchor, constant: 10).isActive = true
+            stackview.alignment = .fill
        }
     }
     
@@ -104,7 +103,7 @@ class ReorderViewController: UIViewController {
         label.attributedText = NSAttributedString(string:string,
                                                   attributes:[NSAttributedString.Key.foregroundColor: rgb(r: 36, g: 36, b: 36),
                                                               NSAttributedString.Key.font: UIFont(name: "Times New Roman", size: CGFloat(viewModel.model.fontSize ?? 40)) as Any])
-        label.attributedText = label.attributedText?.paragraphStyle(lineSpace: 2.0, textAlignment: .left)
+//        label.attributedText = label.attributedText?.paragraphStyle(lineSpace: 2.0, textAlignment: .left)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
         label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true

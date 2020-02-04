@@ -74,7 +74,7 @@ class ASQViewController: UIViewController {
         viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
-            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 5) {
+            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 3) {
                 DispatchQueue.main.async {
                     strongSelf.answerBeginningView.text = "Completed"
                     if Manager.isMockText {
@@ -234,6 +234,8 @@ struct ASQViewModel {
         }else if arr.count > 25{
             time = 11
         }
-        return time
+        let tok = model.question.components(separatedBy: ",")
+        time += (tok.count - 1) > 2 ? 2 : 1
+        return time - 1
     }
 }

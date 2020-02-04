@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
 //        pushReorderVC()
 //        pushRepeatSentence()
-          pushWFD()
+          pushReorderVC()
     }
     
 
@@ -32,8 +32,9 @@ class ViewController: UIViewController {
             controller.hero.isEnabled = true
             controller.viewModel = ReorderViewModel(collection: model.collection[currentReorder], set: questionSet, total: model.collection.count)
             controller.delegate = self
-//            controller.hero.modalAnimationType = .selectBy(presenting: .zoomSlide(direction: .left), dismissing: .zoomSlide(direction: .right))
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
+            controller.modalTransitionStyle = .coverVertical
+//            controller.hero.modalAnimationType = .selectBy(presenting: .pageIn(direction: .left), dismissing: .pageOut(direction: .right))
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
             }
         }
@@ -75,15 +76,7 @@ extension ViewController: ReorderViewDelegate {
         currentReorder += 1
         questionSet += 1
         if model.collection.count > currentReorder {
-            if questionSet == 6 {
-                questionSet = 1
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5, execute: {
-                    self.pushReorderVC()
-                })
-            } else {
                 pushReorderVC()
-            }
-
         }
     }
 }

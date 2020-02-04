@@ -14,8 +14,8 @@ import UIKit
 struct Utils {
     static var player: AVAudioPlayer?
     
-    static func playAudio(fileName:String) {
-        guard let path = Bundle.main.path(forResource: fileName, ofType: "mp3") else { return}
+    static func playAudio(fileName:String, fileType: String = "mp3") {
+        guard let path = Bundle.main.path(forResource: fileName, ofType: fileType) else { return}
         
         do {
             let url = URL(fileURLWithPath: path)
@@ -32,8 +32,8 @@ struct Utils {
         }
     }
     
-    static func audioLength(fileName:String) ->Int {
-        guard let path = Bundle.main.path(forResource: fileName, ofType: "mp3") else { return 6}
+    static func audioLength(fileName:String, fileType: String = "mp3") ->Int {
+        guard let path = Bundle.main.path(forResource: fileName, ofType: fileType) else { return 6}
         let url = URL(fileURLWithPath: path)
         do{
             let player = try AVAudioPlayer(contentsOf: url)
@@ -60,14 +60,14 @@ class Speech :NSObject, AVSpeechSynthesizerDelegate {
     
     let speechSynthesizer = AVSpeechSynthesizer()
 
-    func voiceOver(sentence: String, language: String? = "en-US") {
+    func voiceOver(sentence: String, language: String? = "en-US", utterance: Float = 0.50) {
         print(language)
         // Do any additional setup after loading the view.
         // Line 1. Create an instance of AVSpeechSynthesizer.
         // Line 2. Create an instance of AVSpeechUtterance and pass in a String to be spoken.
         let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: sentence)
         //Line 3. Specify the speech utterance rate. 1 = speaking extremely the higher the values the slower speech patterns. The default rate, AVSpeechUtteranceDefaultSpeechRate is 0.5
-        speechUtterance.rate = 0.50
+        speechUtterance.rate = utterance
         // Line 4. Specify the voice. It is explicitly set to English here, but it will use the device default if not specified.
         speechUtterance.voice = AVSpeechSynthesisVoice(language: language)
         speechSynthesizer.speak(speechUtterance)

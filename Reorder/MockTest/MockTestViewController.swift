@@ -12,13 +12,13 @@ class MockTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Manager.isMockText = true
+        Manager.isMockText = false
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        pushReadAloud()
+        pushASQ()
     }
     
     fileprivate func pushReadAloud() {

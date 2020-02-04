@@ -1,115 +1,1634 @@
 {
-    "collection": [{
-        "paragraphTitle": "Charles Lindbergh",
-        "content": [
-            {
-                "position": 3,
-                "readingDescription": "a) After a crash, he even salvaged bags of mail from his burning aircraft and immediately phoned Alexande Varney, Peoria's airport manager, to advise him to send a truck."
-            },
-            {
-                "readingDescription": "b) He flew the mail in a de Havilland DH-4 biplane to Springfield, Illinois, Peoria and Chicago.",
-                "position": 1
-            },
-            {
-                "readingDescription": "c) After finishing first in his pilot training class, Lindbergh took his first job as the chief pilot of an airmai route operated by Robertson Aircraft Co. of Lambert Field in St. Louis, Missouri.",
-                "position": 0
-            },
-            {
-                "position": 2,
-                "readingDescription": "d) During his tenure on the mail route, he was renowned for delivering the mail under any circumstances."
-            }
-        ]
+  "collection": [
+    {
+      "content": [
+        {
+          "position": 4,
+          "readingDescription": "a. “This way, I will have access to the best scientists in the world without having to produce them myself” says Mr. Maria."
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. Innovation in India is as much due to entrepreneurialism as it is to IT skills, says Arun Maria, chairman of Boston Consulting Group in India."
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. He suggests the country’s computer services industry can simply outsource research to foreign universities if the capability is not available locally."
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. Indian businessmen have used IT to create new business models that enable them to provide services in a more cost-effective way. This is not something that necessarily requires expensive technical research."
+        }
+      ],
+      "no": "1",
+      "paragraphTitle": "Indian IT "
     },
     {
-        "paragraphTitle": "Sydney Fireworks",
-        "content": [
-            {
-                "readingDescription": "a) From 8:40pm, the bridge will be turned into a canvas showing the Welcome to Country ceremony.",
-                "position": 2
-            },
-            {
-                "readingDescription": "b) \"It's about how we're all so affected by the harbour and its surrounds, how special it is to all of us and how it moves us,\" said the Welcome to Country's creative director, Rhoda Roberts.",
-                "position": 1
-            },
-            {
-                "readingDescription": "c) Fireworks and special effects, including a red \"waterfall\" from the bridge base, will turn the structure built in 1932 into a giant Aboriginal flag shortly after the sun sets for the last time in 2015.",
-                "position": 0
-            },
-            {
-                "readingDescription": "d) Fireworks and special effects will also turn the bridge into a giant Aboriginal flag before the 9pm fireworks display.",
-                "position": 3
-            }
-        ]
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. Today, the projects of organizations like the World Bank are meticulously inspected by watchdog groups."
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. But beginning in the 1990s, foreign aid had begun to slowly improve."
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. Scrutiny by the news media shamed many developed countries into curbing their bad practices."
+        },
+        {
+          "readingDescription": "d. Although the system is far from perfect, it is certainly more transparent than it was when foreign aid routinely helped ruthless dictators stay in power.",
+          "position": 4
+        }
+      ],
+      "paragraphTitle": "Foreign aid ",
+      "no": "2"
     },
     {
-        "paragraphTitle": "Language",
-        "content": [
-            {
-                "readingDescription": "a) By contrast, not everyone becomes proficient at complex mathematical reasoning, few people learn to paint well, and many people cannot carry a tune.",
-                "position": 2
-            },
-            {
-                "readingDescription": "b) It is wrong, however, to exaggerate the similarity between language and other cognitive skills, because language stands apart in several ways.",
-                "position": 0
-            },
-            {
-                "readingDescription": "c) But just the opposite is true-language is one of the most complex of all human cognitive abilities.",
-                "position": 4
-            },
-            {
-                "position": 1,
-                "readingDescription": "d) For one thing, the use of language is universal—all normally developing children learn to speak at least one language, and many learn more than one."
-            },
-            {
-                "position": 3,
-                "readingDescription": "e) Because everyone is capable of learning to speak and understanssd language, it may seem to be simple."
-            }
-        ]
+      "no": "3",
+      "paragraphTitle": "Jet Stream ",
+      "content": [
+        {
+          "readingDescription": "a. They are caused by great temperature differences between adjacent air masses.",
+          "position": 2
+        },
+        {
+          "position": 3,
+          "readingDescription": "b. Instead of moving along a straight line, the jet stream flows in a wavelike fashion; the waves propagate eastward (in the Northern Hemisphere) at speeds considerably slower than the wind speed itself."
+        },
+        {
+          "readingDescription": "c. Jet stream, narrow, swift currents or tubes of air found at heights ranging from 7 to 8 mi (11.3–12.9 km) above the surface of the earth.",
+          "position": 1
+        },
+        {
+          "position": 4,
+          "readingDescription": "d. Since the progress of an airplane is aided or impeded depending on whether tail winds or head winds are encountered, in the Northern Hemisphere the jet stream is sought by eastbound aircraft, in order to gain speed and save fuel, and avoided by westbound aircraft."
+        }
+      ]
     },
     {
-        "content": [
-            {
-                "position": 2,
-                "readingDescription": "a) During his tenure on the mail route, he was renowned for delivering the mail under any circumstances."
-            },
-            {
-                "position": 1,
-                "readingDescription": "b) He flew the mail in a de Havilland DH-4 biplane to Springfield, Illinois, Peoria and Chicago."
-            },
-            {
-                "position": 3,
-                "readingDescription": "c) After a crash, he even salvaged bags of mail from his burning aircraft and immediately phoned Alexander Varney, Peoria's airport manager, to advise him to send a truck."
-            },
-            {
-                "readingDescription": "d) After finishing first in his pilot training class, Lindbergh took his first job as the chief pilot of an airmail route operated by Robertson Aircraft Co. of Lambert Field in St. Louis, Missouri.",
-                "position": 0
-            }
-        ],
-        "paragraphTitle": "Pilot deliver mails"
-    }, {
-        "content": [
-            {
-                "position": 0,
-                "readingDescription": "a) Because of great demand, more and more employees are putting themselves into limit."
-            },
-            {
-                "readingDescription": "b) They go to work very early, from 7:00 am to 8:00 am",
-                "position": 1
-            },
-            {
-                "position": 2,
-                "readingDescription": "c) And they went home very late, some even overwork"
-            },
-            {
-                "position": 3,
-                "readingDescription": "d) Many managers find the employee's performance column is decreasing"
-            },
-            {
-                "position": 4,
-                "readingDescription": "e) They (managers) should avoid this phenomenon, because this is not good for the company."
-            }
-        ],
-        "paragraphTitle": "Time Management for employees"
-    }]
+      "paragraphTitle": "Map ",
+      "no": "4",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. For as long as I can remember, there has been a map in the ticket hall of Piccadilly Circus tube station supposedly showing night and day across the time zones of the world."
+        },
+        {
+          "readingDescription": "b. This is somewhat surprising given the London Underground's historic difficultly in grasping the concept of punctuality.",
+          "position": 2
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. But this map has always fascinated me, and still does, even though it now seems very primitive."
+        },
+        {
+          "position": 4,
+          "readingDescription": "d. This is because it chops the world up equally by longitude, without regard the reality of either political divisions or the changing seasons."
+        }
+      ]
+    },
+    {
+      "paragraphTitle": "Mother of Storm ",
+      "no": "5",
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. They're not all necessarily good guys, either, although with the hurricanes wreaking wholesale destruction upon the world's coastal areas, ethical categories tend to become irrelevant."
+        },
+        {
+          "position": 2,
+          "readingDescription": "b. This usually irritates me, but I didn't mind it here, and their interactions are well-handled and informative, although occasionally in moving them about the author's manipulations are a bit blatant."
+        },
+        {
+          "readingDescription": "c. But even the Evil American Corporate Magnate is a pretty likable guy.",
+          "position": 4
+        },
+        {
+          "position": 1,
+          "readingDescription": "d. Unlike Barnes' previous books, Mother of Storms has a fairly large cast of viewpoint characters."
+        }
+      ]
+    },
+    {
+      "paragraphTitle": "Charles Lindbergh ",
+      "no": "6",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. After finishing first in his pilot training class, Lindbergh took his first job as the chief pilot of an airmail route operated by Robertson Aircraft Co. of Lambert Field in St. Louis, Missouri."
+        },
+        {
+          "readingDescription": "b. After a crash, he even salvaged bags of mail from his burning aircraft and immediately phoned Alexander Varney, Peoria's airport manager, to advise him to send a truck.",
+          "position": 4
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. He flew the mail in a de Havilland DH-4 biplane to Springfield, Illinois, Peoria and Chicago."
+        },
+        {
+          "position": 3,
+          "readingDescription": "d. During his tenure on the mail route, he was renowned for delivering the mail under any circumstances."
+        }
+      ]
+    },
+    {
+      "no": "7",
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. In 2001 the government, egged on by WWF, a green group, tried to regulate logging in the relatively small part of the Peruvian Amazon where this is allowed."
+        },
+        {
+          "readingDescription": "b. Instead, it auctioned 40-year concessions to areas ruled off on a map, with the right to log 5% of the area each year. The aim was to encourage strict management plans and sustainable extraction.",
+          "position": 5
+        },
+        {
+          "readingDescription": "c. SEPAHUA, a ramshackle town on the edge of Peru's Amazon jungle, nestles in a pocket on the map where a river of the same name flows into the Urubamba.",
+          "position": 1
+        },
+        {
+          "readingDescription": "d. That pocket denotes a tiny patch of legally loggable land sandwiched between four natural reserves, all rich in mahogany and accessible from the town. “Boundaries are on maps,” says a local logger, “maps are only in Lima,” the capital.",
+          "position": 2
+        },
+        {
+          "position": 4,
+          "readingDescription": "e. It abolished the previous system of annual contracts."
+        }
+      ],
+      "paragraphTitle": "SEPAHUA "
+    },
+    {
+      "paragraphTitle": "International Date Line ",
+      "no": "8",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. International Date Line, imaginary line on the earth's surface, generally following the 180° meridian of longitude, where, by international agreement, travelers change dates."
+        },
+        {
+          "readingDescription": "b. For example, if an airplane were to travel westward with the sun, 24 hr would elapse as it circled the globe, but it would still be the same day for those in the airplane while it would be one day later for those on the ground below them.",
+          "position": 3
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. The date line is necessary to avoid a confusion that would otherwise result."
+        },
+        {
+          "position": 4,
+          "readingDescription": "d. The same problem would arise if two travelers journeyed in opposite directions to a point on the opposite side of the earth, 180° of longitude distant."
+        },
+        {
+          "position": 5,
+          "readingDescription": "e. The apparent paradox is resolved by requiring that the traveler crossing the date line change his date, thus bringing the travelers into agreement when they meet."
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. During the 1920s and 1930s great progress was made in the field of aviation, including the first transatlantic flight of Alcock and Brown in 1919, Charles Lindbergh's solo transatlantic flight in 1927, and Charles Kingsford Smith's transpacific flight the following year."
+        },
+        {
+          "position": 2,
+          "readingDescription": "b. One of the most successful designs of this period was the Douglas DC-3, which became the first airliner to be profitable carrying passengers exclusively, starting the modern era of passenger airline service."
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. The war brought many innovations to aviation, including the first jet aircraft and the first liquid-fueled rockets."
+        },
+        {
+          "readingDescription": "d. By the beginning of World War II, many towns and cities had built airports, and there were numerous qualified pilots available.",
+          "position": 3
+        }
+      ],
+      "paragraphTitle": "Aviation ",
+      "no": "9"
+    },
+    {
+      "content": [
+        {
+          "readingDescription": "a. The topography of the ocean floors is none too well known, since in great areas the available soundings are hundreds or even thousands of miles apart.",
+          "position": 1
+        },
+        {
+          "readingDescription": "b. Closely spaced soundings show that many parts of the oceanic floors are rugged as mountainous regions of the continents.",
+          "position": 5
+        },
+        {
+          "readingDescription": "c. Numerous other major irregularities diversify the Atlantic floor.",
+          "position": 4
+        },
+        {
+          "position": 3,
+          "readingDescription": "d. A broad, well-defined ridge-the Mid-Atlantic ridge-runs north and south between Africa and the two Americas."
+        },
+        {
+          "position": 2,
+          "readingDescription": "e. However, the floor of the Atlantic is becoming fairly well known as a result of special surveys since 1920."
+        }
+      ],
+      "no": "10",
+      "paragraphTitle": "Ocean floors "
+    },
+    {
+      "no": "11",
+      "paragraphTitle": "Carbon Detox ",
+      "content": [
+        {
+          "position": 5,
+          "readingDescription": "a. We should emphasize the old-fashioned virtues of uniting in the face of a crisis, of resourcefulness and community action."
+        },
+        {
+          "position": 3,
+          "readingDescription": "b. Of the narratives that might penetrate these circles, we are more likely to listen to those that offer us some reward."
+        },
+        {
+          "readingDescription": "c. He proposes that instead of arguing for sacrifice, environmentalists should show where the rewards might lie.",
+          "position": 4
+        },
+        {
+          "position": 1,
+          "readingDescription": "d. In his fascinating book Carbon Detox, George Marshall argues that people are not persuaded by information."
+        },
+        {
+          "position": 2,
+          "readingDescription": "e. Our views are formed by the views of the people with whom we mix."
+        }
+      ]
+    },
+    {
+      "no": "12",
+      "paragraphTitle": "An underperforming company ",
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. Leave to cook for five years and you have a feast of profits."
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. Take an underperforming company"
+        },
+        {
+          "readingDescription": "c. That has been the recipe for private-equity groups during the past 200 years.",
+          "position": 4
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. Add some generous helping of debt, a few spoonful of management incentives and trim all the fat."
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. By 1776, iron had replaced the wood in the rails and wheels on the carts."
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. Roads of rails called Wagonways were being used in Germany as early as 1550."
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. Thirteen years later, Englishman, William Jessup designed the first wagons with flanged wheels."
+        },
+        {
+          "readingDescription": "d. The flange was a groove that allowed the wheels to better grip the rail, this was an important design that carried over to later locomotives.",
+          "position": 5
+        },
+        {
+          "position": 2,
+          "readingDescription": "e. These primitive railed roads consisted of wooden rails over which horse-drawn wagons or carts moved with greater ease than over dirt roads. Wagonways were the beginnings of modern railroads."
+        }
+      ],
+      "paragraphTitle": "Wagonways ",
+      "no": "13"
+    },
+    {
+      "no": "14",
+      "content": [
+        {
+          "readingDescription": "a. The energy sector has a fantastic skills shortage at all levels, both now and looming over it for the next 10 years.",
+          "position": 1
+        },
+        {
+          "position": 3,
+          "readingDescription": "b. Not only are there some good career opportunities, but there’s a lot of money going into the research side, too."
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. Engineers, in particular, are much needed to develop greener technologies."
+        },
+        {
+          "readingDescription": "d. With the pressures of climate change and the energy gap, in the last few years funding from the research councils has probably doubled.",
+          "position": 4
+        }
+      ],
+      "paragraphTitle": "Engineers in Energy Sector  "
+    },
+    {
+      "no": "15",
+      "paragraphTitle": "Hypothesis ",
+      "content": [
+        {
+          "readingDescription": "a. The lesson is that all data must be handled in the same way.",
+          "position": 5
+        },
+        {
+          "position": 2,
+          "readingDescription": "b. Ideally, the experimenter is open to the possibility that the hypothesis is correct or incorrect."
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. In that case, there may be a psychological tendency to find \"something wrong\", such as systematic effects, with data which do not support the scientist's expectations, while data which do agree with those expectations may not be checked as carefully."
+        },
+        {
+          "position": 1,
+          "readingDescription": "d. Another common mistake is to ignore or rule out data which do not support the hypothesis."
+        },
+        {
+          "position": 3,
+          "readingDescription": "e. Sometimes, however, a scientist may have a strong belief that the hypothesis is true (or false), or feels internal or external pressure to get a specific result."
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. This was not simply because they wanted to propitiate powerful forces."
+        },
+        {
+          "position": 4,
+          "readingDescription": "b. These early faiths expressed the wonder and mystery that seems always to have been an essential component of the human experience of this beautiful world."
+        },
+        {
+          "readingDescription": "c. My study of the history of religion has revealed that human beings are spiritual animals. Indeed, there is a case for arguing that Homo sapiens is also Homo religious.",
+          "position": 1
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. Men and women started to worship gods as soon as they became recognizably human; they created religions at the same time as they created works of art."
+        }
+      ],
+      "no": "16",
+      "paragraphTitle": "Human worship Gods "
+    },
+    {
+      "paragraphTitle": "Vegetarian ",
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "a. This diet is not only unattractive, but also may cause nutritional imbalance if not managed well."
+        },
+        {
+          "readingDescription": "b. Menus in all of these places have become more balance in nutrients, and also attract those who are not vegetarians.",
+          "position": 4
+        },
+        {
+          "position": 5,
+          "readingDescription": "c. These developments/improvements won’t succeed without the effort of vegetarians."
+        },
+        {
+          "readingDescription": "d. Restaurants and school cafeteria adjust and amend their menus to adapt to this special diet.",
+          "position": 3
+        },
+        {
+          "readingDescription": "e. Vegetarians do not eat meat or fish in their diet.",
+          "position": 1
+        }
+      ],
+      "no": "17"
+    },
+    {
+      "content": [
+        {
+          "readingDescription": "a. And they can be helpful to your study as well.",
+          "position": 5
+        },
+        {
+          "position": 3,
+          "readingDescription": "b. You can see the facilities and accomodations around the school."
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. Because you might be living there."
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. Do not ever choose a school without going to the place and having a look. You should go and see once you have a chance."
+        },
+        {
+          "readingDescription": "e. There are more than 100 schools in the country.",
+          "position": 1
+        }
+      ],
+      "paragraphTitle": "Choose a School ",
+      "no": "18"
+    },
+    {
+      "no": "19",
+      "content": [
+        {
+          "position": 4,
+          "readingDescription": "a. Without the normal blood flow, it will cause muscle contraction."
+        },
+        {
+          "readingDescription": "b. The clot in blood vessels will block blood flow.",
+          "position": 3
+        },
+        {
+          "readingDescription": "c. Heart attack is the caused by the sudden blockage of a coronary artery by a blood clot.",
+          "position": 1
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. When the clot is formed, it will stay in the blood vessels."
+        }
+      ],
+      "paragraphTitle": "Heart Attack "
+    },
+    {
+      "no": "20",
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "a. They don't all have the same reasons for going or for choosing a particular place to study."
+        },
+        {
+          "position": 4,
+          "readingDescription": "b. Some students go overseas because they love travel."
+        },
+        {
+          "position": 1,
+          "readingDescription": "c. All over the world students are changing countries for their university studies."
+        },
+        {
+          "readingDescription": "d. They may choose a university because of its interesting courses or perhaps because they like the country and its language.",
+          "position": 3
+        },
+        {
+          "position": 5,
+          "readingDescription": "e. Whatever the reason, thousands of students each year make their dreams of a university education come true."
+        }
+      ],
+      "paragraphTitle": "Study Overseas "
+    },
+    {
+      "content": [
+        {
+          "readingDescription": "a. Of course, there may be the extremely rare example of scientific dishonesty, which will be seized upon by the news organisations, but the role of science within modern society remains valuable.",
+          "position": 2
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. I think we should be wary of the reporting of science - it is often over-dramatized in order to secure an audience - but not of science itself."
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. But no one would deny that mobile phones can help us to make a phone call when we are under a crisis."
+        },
+        {
+          "position": 5,
+          "readingDescription": "d. In other words I firmly believe that the development of science and the extension of understanding is a public good."
+        },
+        {
+          "position": 3,
+          "readingDescription": "e. Mobile phones, for example, can cause incidents if drivers insist on talking on the phone instead of looking at roads."
+        }
+      ],
+      "paragraphTitle": "Scientific Dishonesty ",
+      "no": "21"
+    },
+    {
+      "content": [
+        {
+          "position": 4,
+          "readingDescription": "a. Even if other countries act in concert with Canada to price carbon, the effects will be uneven across sectors, and lobbying efforts by relatively more-affected sectors might threaten the political viability of the policy."
+        },
+        {
+          "readingDescription": "b. If Canada implements a carbon price on its own, there are worries that Canadian factories will relocate to other countries to avoid the regulation.",
+          "position": 3
+        },
+        {
+          "position": 1,
+          "readingDescription": "c. There is a growing consensus that, if serious action is to be taken to reduce greenhouse gas (GHG) emissions in Canada, a price must be applied to those emissions."
+        },
+        {
+          "readingDescription": "d. There are, however, challenges associated with the political acceptability of carbon pricing.",
+          "position": 2
+        }
+      ],
+      "no": "22",
+      "paragraphTitle": "Carbon Pricing in Canada "
+    },
+    {
+      "paragraphTitle": "Wal-Mart ",
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "a. \"We're seeing core consumers under a lot of pressure,\" Duke said at an event in New York. \"There's no doubt that rising fuel prices are having an impact.\""
+        },
+        {
+          "readingDescription": "b. Wal-Mart shoppers, many of whom live paycheck to paycheck, typically shop in bulk at the beginning of the month when their paychecks come in.",
+          "position": 3
+        },
+        {
+          "readingDescription": "c. Wal-Mart's core shoppers are running out of money much faster than a year ago due to rising gasoline prices, and the retail giant is worried, CEO Mike Duke said Wednesday.",
+          "position": 1
+        },
+        {
+          "readingDescription": "d. Lately, they're \"running out of money\" at a faster clip, he said.",
+          "position": 4
+        },
+        {
+          "position": 5,
+          "readingDescription": "e. \"Purchases are really dropping off by the end of the month even more than last year,\" Duke said. \"This end- of-month [purchases] cycle is growing to be a concern."
+        }
+      ],
+      "no": "23"
+    },
+    {
+      "no": "24",
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "a. Journalists try to be fair and objective by presenting all sides of a particular issues."
+        },
+        {
+          "readingDescription": "b. Some perspectives ultimately are not included.",
+          "position": 4
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. Practically speaking, however, it is about as easy to present all sides of an issue as it is to invite all candidates from all political parties to a presidential debate."
+        },
+        {
+          "position": 1,
+          "readingDescription": "d. Although experts like journalists are expected to be unbiased, they inevitably share the system biases of the disciplines and cultures in which they work."
+        }
+      ],
+      "paragraphTitle": "Objectivity of Journalists "
+    },
+    {
+      "paragraphTitle": "Competence and Performance ",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. In language learning there is a distinction between competence and performance. Competence is a state of the speaker’s mind. What he or she knows?"
+        },
+        {
+          "position": 5,
+          "readingDescription": "b. Knowing the Highway Code is not the same as driving."
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. In actual driving, however, the driver has to relate the code to a continuous flow of changing circumstances, and may even break it from time to time."
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. Separate from actual performance – what he or she does while producing or comprehending language. In other words, competence is put to use through performance."
+        },
+        {
+          "position": 3,
+          "readingDescription": "e. An analogy can be made to the Highway Code for driving. Drivers know the code and have indeed been tested on it to obtain a driving license."
+        }
+      ],
+      "no": "25"
+    },
+    {
+      "no": "26",
+      "content": [
+        {
+          "position": 5,
+          "readingDescription": "a. The non-specialists, however, the opportunists of the animal world, can never afford to relax."
+        },
+        {
+          "readingDescription": "b. So long as the ant eater has its ants and the koala bear is gum leaves, then they are satisfied and the living is easy.",
+          "position": 4
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. If they have put all their effort into the perfection of one survival trick, they do not bother so much with the general complexities of the world around them."
+        },
+        {
+          "readingDescription": "d. It depends on how specialized they have become during the course of evolution.",
+          "position": 2
+        },
+        {
+          "position": 1,
+          "readingDescription": "e. All animals have a strong exploratory urge, but for some it is more crucial than others."
+        }
+      ],
+      "paragraphTitle": "Animals Exploratory Urge "
+    },
+    {
+      "no": "27",
+      "paragraphTitle": "Language ",
+      "content": [
+        {
+          "position": 4,
+          "readingDescription": "a. Because everyone is capable of learning to speak and understand language, it may seem to be simple."
+        },
+        {
+          "readingDescription": "b. It is wrong, however, to exaggerate the similarity between language and other cognitive skills, because language stands apart in several ways.",
+          "position": 1
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. By contrast, not everyone becomes proficient at complex mathematical reasoning, few people learn to paint well, and many people cannot carry a tune."
+        },
+        {
+          "readingDescription": "d. But just the opposite is true—language is one of the most complex of all human cognitive abilities.",
+          "position": 5
+        },
+        {
+          "readingDescription": "e. For one thing, the use of language is universal—all normally developing children learn to speak at least one language, and many learn more than one.",
+          "position": 2
+        }
+      ]
+    },
+    {
+      "no": "28",
+      "content": [
+        {
+          "readingDescription": "a. Every day he was asked where the kitchen was in his house, and every day he didn’t have the foggiest idea.",
+          "position": 2
+        },
+        {
+          "readingDescription": "b. Yet whenever he was hungry he got up and propelled himself straight to the kitchen to get something to eat.",
+          "position": 3
+        },
+        {
+          "readingDescription": "c. In 1992 a retired engineer in San Diego contracted a rare brain disease that wiped out his memory.",
+          "position": 1
+        },
+        {
+          "position": 5,
+          "readingDescription": "d. It offered proof of what the US psychologist William James noticed more than a century ago that humans “are mere walking bundles of habits"
+        },
+        {
+          "readingDescription": "e. Studies of this man led scientists to a breakthrough: the part of our brains where habits are stored has nothing to do with memory or reason.",
+          "position": 4
+        }
+      ],
+      "paragraphTitle": "Memory and habits "
+    },
+    {
+      "no": "29",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. A University of Canberra student has launched the nation’s first father-led literacy project, to encourage fathers to become more involved in their children’s literacy."
+        },
+        {
+          "readingDescription": "b. She said, “A male that values reading sets a powerful role model, particularly for young boys, who are statistically more likely to end up in remedial literacy programs.”",
+          "position": 4
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. Having worked as a literacy tutor with teenagers, Ms. Bocking saw the need for good attitudes towards reading to be formed early on – with the help of male role models."
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. Julia Bocking’s Literacy and Dads (LADS) project aims to increase the number of fathers participating as literacy helpers in K-2 school reading programs at Queanbeyan Primary Schools."
+        }
+      ],
+      "paragraphTitle": "Father-Led Literacy Project "
+    },
+    {
+      "paragraphTitle": "Humanities 104 ",
+      "no": "30",
+      "content": [
+        {
+          "readingDescription": "a. The final draft is due one week before the final exam.",
+          "position": 4
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. A requirement of Humanities 104 is to write a persuasive paper on a topic of your choice."
+        },
+        {
+          "readingDescription": "c. The topic you choose should be supported by a range of sources.",
+          "position": 2
+        },
+        {
+          "position": 3,
+          "readingDescription": "d. The source should be cited under APA guidelines, and the final draft should be written in APA styles."
+        }
+      ]
+    },
+    {
+      "paragraphTitle": "City Mayors ",
+      "no": "31",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. Education scholars generally agree that mayors can help failing districts."
+        },
+        {
+          "readingDescription": "b. It is, however, starting to utter warnings.",
+          "position": 2
+        },
+        {
+          "readingDescription": "c. And they pointed to Mr. Bloomberg’s aggressive style as an example of what not to do.",
+          "position": 4
+        },
+        {
+          "readingDescription": "d. Last summer the editors of the Harvard Educational Review warned that mayoral control can reduce parents’ influence on schools.",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. It is not just a matter of putting forward a set of facts and expecting the other person immediately to accept the logic of the exposition."
+        },
+        {
+          "readingDescription": "b. The reason is that achieving agreement requires people to accept the reality of views different from their own and to accept change or compromise.",
+          "position": 2
+        },
+        {
+          "readingDescription": "c. They have to be persuaded and helped to feel comfortable about the outcome that is eventually agreed.",
+          "position": 4
+        },
+        {
+          "position": 5,
+          "readingDescription": "d. People need time to make this adjustment in attitude and react badly to any attempt to rush them into an agreement."
+        },
+        {
+          "readingDescription": "e. In general, there is a tendency to underestimate how long it takes to discuss and resolve an issue on which two people initially have different views.",
+          "position": 1
+        }
+      ],
+      "paragraphTitle": "Opinion Compromise ",
+      "no": "32"
+    },
+    {
+      "no": "33",
+      "content": [
+        {
+          "readingDescription": "a. The Arcelor-Mittal deal demonstrates Europe's deepening integration into the global economy.",
+          "position": 4
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. Arcelor, established in Dutch, had been the largest European steel maker by 2006."
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. It was taken over by Mittal, a Dutch-registered company run from London by its biggest single shareholder, Lakshmi Mittal, an Indian who started his first business in Indonesia."
+        },
+        {
+          "readingDescription": "d. The takeover battle raged for six months before Arcelor's bosses finally listened to shareholders who wanted the board to accept Mittal's third offer.",
+          "position": 3
+        }
+      ],
+      "paragraphTitle": "Arcelor-Mittal Takeover "
+    },
+    {
+      "no": "34",
+      "content": [
+        {
+          "readingDescription": "a. Of course, the idea we present here is an experiment,” wrote Prof Govindarajan, a professor of international business at the Tuck School of Business at Dartmouth and Mr. Sarkar, a marketing consultant who works on environmental issues an almost apologetic disclaimer for having such a “far-out” idea.",
+          "position": 2
+        },
+        {
+          "readingDescription": "b. Nonetheless, they closed their blog with a challenge: “We ask chief executives, governments, NGOs, foundations",
+          "position": 4
+        },
+        {
+          "readingDescription": "c. Who could create a house for $300 and if it was possible, why hadn’t it been done before?",
+          "position": 3
+        },
+        {
+          "readingDescription": "d. When Vijay Govindarajan and Christian Sarkar wrote a blog entry on Harvard Business Review in August 2010 mooting the idea of a “$300-house for they were merely expressing a suggestion. “",
+          "position": 1
+        }
+      ],
+      "paragraphTitle": "A $300-House "
+    },
+    {
+      "paragraphTitle": "Stem Cells ",
+      "no": "35",
+      "content": [
+        {
+          "readingDescription": "a. These stem cells have been found in tissues such as the brain, bone marrow, blood, blood vessels, skeletal muscles, skin, and the liver.",
+          "position": 2
+        },
+        {
+          "readingDescription": "b. They might thus be used as treatments for diseases that require the replacement of a particular, lost cell type.",
+          "position": 3
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. Some example cited for a possible treatment using these cells are diabetes, motor neuron disease and Parkinson’s disease."
+        },
+        {
+          "readingDescription": "d. Embryonic stem cells are valued by scientists because the cells’ descendant can turn into any other sort of body cells.",
+          "position": 1
+        }
+      ]
+    },
+    {
+      "paragraphTitle": "Children's Emotions ",
+      "no": "36",
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. In particular, many young children lack the verbal skills to express their emotions and to effectively communicate their need for emotional support."
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. Most young children are inexperienced in dealing with emotional upheaval."
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. As a result, they lack the coping strategies that many adults have."
+        },
+        {
+          "readingDescription": "d. The frustration of not being able to effectively communicate may manifest itself in alternative behaviours.",
+          "position": 4
+        },
+        {
+          "position": 5,
+          "readingDescription": "e. Strategies that children may employ at this age are commonly referred to as defense mechanisms"
+        }
+      ]
+    },
+    {
+      "paragraphTitle": "Sherbet Powder ",
+      "no": "37",
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "a. When it is mixed with water in your mouth, an endothermic reaction occurs, taking heat energy from your mouth and making it feel cooler."
+        },
+        {
+          "readingDescription": "b. This process is endothermic-taking heat energy from the surroundings and cooling the injured part of your body. In this way, the cold pack acts as an ice pack.",
+          "position": 4
+        },
+        {
+          "readingDescription": "c. Another example of an endothermic reaction is the cold packs used by athletes to treat injuries.",
+          "position": 3
+        },
+        {
+          "position": 1,
+          "readingDescription": "d. Sherbet powder is a mix of baking soda and citric acid."
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "position": 4,
+          "readingDescription": "a. These events have put long-term, difficult problems like poverty and environmental degradation at the top of the global agenda."
+        },
+        {
+          "position": 2,
+          "readingDescription": "b. In fact, the world body was born when delegates from 50 nations met in San Francisco in April 1945 for the United Nations Conference on International Organization."
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. The recent high-profile conferences on development issues, which have continued a series that began in the 1970s, have broken new ground in many areas: by involving Presidents, Prime Ministers and other heads of state - as pioneered at the 1990 World Summit for Children."
+        },
+        {
+          "readingDescription": "d. These problems otherwise would not have the political urgency to grab front-page headlines and command the attention of world leaders.",
+          "position": 5
+        },
+        {
+          "readingDescription": "e. Conferences have played a key role in guiding the work of the United Nations since its very inception.",
+          "position": 1
+        }
+      ],
+      "paragraphTitle": "United Nations Conference ",
+      "no": "38"
+    },
+    {
+      "paragraphTitle": "Artificial Intelligence ",
+      "no": "39",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. Researchers in the field of artificial intelligence have long been intrigued by games, and not just as a way of avoiding work."
+        },
+        {
+          "position": 2,
+          "readingDescription": "b. Games provide an ideal setting to explore important elements of the design of cleverer machines, such as pattern recognition, learning and planning."
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. Today, though, they are pressing the attack on every front."
+        },
+        {
+          "position": 3,
+          "readingDescription": "d. Ever since the stunning victory of Deep Blue, a program running on an IBM supercomputer, over Gary Kasparov, then world chess champion, in 1997, it has been clear that computers would dominate that particular game."
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "readingDescription": "a. Many students sit in a tutorial week after week without saying anything.",
+          "position": 1
+        },
+        {
+          "readingDescription": "b. They think it is like a small lecture where the tutor gives them information.",
+          "position": 4
+        },
+        {
+          "position": 5,
+          "readingDescription": "c. Even if students do know what a tutorial is for, there can be other reasons why they keep quiet."
+        },
+        {
+          "position": 3,
+          "readingDescription": "d. Maybe they do not know the purpose of a tutorial."
+        },
+        {
+          "position": 2,
+          "readingDescription": "e. Why is that?"
+        }
+      ],
+      "no": "40",
+      "paragraphTitle": "Silent Students in Tutorials "
+    },
+    {
+      "paragraphTitle": "The Job of a Manager ",
+      "no": "41",
+      "content": [
+        {
+          "readingDescription": "a. The job of a manager in the workplace is to get things done through employees.",
+          "position": 1
+        },
+        {
+          "readingDescription": "b. That is, however, easier said than done.",
+          "position": 3
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. Motivation practice and theory are difficult subjects, encompassing various disciplines."
+        },
+        {
+          "readingDescription": "d. In order to accomplish this, the manager should be able to motivate employees.",
+          "position": 2
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "a. Ne, an international student from Shanghai, China, began her Monash journey at Monash College in October 2006."
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. Mechanical engineering student Ne Tan is spending the first semester of this year studying at the University of California, Berkeley as part of the Monash Abroad program."
+        },
+        {
+          "readingDescription": "c. Now in her third year of study, the Monash Abroad program will see her complete four units of study in the US before returning to Australia in May 2009.",
+          "position": 4
+        },
+        {
+          "readingDescription": "d. There she completed a diploma that enabled her to enter Monash University as a second-year student.",
+          "position": 3
+        }
+      ],
+      "paragraphTitle": "Monash Student Ne Tan ",
+      "no": "42"
+    },
+    {
+      "content": [
+        {
+          "readingDescription": "a. It was thought that, at frequencies this high, the rapidly cycling sound wave was too fast for the auditory nerve to cope with.",
+          "position": 2
+        },
+        {
+          "position": 3,
+          "readingDescription": "b. To test this theory, Andrew Oxenham and his colleagues at the University of Minnesota in Minneapolis asked a group of six students whether two four-note melodies were identical or not."
+        },
+        {
+          "readingDescription": "c. As in previous studies, the volunteers could not recognise melodies with fundamental tones above",
+          "position": 4
+        },
+        {
+          "readingDescription": "d. Previous studies have shown that humans are unable to recognise melodies whose notes have a fundamental tone above 5 kilohertz.",
+          "position": 1
+        }
+      ],
+      "no": "43",
+      "paragraphTitle": "Voice higher than 5mhz "
+    },
+    {
+      "content": [
+        {
+          "readingDescription": "a. Development in the past was driven by growth and innovation. It led to new technologies and huge improvements in living standards.",
+          "position": 4
+        },
+        {
+          "position": 2,
+          "readingDescription": "b. The Brundtland Report, our Common Future (1987) defines sustainable development as” development which meets the needs of the present without compromising the ability of future generations to meet their own needs."
+        },
+        {
+          "readingDescription": "c. Implicit in this definition is the idea that the old pattern of development could not be sustained. Is this true?",
+          "position": 3
+        },
+        {
+          "readingDescription": "d. Whatever happened to the idea of progress and a better future? I still believe both",
+          "position": 1
+        },
+        {
+          "position": 5,
+          "readingDescription": "e. To assume that we know what the circumstances or needs of future generations will be is mistaken and inevitably leads to the debilitating sense that we are living on borrowed time."
+        }
+      ],
+      "paragraphTitle": "Sustainable Development ",
+      "no": "44"
+    },
+    {
+      "no": "45",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. In Montana as elsewhere, companies that have acquired older mines respond to demands to pay for cleanup in either of two ways."
+        },
+        {
+          "readingDescription": "b. Especially if the company is small, its owners may declare the company bankrupt, in some cases conceal its assets, and transfer their business efforts to other companies or to new companies that do not bear responsibility for cleanup at the old mine.",
+          "position": 2
+        },
+        {
+          "readingDescription": "c. If the company is so large that it cannot claim that it would be bankrupted by cleanup costs, the company instead denies its responsibility or else seeks to minimize the costs.",
+          "position": 3
+        },
+        {
+          "readingDescription": "d. In either case, either the mine site and areas downstream of it remain toxic, thereby endangering people, or else the U.S. federal government and the Montana state government pay for the cleanup through the federal Superfund and a corresponding Montana state fund.",
+          "position": 4
+        }
+      ],
+      "paragraphTitle": "Bankruptcy "
+    },
+    {
+      "paragraphTitle": "Historical Records ",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. Historical records, coins, and other date-bearing objects can help – if they exist. But even prehistoric sites contain records – written in nature’s hand."
+        },
+        {
+          "readingDescription": "b. For example, tree rings, Dendrochronology (literally, te of a site, they cooden artefacts by matching their ring patterns to known records, which, in some areas of the world, span several thousand years.",
+          "position": 4
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. The series of strata in an archaeological dig enables an excavator to date recovered objects relatively, if not absolutely."
+        },
+        {
+          "position": 3,
+          "readingDescription": "d. However, when archaeologists want know the absolute date of a site, they can often go beyond simple stratigraphy."
+        }
+      ],
+      "no": "46"
+    },
+    {
+      "paragraphTitle": "Music record in Brazil ",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. Early in 1938, one Folklore Research Mission dispatched to the north-eastern hinterlands of Brazil on a similar mission."
+        },
+        {
+          "readingDescription": "b. But the Brazilian mission’s collection ended up languishing in vaults here.",
+          "position": 4
+        },
+        {
+          "readingDescription": "c. His intention was to record as much music as possible as quickly as possible, before encroaching influences like radio and cinema began transforming the region’s distinctive culture.",
+          "position": 2
+        },
+        {
+          "readingDescription": "d. They recorded whoever and whatever seemed to be interesting: piano carriers, cowboys, beggars, voodoo priests, quarry workers, fishermen, dance troupes and even children at play.",
+          "position": 3
+        }
+      ],
+      "no": "47"
+    },
+    {
+      "paragraphTitle": "Science and technology ",
+      "no": "48",
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "a. Human existence in the developed world is entirely dependent on some fairly recent developments in science and technology."
+        },
+        {
+          "readingDescription": "b. But the fact that science underlies our lives, our health, our work, our communications, our entertainment and our transport is undeniable.",
+          "position": 4
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. Whether this is good or bad is, of course, up for argument"
+        },
+        {
+          "readingDescription": "d. It is a truism to say that in 21st century society science and technology are important.",
+          "position": 1
+        }
+      ]
+    },
+    {
+      "paragraphTitle": "Accounting System ",
+      "no": "49",
+      "content": [
+        {
+          "readingDescription": "a. These tools combine together to provide quality customer service and create a climate of confidence, a customer service strategy that helps meet the specific needs.",
+          "position": 4
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. Are there any systems that can measure the Accounting system?"
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. Well, there is accounting software describes a type of application software that records and processes accounting transactions within functional modules such as accounts payable, accounts receivable, payroll, and trial balance."
+        },
+        {
+          "position": 3,
+          "readingDescription": "d. This enables the access anywhere at any time with any device which is Internet enabled, or may be desktop based. It varies greatly in its complexity and cost."
+        }
+      ]
+    },
+    {
+      "no": "50",
+      "paragraphTitle": "Earthquake in San Francisco ",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. At 5:12 a.m. on April 18, 1906, the people of San Francisco were awakened by an earthquake that would devastate the city."
+        },
+        {
+          "position": 3,
+          "readingDescription": "b. But when calculating destruction, the earthquake took second place to the great fire that followed."
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. The fire, lasting four days, most likely started with broken gas lines (and, in some cases, was helped along by people hoping to collect insurance for their property—they were covered for fire, but not earthquake, damage)."
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. The main temblor, having a 7.7–7.9 magnitude, lasted about one minute and was the result of the rupturing of the northernmost 296 miles of the 800-mile San Andreas fault."
+        }
+      ]
+    },
+    {
+      "paragraphTitle": "Copernicus’s Heliocentric Theory ",
+      "no": "51",
+      "content": [
+        {
+          "position": 4,
+          "readingDescription": "a. According to legend, Copernicus received a copy as he was dying, on May 24, 1543."
+        },
+        {
+          "readingDescription": "b. The book opened the way to a truly scientific approach to astronomy. It had a profound influence on later thinkers of the scientific revolution, including such major figures as Galileo, Johannes Kepler, and Isaac Newton.",
+          "position": 5
+        },
+        {
+          "readingDescription": "c. Copernicus probably hit upon his main idea sometime between 1508 and 1514.",
+          "position": 1
+        },
+        {
+          "readingDescription": "d. The historic book that contains the final version of his theory, De Revolutionibus Orbium Coelestium Libri VI (“Six Books Concerning the Revolutions of the Heavenly Orbs”), did not appear in print until 1543, the year of his death.",
+          "position": 3
+        },
+        {
+          "position": 2,
+          "readingDescription": "e. For years, however, he delayed publication of his controversial work, which contradicted all the authorities of the time."
+        }
+      ]
+    },
+    {
+      "paragraphTitle": "Fibers for clothing ",
+      "no": "52",
+      "content": [
+        {
+          "readingDescription": "a. The fibers are as strong and soft as wool and silk",
+          "position": 2
+        },
+        {
+          "readingDescription": "b. Narendra Reddy and Yiqi Yang, who produced the fibers at the University of Nebraska in Lincoln. He says that because they are biodegradable, they might be used in biomedical applications such as surgical sutures.",
+          "position": 4
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. However, up to 30 times cheaper."
+        },
+        {
+          "readingDescription": "d. Fibers suitable for clothing have been made for the first time from the wheat protein gluten.",
+          "position": 1
+        }
+      ]
+    },
+    {
+      "no": "53",
+      "content": [
+        {
+          "readingDescription": "a. This may seem friendly but, as it probably involves using colloquial expressions, it makes comprehension harder.",
+          "position": 5
+        },
+        {
+          "position": 4,
+          "readingDescription": "b. Many think the best way to make foreigners understand is to be chatty and informal."
+        },
+        {
+          "readingDescription": "c. Because so many English-speakers today are monoglots, they have little idea how difficult it is to master another language.",
+          "position": 3
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. Equally, any native English speaker wanting to deal with these new high achievers needs to know how to talk without baffling them."
+        },
+        {
+          "position": 1,
+          "readingDescription": "e. Anyone wanting to get to the top of international business, medicine or academia (but possibly not sport) needs to be able to speak English to a pretty high level."
+        }
+      ],
+      "paragraphTitle": "Native English Speaker "
+    },
+    {
+      "paragraphTitle": "Hip Hop Culture ",
+      "content": [
+        {
+          "readingDescription": "a. Hip Hop culture emerged as a reaction to the gang culture and violence of the South Bronx in the 1970s, and daily experiences of poverty, racism, exclusion, crime, violence, and neglect.",
+          "position": 1
+        },
+        {
+          "position": 3,
+          "readingDescription": "b. Without these, Hip Hop culture would never have been, and it is because these values remain at its core that Hip Hop is such a powerful agent of positive social change around the world."
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. It necessarily embodies and values resilience, understanding, community and social justice."
+        },
+        {
+          "position": 4,
+          "readingDescription": "d. Yet, the Hip Hop project is not yet free from these difficult circumstances."
+        }
+      ],
+      "no": "54"
+    },
+    {
+      "paragraphTitle": "Copernicanism ",
+      "content": [
+        {
+          "position": 4,
+          "readingDescription": "a. In do doing, they discover that these once remote world are themselves earth-like in character."
+        },
+        {
+          "readingDescription": "b. Descriptions of these planetary bodies as terrestrial in kind demonstrate the seventeenth-century intellectual shift from the Aristotelian to the Copernican.",
+          "position": 5
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. Scientists and writers alike constructed fantastical tales in which fictional characters journey to the moon, sun, and planets."
+        },
+        {
+          "readingDescription": "d. During this period of scientific revolution, a new literary genre arose, namely that of the scientific cosmic voyage.",
+          "position": 2
+        },
+        {
+          "readingDescription": "e. The expending influence of Copernicanism through the seventeenth century transformed not only the natural philosophic leaning of astronomers but also the store of conceptual material accessible to writers of fiction.",
+          "position": 1
+        }
+      ],
+      "no": "55"
+    },
+    {
+      "paragraphTitle": "EU Fish Problems ",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. The European Union has two big fish problems."
+        },
+        {
+          "readingDescription": "b. The EU has tried to solve both problems by sending its fishermen to West Africa. Since 1979 it has struck agreements with the government of Senegal, granting our fleets access to its waters.",
+          "position": 4
+        },
+        {
+          "position": 5,
+          "readingDescription": "c. As a result, Senegal’s marine ecosystem has started to go the same way as ours."
+        },
+        {
+          "readingDescription": "d. One is that, partly as a result of its failure to manage them properly, its own fisheries can no longer meet European demand.",
+          "position": 2
+        },
+        {
+          "position": 3,
+          "readingDescription": "e. The other is that its governments won’t confront their fishing lobbies and decommission all the surplus boats."
+        }
+      ],
+      "no": "56"
+    },
+    {
+      "no": "57",
+      "content": [
+        {
+          "readingDescription": "a. For example, one of the companies we work with in China, called Eco-star, refurbishes copy machines from the United States and re-sells or leases them for 20 percent less than a branded photocopier.",
+          "position": 4
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. New Ventures is a program that helps entrepreneurs in some of the world’s most dynamic, emerging economies-- Brazil, China, Colombia, India, Indonesia and Mexico."
+        },
+        {
+          "readingDescription": "c. Often they also address the challenges experienced by the world’s poor.",
+          "position": 3
+        },
+        {
+          "readingDescription": "d. We have facilitated more than $203 million in investment, and worked with 250 innovative businesses whose goods and services produce clear, measurable environmental benefits, such as clean energy, efficient water use, and sustainable agriculture.",
+          "position": 2
+        }
+      ],
+      "paragraphTitle": "New Ventures "
+    },
+    {
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. The \"Festival in The Desert\" is a celebration of the musical heritage of the Touareg, a fiercely independent nomadic people."
+        },
+        {
+          "readingDescription": "b. Reaching it tests endurance, with miles of impermanent sand tracks to negotiate.",
+          "position": 3
+        },
+        {
+          "readingDescription": "c. It is held annually near Essakane, an oasis some 40 miles north-west of Timbuktu, the ancient city on the Niger River.",
+          "position": 2
+        },
+        {
+          "readingDescription": "d. The reward of navigating this rough terrain comes in the form of a three-day feast of music and dance.",
+          "position": 4
+        }
+      ],
+      "paragraphTitle": "Festival in the Desert ",
+      "no": "58"
+    },
+    {
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "a. The Eighth Edition integrates the latest research, data, and policy in hot topics such as outsourcing, economic geography, trade and environment, financial derivatives, the subprime crisis, and China's exchange rate policies."
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. International Economics: Theory and Policy is a proven approach in which each half of the book leads with an intuitive introduction to theory and follows with self-contained chapters to cover key policy applications."
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. New for the Eighth Edition, all end-of-chapter problems are integrated into MyEconLab, the online assessment and tutorial system that accompanies the text."
+        },
+        {
+          "position": 4,
+          "readingDescription": "d. Students get instant, targeted feedback, and instructors can encourage practice without needing to grade work by hand."
+        }
+      ],
+      "no": "59",
+      "paragraphTitle": "International Economics "
+    },
+    {
+      "content": [
+        {
+          "readingDescription": "a. They pointed to what they called an \"Asian paradox,\" which refers to lower rates of heart disease and cancer in Asia despite high rates of cigarette smoking.",
+          "position": 2
+        },
+        {
+          "position": 3,
+          "readingDescription": "b. They theorized that the 1.2 liters of green tea that is consumed by many Asians each day provides high levels of polyphenols and other antioxidants."
+        },
+        {
+          "readingDescription": "c. These compounds may work in several ways to improve cardiovascular health.",
+          "position": 4
+        },
+        {
+          "position": 1,
+          "readingDescription": "d. In May 2006, researchers at Yale University School of Medicine weighed in on the issue with a review article that looked at more than 100 studies on the health benefits of green tea."
+        },
+        {
+          "position": 5,
+          "readingDescription": "e. Specifically, green tea may prevent the oxidation of LDL cholesterol (the \"bad\" type), which, in turn, can reduce the buildup of plaque in arteries, the researchers wrote."
+        }
+      ],
+      "paragraphTitle": "Green Tea Health Benefit",
+      "no": "60"
+    },
+    {
+      "paragraphTitle": "Musical Notion ",
+      "no": "61",
+      "content": [
+        {
+          "position": 5,
+          "readingDescription": "a. Now music could be communicated efficiently, and succeeding generations would know something about the music of their ancestors."
+        },
+        {
+          "readingDescription": "b. Over the years many human endeavours have had the benefit of language.",
+          "position": 1
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. In particular a written language can convey a lot of information about past events, places, people and things."
+        },
+        {
+          "position": 4,
+          "readingDescription": "d. It was the development of a standard musical notation in the 11th century that allowed music to be documented in a physical form."
+        },
+        {
+          "readingDescription": "e. But it is difficult to describe music in words, and even more difficult to specify a tune.",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "paragraphTitle": "Taking Lecture Notes ",
+      "no": "62",
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. Get them down, and then later reorganize them in your own words."
+        },
+        {
+          "position": 4,
+          "readingDescription": "b. Once you have done this, you have set the stage for successful reviewing and revising."
+        },
+        {
+          "position": 1,
+          "readingDescription": "c. Your main job in taking lecture notes is to be a good listener."
+        },
+        {
+          "position": 2,
+          "readingDescription": "d. To be a good listener, you must learn to focus and concentrate on the main points of the lecture."
+        }
+      ]
+    },
+    {
+      "no": "63",
+      "content": [
+        {
+          "position": 2,
+          "readingDescription": "a. Since European settlement they have had to compete with a range of introduced animals for habitat, food and shelter."
+        },
+        {
+          "position": 4,
+          "readingDescription": "b. These new pressures have also caused a major impact on our country's soil and waterways and on its native plants and animals."
+        },
+        {
+          "position": 1,
+          "readingDescription": "c. Australia's native plants and animals adapted to life on an isolated continent over millions of years."
+        },
+        {
+          "position": 3,
+          "readingDescription": "d. Some have also had to face new predators."
+        }
+      ],
+      "paragraphTitle": "Australia’s native plants and animals "
+    },
+    {
+      "paragraphTitle": "Internship ",
+      "no": "64",
+      "content": [
+        {
+          "readingDescription": "a. Insulated from the consequences of such decisions, and privy to all critical information about the case, we were able to solve complex business problems with relative ease.",
+          "position": 2
+        },
+        {
+          "position": 5,
+          "readingDescription": "b. So in approaching this impending summer period, what lingered in the back of our minds was a collectively felt, unspeakable thought: \"Were we really up to the challenge?\""
+        },
+        {
+          "position": 1,
+          "readingDescription": "c. During the school year, we had the benefit of being both unaccountable and omnipotent."
+        },
+        {
+          "readingDescription": "d. We knew that once we began our internships, this would no longer be the case.",
+          "position": 3
+        },
+        {
+          "position": 4,
+          "readingDescription": "e. The information would be more nebulous and the outcomes of our decisions would be unpredictable."
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "position": 4,
+          "readingDescription": "a. A pidgin is a variety of a language (e.g. English) that developed for some practical purpose, such as trading, among groups of people who had a lot of contact, but who did not know each other’s languages."
+        },
+        {
+          "position": 2,
+          "readingDescription": "b. For example, in Papua New Guinea, a lot of official business is conducted in Tok Pisin."
+        },
+        {
+          "readingDescription": "c. In some areas, the standard chosen may be a variety that originally had no native speakers in the country.",
+          "position": 1
+        },
+        {
+          "position": 3,
+          "readingDescription": "d. This language is now used by over a million people, but it began many years earlier as a kind of ‘contact’ language called a pidgin."
+        }
+      ],
+      "no": "65",
+      "paragraphTitle": "Pidgins "
+    },
+    {
+      "paragraphTitle": "Sea Level Rise ",
+      "no": "66",
+      "content": [
+        {
+          "position": 1,
+          "readingDescription": "a. Sea level rise led to 36 thousand people die every year."
+        },
+        {
+          "readingDescription": "b. According to the research, if sea level rises 50 centimeters, 86 million people will die.",
+          "position": 3
+        },
+        {
+          "position": 4,
+          "readingDescription": "c. If sea level rises 1 meter, 168 million people will die all around the world."
+        },
+        {
+          "readingDescription": "d. This number can be raised if sea level ceaseless goes up, scientists notified.",
+          "position": 2
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "readingDescription": "a. Teens in middle adolescence are eating fewer fruits and vegetables than in 1999, Larson and colleagues found.",
+          "position": 4
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. Fruit and vegetable intake is important for the prevention of future chronic disease, so it's important to know whether intakes of teens are approaching national objectives for fruit and vegetable consumption."
+        },
+        {
+          "position": 3,
+          "readingDescription": "c. The study gathered information about fruit and vegetable intake among 944 boys and 1,161 girls in 1999 and again in 2004."
+        },
+        {
+          "readingDescription": "d. Larson and colleagues from the University of Minnesota undertook the study to examine whether or not teens in the state were increasing their intake of fruits and vegetables.",
+          "position": 2
+        },
+        {
+          "readingDescription": "e. This is giving us the message that we need new and enhanced efforts to increase fruit and vegetable intake that we haven't been doing in the past.",
+          "position": 5
+        }
+      ],
+      "paragraphTitle": "  Fruit and Vegetable Intake ",
+      "no": "67"
+    },
+    {
+      "no": "68",
+      "paragraphTitle": "Blue Halo ",
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. By manufacturing artificial surfaces that replicated 'blue halos', scientists were able to test the effect on pollinators, in this case foraging bumblebees."
+        },
+        {
+          "position": 1,
+          "readingDescription": "b. Latest research has found that several common flower species have nanoscale ridges on the surface of their petals that meddle with light when viewed from certain angles."
+        },
+        {
+          "position": 2,
+          "readingDescription": "c. These nanostructures scatter light particles in the blue to ultraviolet colour spectrum, generating a subtle effect that scientists have christened the 'blue halo'."
+        },
+        {
+          "readingDescription": "d. They found that bees can see the blue halo, and use it as a signal to locate flowers more efficiently.",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "content": [
+        {
+          "position": 3,
+          "readingDescription": "a. The children in that neighbourhood were her primary source of language input."
+        },
+        {
+          "readingDescription": "b. This paper summarizes some of the major data gathered in a longitudinal, naturalistic study of a Japanese girl learning English as a second language.",
+          "position": 1
+        },
+        {
+          "readingDescription": "c. The subject in this study is Uguisu, “nightingale” in Japanese. Her family came to the United States for a period of two years while her father was a visiting scholar at Harvard, and they took residence in North Cambridge, a working-class neighbourhood.",
+          "position": 2
+        },
+        {
+          "position": 4,
+          "readingDescription": "d. Uguisu also attended public kindergarten of two hours every day, and later elementary school, but with no tutoring in English syntax. Most of her neighbourhood friends were in her same class at school."
+        }
+      ],
+      "paragraphTitle": "Japaneses girl leaning English ",
+      "no": "69"
+    }
+  ]
 }
-
