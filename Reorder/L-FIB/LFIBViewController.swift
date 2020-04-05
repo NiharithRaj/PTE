@@ -12,9 +12,12 @@ class LFIBViewController: UIViewController {
     var viewModel: LFIBViewModel!
     let count = 25.0
     let recordTime = 6
-    var answerCount = 10
+    var answerCount = 21
     let speech = Speech()
+    var seconds = 6
 
+    @IBOutlet weak var listenAudioLabel: UILabel!
+    
     @IBOutlet weak var dotview: UIView!
     @IBOutlet weak var progressbarContainerView: UIView!
     @IBOutlet weak var questionNumberLabel: UILabel!
@@ -36,11 +39,34 @@ class LFIBViewController: UIViewController {
         super.viewDidLoad()
         questionTime =  Utils.audioLength(fileName: "\(viewModel.model.order)", fileType: "aifc") + 1
         setupUI()
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+//            self.playCopyR8Audio(volume: 0.5)
+//        })
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        changeQuestion()
+        if Manager.isListeningMock && Manager.isAnswerOnly {
+            playOnlyAnswer()
+            
+        } else {
+            changeQuestion()
+        }
+
+    }
+    
+    private func playOnlyAnswer() {
+        displayCorrectAnswer()
+        questionNumberLabel.isHidden = true
+        let dob = Double(questionTime + 2)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + dob, execute: {
+            self.dismiss(animated: true, completion: nil)
+            self.delegate?.didCompleted()
+        })
+    }
+    
+    private func playCopyR8Audio(volume: Float = 0.1) {
+        GSAudio.sharedInstance.playSound(soundFileName: "copy_r8", volume: volume)
     }
     
     private func timerEvent() {
@@ -53,21 +79,33 @@ class LFIBViewController: UIViewController {
         answerCount -= 1
         timerLabel.text = timeFormatted(answerCount) // will show timer
         if self.answerCount == 0 {
-            //Do here
             timer.invalidate()
-            answerLabel.isHidden = false
-//            answerLabel.text = viewModel.model.sentence
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                self.displayCorrectAnswer()
-            })
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 8, execute: {
-                self.dismiss(animated: true, completion: nil)
-                self.delegate?.didCompleted()
-            })
+
+            if Manager.isListeningMock {
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: {
+                    self.dismiss(animated: true, completion: nil)
+                    self.delegate?.didCompleted()
+                })
+            } else {
+                answerLabel.isHidden = false
+                //            answerLabel.text = viewModel.model.sentence
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+                    self.displayCorrectAnswer()
+                })
+                
+                let dob = Double(questionTime + 5)
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + dob, execute: {
+                    self.dismiss(animated: true, completion: nil)
+                    self.delegate?.didCompleted()
+                    
+                })
+            }
+            //Do here
         }
     }
     
     private func displayCorrectAnswer() {
+        listenAudioLabel.isHidden = false
         var question = viewModel.model.question
         var ranges:[NSRange] = []
         for index in 0..<viewModel.model.answer.count {
@@ -80,23 +118,26 @@ class LFIBViewController: UIViewController {
         }
         let attri = NSMutableAttributedString(string: question)
         for range in ranges {
-            attri.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.red,NSAttributedString.Key.underlineStyle : NSUnderlineStyle.single.rawValue], range: range)
+            attri.addAttributes([NSAttributedString.Key.foregroundColor : rgb(r: 0, g: 122, b: 255),NSAttributedString.Key.underlineStyle : NSUnderlineStyle.single.rawValue], range: range)
         }
 
         UIView.animate(withDuration: 3.0) {
             self.answerLabel.attributedText = attri.paragraphStyle(lineSpace: 15.0, textAlignment: .left)
-        }        
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+            self.speakNow()
+        })
     }
    
     
     fileprivate func changeQuestion() {
-        var seconds = 3
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             DispatchQueue.main.async {
-                self.topViewBeginningLabel.text = "Beginning in \(seconds) seconds."
+                self.topViewBeginningLabel.text = "Beginning in \(self.seconds) seconds."
             }
-            seconds -= 1
-            if seconds == 0 {
+            self.seconds -= 1
+            if self.seconds == 0 {
                 timer.invalidate()
                 DispatchQueue.main.async {
                     self.topViewBeginningLabel.text = "Playing"
@@ -110,6 +151,7 @@ class LFIBViewController: UIViewController {
     fileprivate func beginQuestionProgress() {
         viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
             guard let strongSelf = self else { return }
+//            strongSelf.playCopyR8Audio(volume: 0.3)
             strongSelf.topViewBeginningLabel.text = "Completed"
 //            DispatchQueue.main.async {
                 strongSelf.timerLabel.isHidden = false
@@ -120,7 +162,10 @@ class LFIBViewController: UIViewController {
     }
     
     private func speakNow() {
-        Utils.playAudio(fileName: "\(viewModel.model.order)", fileType: "aifc")
+        Timer.scheduledTimer(withTimeInterval: TimeInterval(questionTime / 2), repeats: false) { (timer) in
+//            self.playCopyR8Audio(volume: 0.1)
+        }
+        GSAudio.sharedInstance.playSound(soundFileName: "\(viewModel.model.order)")
     }
     
     private func setupUI() {
@@ -128,7 +173,7 @@ class LFIBViewController: UIViewController {
         topView.layer.borderColor = UIColor.gray.cgColor
         topView.layer.borderWidth = 2.0
         topView.layer.cornerRadius = 10.0
-        
+        topViewBeginningLabel.text = "Beginning in \(seconds) seconds."
 //        answerView.layer.borderColor = UIColor.gray.cgColor
 //        answerView.layer.borderWidth = 2.0
 //        answerView.layer.cornerRadius = 10.0
@@ -154,7 +199,12 @@ class LFIBViewController: UIViewController {
             dotview.addSubview(v)
         }
         addIndicators(toView: progressbarContainerView)
-        questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
+        
+        if Manager.isListeningMock {
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalListeningQuestions)"
+        } else {
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
+        }
     }
     
     fileprivate func addIndicators(toView: UIView) {

@@ -54,8 +54,13 @@ class RSTimerViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        questionView(yes: false)
-        changeQuestion()
+        if Manager.isMockText && Manager.isAnswerOnly {
+            questionView(yes: true)
+            playOnlyAnswer()
+        } else {
+            questionView(yes: false)
+            changeQuestion()
+        }
     }
 
     fileprivate func changeQuestion() {
@@ -85,7 +90,7 @@ class RSTimerViewController: UIViewController {
         viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
-            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: (strongSelf.viewModel.isWFDInstrucion ? 15 : strongSelf.questionTime + 1)) {
+            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: (strongSelf.viewModel.isWFDInstrucion ? 15 : strongSelf.questionTime + 3)) {
                 DispatchQueue.main.async {
                     strongSelf.answerBeginningView.text = "Completed"
 
@@ -134,9 +139,20 @@ class RSTimerViewController: UIViewController {
             self.speakNow()
         }
     }
+    private func playOnlyAnswer() {
+        
+            questionView(yes: true)
+             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+                 self.speakNow()
+             })
+             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
+                 self.dismiss(animated: true, completion: nil)
+                 self.delegate?.didCompleted()
+             })
+    }
     
     private func speakNow() {
-        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 3])
+        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 6])
     }
     private func setupUI() {
 
@@ -229,7 +245,7 @@ struct RSTimerViewModel {
     }
     
     var speechTime:Int {
-        var time = 4
+        var time = 5
         let arr = model.sentence.components(separatedBy: CharacterSet.init(charactersIn: " "))
         if arr.count > 10 && arr.count <= 13 {
             time = 5

@@ -99,16 +99,18 @@ class ReorderViewController: UIViewController {
         view.layer.masksToBounds = false
         let label = UILabel()
         label.numberOfLines = 0
+//        view.backgroundColor = .red
         view.addSubview(label)
+        var string = string + "\n"
         label.attributedText = NSAttributedString(string:string,
                                                   attributes:[NSAttributedString.Key.foregroundColor: rgb(r: 36, g: 36, b: 36),
                                                               NSAttributedString.Key.font: UIFont(name: "Times New Roman", size: CGFloat(viewModel.model.fontSize ?? 40)) as Any])
-//        label.attributedText = label.attributedText?.paragraphStyle(lineSpace: 2.0, textAlignment: .left)
+            label.attributedText = label.attributedText?.paragraphStyle(lineSpace: 5.0, textAlignment: .left)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
-        label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
-        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
-        label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
+        label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+        label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10).isActive = true
         label.backgroundColor = .white
 
         return view

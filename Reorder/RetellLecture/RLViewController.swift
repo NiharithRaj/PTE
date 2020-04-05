@@ -36,7 +36,7 @@ class RLViewController: UIViewController {
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTime = Utils.audioLength(fileName: viewModel.name)
+        questionTime = Utils.audioLength(fileName: viewModel.name, fileType: "aifc")
         setupUI()
     }
     
@@ -56,7 +56,7 @@ class RLViewController: UIViewController {
             if seconds == 0 {
                 timer.invalidate()
                 DispatchQueue.main.async {
-                    Utils.playAudio(fileName: self.viewModel.name)
+                    Utils.playAudio(fileName: self.viewModel.name, fileType: "aifc")
                     self.topViewBeginningLabel.text = "Playing"
                     self.beginQuestionProgress()
                 }
@@ -99,7 +99,7 @@ class RLViewController: UIViewController {
             if seconds == 0 {
                 timer.invalidate()
                 DispatchQueue.main.async {
-                    Utils.playAudio(fileName: "beep")
+//                    Utils.playAudio(fileName: "beep")
                     self.answerBeginningView.text = "Recording"
                 }
             }
@@ -139,6 +139,8 @@ class RLViewController: UIViewController {
         answerBeginningView.isHidden = true
         if Manager.isMockText {
             questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalQuestions)"
+        } else {
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
         }
     }
     
@@ -185,8 +187,10 @@ class RLViewController: UIViewController {
 struct RLViewModel {
     var questionNumber:Int = 0
     let name:String
-    init(fileName:String,qnumber:Int) {
+    let total:Int
+    init(fileName:String,qnumber:Int, total:Int) {
         name = fileName
         questionNumber = qnumber
+        self.total = total
     }
 }

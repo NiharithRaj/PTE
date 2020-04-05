@@ -41,7 +41,11 @@ class WFDViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        changeQuestion()
+        if Manager.isListeningMock && Manager.isAnswerOnly {
+            playAnswer()
+        } else {
+            changeQuestion()
+        }
     }
     
     private func timerEvent() {
@@ -56,20 +60,31 @@ class WFDViewController: UIViewController {
         if self.answerCount == 0 {
             //Do here
             timer.invalidate()
-            answerLabel.isHidden = false
-            wordCountLabel.isHidden = false
-            answerLabel.text = viewModel.model.sentence
-            wordCountLabel.text = "Total Word Count: \(wordCount())"
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                self.speakNow()
-            })
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
-                self.dismiss(animated: true, completion: nil)
-                self.delegate?.didCompleted()
-            })
+            if Manager.isListeningMock {
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: {
+                    self.dismiss(animated: true, completion: nil)
+                    self.delegate?.didCompleted()
+                })
+            } else {
+                playAnswer()
+            }
         }
     }
     
+    private func playAnswer() {
+        questionNumberLabel.isHidden = true
+        answerLabel.isHidden = false
+        wordCountLabel.isHidden = false
+        answerLabel.text = viewModel.model.sentence
+        wordCountLabel.text = "Total Word Count: \(wordCount())"
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+            self.speakNow()
+        })
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
+            self.dismiss(animated: true, completion: nil)
+            self.delegate?.didCompleted()
+        })
+    }
     private func wordCount() -> Int {
         let chararacterSet = CharacterSet.whitespacesAndNewlines
         var components = viewModel.model.sentence.components(separatedBy: chararacterSet)
@@ -108,7 +123,7 @@ class WFDViewController: UIViewController {
     }
     
     private func speakNow() {
-        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 3])
+        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 6])
     }
     
     private func setupUI() {
@@ -140,7 +155,12 @@ class WFDViewController: UIViewController {
             dotview.addSubview(v)
         }
         addIndicators(toView: progressbarContainerView)
-        questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
+        if Manager.isListeningMock {
+            answerCount = 50
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalListeningQuestions)"
+        } else {
+            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
+        }
     }
     
     fileprivate func addIndicators(toView: UIView) {

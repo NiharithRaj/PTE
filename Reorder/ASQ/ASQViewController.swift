@@ -43,8 +43,13 @@ class ASQViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        questionView(yes: false)
-        changeQuestion()
+        if Manager.isMockText && Manager.isAnswerOnly {
+            questionView(yes: true)
+            playOnlyAnswer()
+        } else {
+            questionView(yes: false)
+            changeQuestion()
+        }
     }
     
     fileprivate func changeQuestion() {
@@ -124,8 +129,21 @@ class ASQViewController: UIViewController {
         }
     }
     
+    private func playOnlyAnswer() {
+        answerTextLabel.text = viewModel.model.answer
+        questionLabel.text = viewModel.model.question
+            questionView(yes: true)
+             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+                 self.speakNow()
+             })
+             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10, execute: {
+                 self.dismiss(animated: true, completion: nil)
+                 self.delegate?.didCompleted()
+             })
+    }
+    
     private func speakNow() {
-        speech.voiceOver(sentence: viewModel.model.question, language: languagues[viewModel.questionNumber % 3])
+        speech.voiceOver(sentence: viewModel.model.question, language: languagues[viewModel.questionNumber % 6])
     }
     private func setupUI() {
         

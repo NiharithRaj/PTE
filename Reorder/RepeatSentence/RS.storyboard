@@ -223,7 +223,7 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only one." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taK-Bb-B66">
-                                        <rect key="frame" x="30" y="100" width="1860" height="35"/>
+                                        <rect key="frame" x="100" y="100" width="1790" height="35"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -241,13 +241,13 @@
                                     <constraint firstItem="XBP-Qj-Isq" firstAttribute="top" secondItem="taK-Bb-B66" secondAttribute="bottom" constant="90" id="41Q-Gw-jUp"/>
                                     <constraint firstAttribute="trailing" secondItem="taK-Bb-B66" secondAttribute="trailing" constant="30" id="5Jb-zr-RKB"/>
                                     <constraint firstItem="taK-Bb-B66" firstAttribute="top" secondItem="aQ8-Ba-TBh" secondAttribute="top" constant="100" id="5NH-zz-4Ue"/>
-                                    <constraint firstItem="taK-Bb-B66" firstAttribute="leading" secondItem="aQ8-Ba-TBh" secondAttribute="leading" constant="30" id="Vh8-P8-TuL"/>
+                                    <constraint firstItem="taK-Bb-B66" firstAttribute="leading" secondItem="aQ8-Ba-TBh" secondAttribute="leading" constant="100" id="Vh8-P8-TuL"/>
                                     <constraint firstAttribute="trailing" secondItem="xmJ-jK-iTE" secondAttribute="trailing" constant="70" id="Ykh-mp-t3M"/>
                                     <constraint firstItem="xmJ-jK-iTE" firstAttribute="top" secondItem="aQ8-Ba-TBh" secondAttribute="top" constant="30" id="eLQ-68-EPF"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="iNc-VA-A1m">
-                                <rect key="frame" x="1397" y="794" width="463" height="312"/>
+                                <rect key="frame" x="60" y="794" width="463" height="312"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="312" id="boP-tn-kma"/>
                                     <constraint firstAttribute="width" constant="463" id="jfm-5G-QDV"/>
@@ -259,10 +259,10 @@
                             <constraint firstAttribute="bottom" secondItem="iNc-VA-A1m" secondAttribute="bottom" constant="-26" id="3Rf-rs-aVS"/>
                             <constraint firstItem="az0-Dg-5qI" firstAttribute="top" secondItem="wF3-3L-y8Y" secondAttribute="top" id="8sD-e8-ekl"/>
                             <constraint firstAttribute="bottom" secondItem="az0-Dg-5qI" secondAttribute="bottom" id="CHS-yJ-vtQ"/>
-                            <constraint firstAttribute="trailing" secondItem="iNc-VA-A1m" secondAttribute="trailing" constant="60" id="EIM-rB-Ud4"/>
                             <constraint firstAttribute="trailing" secondItem="aQ8-Ba-TBh" secondAttribute="trailing" id="Ke9-m4-l5S"/>
                             <constraint firstItem="aQ8-Ba-TBh" firstAttribute="top" secondItem="wF3-3L-y8Y" secondAttribute="top" id="MTz-Mx-e6v"/>
                             <constraint firstAttribute="trailing" secondItem="az0-Dg-5qI" secondAttribute="trailing" id="aqc-WD-F8E"/>
+                            <constraint firstItem="iNc-VA-A1m" firstAttribute="leading" secondItem="aQ8-Ba-TBh" secondAttribute="leading" constant="60" id="kUO-sa-Bbc"/>
                             <constraint firstItem="aQ8-Ba-TBh" firstAttribute="leading" secondItem="wF3-3L-y8Y" secondAttribute="leading" id="nvQ-Bq-QVg"/>
                             <constraint firstAttribute="bottom" secondItem="aQ8-Ba-TBh" secondAttribute="bottom" id="r8G-ar-aFu"/>
                             <constraint firstItem="az0-Dg-5qI" firstAttribute="leading" secondItem="wF3-3L-y8Y" secondAttribute="leading" id="zmS-4p-Xgf"/>

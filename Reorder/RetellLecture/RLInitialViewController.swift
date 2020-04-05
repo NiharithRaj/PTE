@@ -9,12 +9,20 @@
 import UIKit
 
 class RLInitialViewController: UIViewController {
-    var collection = ["1","2"]
+    var collection:[String] = []
     var currentIndex = 0
     var callBack:(()->())?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if Manager.isMockText {
+            collection = ["R1","R2"]
+        } else {
+            for index in 151...180 {
+                collection.append("R\(index)")
+            }
+        }
 //        parsefromJson()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
             self.pushRepeatSentence()
@@ -29,7 +37,7 @@ class RLInitialViewController: UIViewController {
     fileprivate func pushRepeatSentence() {
         let storyboard = UIStoryboard(name: "RL", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "RLViewController") as? RLViewController {
-            controller.viewModel = RLViewModel(fileName: collection[currentIndex], qnumber: Manager.isMockText ? Manager.Retellstart + currentIndex : currentIndex + 1)
+            controller.viewModel = RLViewModel(fileName: collection[currentIndex], qnumber: Manager.isMockText ? Manager.Retellstart + currentIndex : currentIndex + 1, total: collection.count)
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)

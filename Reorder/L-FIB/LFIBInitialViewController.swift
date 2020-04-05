@@ -12,6 +12,7 @@ class LFIBInitialViewController: UIViewController {
     
     var model: LFIBCollection!
     var currentIndex = 0
+    var callBack:(()->())?
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
@@ -28,7 +29,7 @@ class LFIBInitialViewController: UIViewController {
     fileprivate func pushWFD() {
         let storyboard = UIStoryboard(name: "LFIB", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "LFIBViewController") as? LFIBViewController {
-            controller.viewModel = LFIBViewModel(model: model.collection[currentIndex],questionNumber: currentIndex + 1, total: model.collection.count)
+            controller.viewModel = LFIBViewModel(model: model.collection[currentIndex],questionNumber:Manager.isListeningMock ? Manager.fibstart + currentIndex :  currentIndex + 1, total: model.collection.count)
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
@@ -54,6 +55,11 @@ extension LFIBInitialViewController : RSTimerDelegate {
         if model.collection.count > currentIndex {
             DispatchQueue.main.async {
                 self.pushWFD()
+            }
+        } else {
+            if let c = callBack {
+                navigationController?.popViewController(animated: false)
+                c()
             }
         }
     }

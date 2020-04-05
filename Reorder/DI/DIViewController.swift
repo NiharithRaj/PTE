@@ -10,9 +10,11 @@ import UIKit
 class DIViewModel:NSObject {
     var questionNumber:Int = 0
     var imageName:String = ""
-    convenience init(name:String,questionNumber:Int) {
+    var total:Int = 0
+    convenience init(name:String,questionNumber:Int, total:Int) {
         self.init()
         imageName = name
+        self.total = total
         self.questionNumber = questionNumber
     }
 }
@@ -95,7 +97,7 @@ class DIViewController: UIViewController {
             if seconds == 0 {
                 timer.invalidate()
                 DispatchQueue.main.async {
-                    Utils.playAudio(fileName: "beep")
+//                    Utils.playAudio(fileName: "beep")
                     self.answerBeginningView.text = "Recording"
                     answer()
                 }
@@ -105,8 +107,8 @@ class DIViewController: UIViewController {
     
 
     private func setupUI() {
-        
-        diImageView.image = UIImage(named: viewModel.imageName)
+        let myImage = UIImage(named: "\(viewModel.imageName).png", in: Bundle(for: type(of: self)), compatibleWith: nil)
+        diImageView.image = myImage
         answerView.layer.borderColor = UIColor.gray.cgColor
         answerView.layer.borderWidth = 2.0
         answerView.layer.cornerRadius = 10.0
@@ -132,9 +134,7 @@ class DIViewController: UIViewController {
         
         addIndicators(toView: answerProgressView)
         answerBeginningView.isHidden = true
-        if Manager.isMockText {
-            questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalQuestions)"
-        }
+        questionNumberLabel.text = "Question \(viewModel.questionNumber) of \( Manager.isMockText ? Manager.totalQuestions : viewModel.total)"
     }
     
     fileprivate func addIndicators(toView: UIView) {

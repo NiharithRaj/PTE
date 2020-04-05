@@ -10,8 +10,8 @@ import UIKit
 import Hero
 class ViewController: UIViewController {
     var model: ReorderCollection!
-    var currentReorder:Int = 0
-    var questionSet = 1
+    var currentReorder:Int = 29
+    var questionSet = 29 + 1
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

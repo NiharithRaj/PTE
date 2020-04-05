@@ -11,6 +11,8 @@ import UIKit
 class WFDInitialViewController: UIViewController {
     var model: RepeatSentenceCollection!
     var currentIndex = 0
+    var callBack:(()->())?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
@@ -27,7 +29,7 @@ class WFDInitialViewController: UIViewController {
     fileprivate func pushWFD() {
         let storyboard = UIStoryboard(name: "WFD", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "WFDViewController") as? WFDViewController {
-            controller.viewModel = RSTimerViewModel(model: model.collection[currentIndex],questionNumber: currentIndex + 1, total: model.collection.count)
+            controller.viewModel = RSTimerViewModel(model: model.collection[currentIndex],questionNumber: Manager.isListeningMock ? Manager.wfdstart + currentIndex : currentIndex + 1, total: model.collection.count)
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
@@ -55,6 +57,11 @@ extension WFDInitialViewController: RSTimerDelegate {
         if model.collection.count > currentIndex {
             DispatchQueue.main.async {
                 self.pushWFD()
+            }
+        } else {
+            if let c = callBack {
+                navigationController?.popViewController(animated: false)
+                c()
             }
         }
     }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-let languagues = ["en-US","en-GB","en-AU"]
+let languagues = ["en-AU","en-US","en-GB","en-ZA","en-IE","en-IN",]
 
 class RSViewController: UIViewController {
     var model: RepeatSentenceCollection!

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rwr-uD-QqG">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rwr-uD-QqG">
     <device id="appleTV" appearance="light"/>
     <dependencies>
         <deployment identifier="tvOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -139,23 +139,23 @@
                                         </constraints>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="SGC-f1-jWL">
-                                        <rect key="frame" x="1397" y="794" width="463" height="312"/>
+                                        <rect key="frame" x="60" y="890" width="414" height="238"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="463" id="Ew1-dY-eEu"/>
-                                            <constraint firstAttribute="height" constant="312" id="ukj-a5-cSY"/>
+                                            <constraint firstAttribute="width" constant="414" id="Ew1-dY-eEu"/>
+                                            <constraint firstAttribute="height" constant="238" id="ukj-a5-cSY"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ody-bY-7tQ" firstAttribute="top" secondItem="ApP-8T-XaR" secondAttribute="top" constant="30" id="3As-GJ-ONR"/>
-                                    <constraint firstAttribute="bottom" secondItem="SGC-f1-jWL" secondAttribute="bottom" constant="-26" id="5AU-WX-0jM"/>
+                                    <constraint firstAttribute="bottom" secondItem="SGC-f1-jWL" secondAttribute="bottom" constant="-48" id="5AU-WX-0jM"/>
                                     <constraint firstItem="3m8-cZ-lRH" firstAttribute="top" secondItem="ApP-8T-XaR" secondAttribute="top" constant="100" id="Adg-a0-buw"/>
                                     <constraint firstAttribute="trailing" secondItem="cyl-OL-42j" secondAttribute="trailing" constant="194" id="CMR-AE-en8"/>
                                     <constraint firstItem="3UP-MN-WfK" firstAttribute="top" secondItem="3m8-cZ-lRH" secondAttribute="bottom" constant="96" id="COi-1d-Z8a"/>
                                     <constraint firstAttribute="bottom" secondItem="cyl-OL-42j" secondAttribute="bottom" constant="299" id="FTl-uC-1xg"/>
                                     <constraint firstAttribute="trailing" secondItem="3m8-cZ-lRH" secondAttribute="trailing" constant="60" id="HtO-b8-MiA"/>
-                                    <constraint firstAttribute="trailing" secondItem="SGC-f1-jWL" secondAttribute="trailing" constant="60" id="RPx-uL-bJI"/>
+                                    <constraint firstItem="SGC-f1-jWL" firstAttribute="leading" secondItem="ApP-8T-XaR" secondAttribute="leading" constant="60" id="LQ3-a6-Z0v"/>
                                     <constraint firstAttribute="bottom" secondItem="3UP-MN-WfK" secondAttribute="bottom" constant="135" id="Vg4-Xb-jwg"/>
                                     <constraint firstAttribute="trailing" secondItem="ody-bY-7tQ" secondAttribute="trailing" constant="70" id="WFA-lf-eMU"/>
                                     <constraint firstItem="cyl-OL-42j" firstAttribute="leading" secondItem="3UP-MN-WfK" secondAttribute="trailing" constant="163" id="az8-Wj-Ufa"/>

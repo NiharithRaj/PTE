@@ -12,13 +12,13 @@ class MockTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Manager.isMockText = false
+        Manager.isMockText = true
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        pushASQ()
+        pushReadAloud()
     }
     
     fileprivate func pushReadAloud() {
@@ -36,7 +36,11 @@ class MockTestViewController: UIViewController {
         let storyboard = UIStoryboard(name: "RS", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "RSViewController") as? RSViewController {
             controller.callBack = {
-                self.pushDescribeImage()
+                if Manager.isAnswerOnly {
+                    self.pushASQ()
+                } else {
+                    self.pushDescribeImage()
+                }
             }
             navigationController?.pushViewController(controller, animated: false)
         }
@@ -66,7 +70,14 @@ class MockTestViewController: UIViewController {
         let storyboard = UIStoryboard(name: "ASQ", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "ASQinitialViewController") as? ASQinitialViewController {
             controller.callBack = {
-                print("Done")
+                if !Manager.isAnswerOnly {
+                    Manager.isAnswerOnly = true
+                    self.pushRepeatSentence()
+                } else {
+                    Manager.isAnswerOnly = false
+                    Manager.isMockText = false
+                    print("Done")
+                }
             }
             navigationController?.pushViewController(controller, animated: false)
         }
