@@ -63,11 +63,15 @@ struct Utils {
 
 }
 
-class Speech :NSObject, AVSpeechSynthesizerDelegate {
+protocol SpeechCallBack: class {
+    func speechDone()
+}
+
+class Speech :NSObject {
     
     let speechSynthesizer = AVSpeechSynthesizer()
-
-    func voiceOver(sentence: String, language: String? = "en-US", utterance: Float = 0.50) {
+    weak var delegate:SpeechCallBack?
+    func voiceOver(sentence: String, language: String? = "en-US", utterance: Float = 0.50, delegate: SpeechCallBack? = nil) {
         print(language)
         // Do any additional setup after loading the view.
         // Line 1. Create an instance of AVSpeechSynthesizer.
@@ -78,7 +82,18 @@ class Speech :NSObject, AVSpeechSynthesizerDelegate {
         // Line 4. Specify the voice. It is explicitly set to English here, but it will use the device default if not specified.
         speechUtterance.voice = AVSpeechSynthesisVoice(language: language)
         speechSynthesizer.speak(speechUtterance)
+        if let dele = delegate {
+            self.delegate = dele
+            speechSynthesizer.delegate = self
+        }
     }
+}
+
+extension Speech: AVSpeechSynthesizerDelegate {
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        delegate?.speechDone()
+    }
+   
 }
 
 extension UILabel {

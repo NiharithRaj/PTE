@@ -18,13 +18,14 @@ class LMockTestViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        PushSST()
+        pushLFIB()
     }
     
     fileprivate func PushSST() {
         let storyboard = UIStoryboard(name: "SST", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "SSTInitialViewController") as? SSTInitialViewController {
             controller.callBack = {
+                Manager.isAnswerOnly = true
                 self.pushLFIB()
             }
             navigationController?.pushViewController(controller, animated: false)
@@ -56,8 +57,7 @@ class LMockTestViewController: UIViewController {
         let storyboard = UIStoryboard(name: "WFD", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "WFDInitialViewController") as? WFDInitialViewController {
             controller.callBack = {
-                Manager.isAnswerOnly = true
-                self.pushLFIB()
+                self.PushSST()
             }
             navigationController?.pushViewController(controller, animated: false)
         }

@@ -7,11 +7,11 @@
 //
 
 import UIKit
-let languagues = ["en-AU","en-US","en-GB","en-ZA","en-IE","en-IN",]
+let languagues = ["en-IE", "en-AU","en-US","en-GB","en-ZA"]
 
 class RSViewController: UIViewController {
     var model: RepeatSentenceCollection!
-    var currentIndex = 0
+    var currentIndex = 167
     let fileName = "RS"
     var callBack:(()->())?
 
@@ -21,6 +21,7 @@ class RSViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
+        model.collection.shuffle()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
             self.pushRepeatSentence()
         })
@@ -32,6 +33,7 @@ class RSViewController: UIViewController {
     }
 
     fileprivate func pushRepeatSentence() {
+        view.backgroundColor = .white
         let storyboard = UIStoryboard(name: "RS", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "RSTimerViewController") as? RSTimerViewController {
             controller.viewModel = RSTimerViewModel(model: model.collection[currentIndex],questionNumber: Manager.isMockText ? (Manager.rpeatstart + currentIndex) : currentIndex + 1, total: model.collection.count, isWFDInstrucion: isWFD)
@@ -72,11 +74,14 @@ extension RSViewController: RSTimerDelegate {
 }
 
 struct RepeatSentenceCollection: Decodable {
-    let collection: [RepeatSentence]
+    var collection: [RepeatSentence]
 }
 
 struct RepeatSentence: Decodable {
     let sentence: String
     let time: Int
+    let isNew: Bool?
+    let repeatRate:Int?
     let fileName: Int?
 }
+

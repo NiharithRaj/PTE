@@ -19,7 +19,7 @@ class DIInitialViewController: UIViewController {
             collection = ["i1","i2","i3","i4","i5","i6"]
         } else {
             for index in 1...171 {
-                if index % 3 == 0 {
+                if index % 6 == 0 {
                     collection.append("\(index)")
                 }
             }

@@ -16,6 +16,7 @@ class RSTimerViewController: UIViewController {
     var viewModel: RSTimerViewModel!
     let count = 25.0
     @IBOutlet weak var instructionLabel: UILabel!
+    @IBOutlet weak var answerNewImageView: UIImageView!
     let recordTime = 8
     @IBOutlet weak var dotview: UIView!
     @IBOutlet weak var progressbarContainerView: UIView!
@@ -29,11 +30,13 @@ class RSTimerViewController: UIViewController {
 
     @IBOutlet weak var answerTextLabel: UILabel!
 
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var answerBeginningView: UILabel!
     @IBOutlet weak var answerProgressView: UIView!
     @IBOutlet weak var answerView: UIView!
 
-
+    @IBOutlet weak var newImage: UIImageView!
+    
     @IBOutlet weak var answerTextView: UIView!
     @IBOutlet weak var questionView: UIView!
 
@@ -87,10 +90,10 @@ class RSTimerViewController: UIViewController {
 
     fileprivate func beginQuestionProgress() {
 
-        viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
+        viewProgress(animationview: progressbarContainerView, seconds: questionTime + 1) { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
-            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: (strongSelf.viewModel.isWFDInstrucion ? 15 : strongSelf.questionTime + 3)) {
+            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: (strongSelf.viewModel.isWFDInstrucion ? 15 : strongSelf.questionTime + 2)) {
                 DispatchQueue.main.async {
                     strongSelf.answerBeginningView.text = "Completed"
 
@@ -152,12 +155,13 @@ class RSTimerViewController: UIViewController {
     }
     
     private func speakNow() {
-        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 6])
+        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 5], utterance: 0.45)
     }
     private func setupUI() {
 
         topView.layer.borderColor = UIColor.gray.cgColor
         topView.layer.borderWidth = 2.0
+        topView.layer.masksToBounds = true
         topView.layer.cornerRadius = 10.0
 
         answerView.layer.borderColor = UIColor.gray.cgColor
@@ -189,6 +193,22 @@ class RSTimerViewController: UIViewController {
         questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
         if Manager.isMockText {
             questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(Manager.totalQuestions)"
+        }
+        newImage.isHidden = !(viewModel.model.isNew ?? false)
+        answerNewImageView.isHidden = !(viewModel.model.isNew ?? false)
+        if let isnew = viewModel.model.isNew, !isnew {
+            leadingConstraint.constant = 25
+        }
+        
+        if let repeatRate = viewModel.model.repeatRate, let isnew = viewModel.model.isNew, !isnew {
+            let starView = StarRatingView(frame: CGRect(x: view.frame.size.width - 600, y: 200, width: 480, height: 60), starCount: repeatRate)
+            view.addSubview(starView)
+            starView.translatesAutoresizingMaskIntoConstraints = false
+            starView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+            starView.topAnchor.constraint(equalTo: instructionLabel.bottomAnchor, constant: 30).isActive = true
+            starView.widthAnchor.constraint(equalToConstant: 480).isActive = true
+            starView.heightAnchor.constraint(equalToConstant: 60).isActive = true
+            view.bringSubviewToFront(starView)
         }
     }
 
@@ -259,5 +279,60 @@ struct RSTimerViewModel {
         }else {
             return time
         }
+    }
+}
+
+
+class StarRatingView: UIView {
+    required init?(coder: NSCoder) {
+        count = 0
+        super.init(coder: coder)
+    }
+    let count: Int
+    init(frame: CGRect, starCount: Int) {
+        count = starCount
+        super.init(frame: frame)
+        commonInt()
+    }
+    
+    
+    func commonInt() {
+        let mainStackView:UIStackView = UIStackView()
+        mainStackView.axis = .horizontal
+        mainStackView.alignment = .fill
+        mainStackView.distribution = .fill
+        mainStackView.spacing = 10
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.size.width - 50 / 2, height: 60))
+        label.attributedText = NSAttributedString(string:"Repeat rate:",
+                                                  attributes:[NSAttributedString.Key.font: UIFont(name: "TimesNewRomanPS-BoldMT", size: 35) as Any])
+        label.textAlignment = .left
+//        label.font = UIFont(name: "Times New Roman", size: 35)
+
+        mainStackView.addArrangedSubview(label)
+
+        let stackView:UIStackView = UIStackView()
+        stackView.frame = frame
+        stackView.distribution = .fillEqually
+        stackView.alignment = .leading
+        stackView.axis = .horizontal
+        var imview : UIImageView!
+        let width = 55
+        let startCount = 5
+        for v in 0..<startCount {
+            imview = UIImageView()
+            imview.frame = CGRect(x: v * width, y: 5, width: width, height: width)
+            imview.image = UIImage(named: v < count ? "Star-1": "Star")
+            imview.contentMode = .scaleAspectFill
+            stackView.addSubview(imview)
+        }
+        stackView.frame.size.width = CGFloat(startCount * width)
+        mainStackView.addArrangedSubview(stackView)
+
+        addSubview(mainStackView)
+        mainStackView.translatesAutoresizingMaskIntoConstraints = false
+        mainStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+        mainStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
+        mainStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
+        mainStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0).isActive = true
     }
 }

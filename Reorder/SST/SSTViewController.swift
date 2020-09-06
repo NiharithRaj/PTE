@@ -10,9 +10,10 @@ import UIKit
 
 class SSTViewController: UIViewController {
     let speech = Speech()
-    var viewModel: RLViewModel!
+    var viewModel: SSTViewModel!
     let count = 25.0
     var answerTime = 600
+    @IBOutlet weak var answertextLabel: UILabel!
     @IBOutlet weak var dotview: UIView!
     @IBOutlet weak var progressbarContainerView: UIView!
     @IBOutlet weak var questionNumberLabel: UILabel!
@@ -21,26 +22,29 @@ class SSTViewController: UIViewController {
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var indicatorView: UIView!
     @IBOutlet weak var indicatorLineview: UIView!
-
-    @IBOutlet weak var answerTextLabel: UILabel!
-    
     @IBOutlet weak var answerTextView: UIView!
     @IBOutlet weak var questionView: UIView!
     
+    @IBOutlet weak var totalCountLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     weak var delegate: RSTimerDelegate?
-    
+    let fileType = "m4a"
     var questionTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTime = Utils.audioLength(fileName: viewModel.name, fileType: "mp3")
+        questionTime = Utils.audioLength(fileName: viewModel.sst.qno.lowercased(), fileType: fileType)
         setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        questionView(yes: false)
-        changeQuestion()
+        answerTime = Manager.isListeningMock ? 600 : 90
+        if Manager.isListeningMock && Manager.isAnswerOnly {
+            showAnswer()
+        } else {
+//            questionView(yes: false)
+            changeQuestion()
+        }
     }
     
     fileprivate func changeQuestion() {
@@ -53,7 +57,7 @@ class SSTViewController: UIViewController {
             if seconds == 0 {
                 timer.invalidate()
                 DispatchQueue.main.async {
-                    Utils.playAudio(fileName: self.viewModel.name, fileType: "mp3")
+                    Utils.playAudio(fileName: self.viewModel.sst.qno.lowercased(), fileType: self.fileType)
                     self.topViewBeginningLabel.text = "Playing"
                     self.beginQuestionProgress()
                 }
@@ -72,10 +76,33 @@ class SSTViewController: UIViewController {
                 self.timerLabel.text = timeFormatted(self.answerTime)
                 self.answerTime -= 1
                 if self.answerTime == 0 {
+                    if Manager.isListeningMock {
+                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
+                            self.dismiss(animated: true, completion: nil)
+                            self.delegate?.didCompleted()
+                        })
+                    } else {
+                        self.showAnswer()
+                    }
                     timer.invalidate()
                 }
             }
         }
+    }
+    
+    func  showAnswer() {
+        answertextLabel.attributedText = NSMutableAttributedString(string: viewModel.sst.answer).lineHeightParagraphStyle(height: 1.3, textAlignment: .left)
+        let count = viewModel.sst.answer.components(separatedBy: " ").count
+        totalCountLabel.text = "Total Word Count: \(count)"
+        var time = Double(60)
+        if Manager.isListeningMock {
+            time = Double(questionTime) + 30
+            Utils.playAudio(fileName: self.viewModel.sst.qno.lowercased(), fileType: fileType)
+        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time, execute: {
+            self.dismiss(animated: true, completion: nil)
+            self.delegate?.didCompleted()
+        })
     }
     
     fileprivate func beginQuestionProgress() {
@@ -83,11 +110,6 @@ class SSTViewController: UIViewController {
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
             strongSelf.startTimer()
-            let dob = Double(strongSelf.answerTime + 3)
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + dob, execute: {
-                strongSelf.dismiss(animated: true, completion: nil)
-                strongSelf.delegate?.didCompleted()
-            })
         }
         
 //        answerBeginningView.isHidden = false

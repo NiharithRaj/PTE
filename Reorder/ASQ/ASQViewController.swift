@@ -79,7 +79,7 @@ class ASQViewController: UIViewController {
         viewProgress(animationview: progressbarContainerView, seconds: questionTime) { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.topViewBeginningLabel.text = "Completed"
-            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 3) {
+            strongSelf.viewProgress(animationview: strongSelf.answerProgressView, seconds: 5) {
                 DispatchQueue.main.async {
                     strongSelf.answerBeginningView.text = "Completed"
                     if Manager.isMockText {
@@ -143,7 +143,7 @@ class ASQViewController: UIViewController {
     }
     
     private func speakNow() {
-        speech.voiceOver(sentence: viewModel.model.question, language: languagues[viewModel.questionNumber % 6])
+        speech.voiceOver(sentence: viewModel.model.question, language: languagues[viewModel.questionNumber % 5])
     }
     private func setupUI() {
         

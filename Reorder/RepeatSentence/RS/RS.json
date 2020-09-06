@@ -1,76 +1,1576 @@
 {
-  "collection": [
-  {
-    "No": 51,
-    "fileName": 51,
-    "time": 5,
-    "sentence": "Try to explain how your ideas are linked so that there is a logical flow."
-  },
-  {
-    "fileName": 56,
-    "sentence": "Would you prepare some PowerPoint slides with appropriate graphs?",
-    "No": 52,
-    "time": 5
-  },
-  {
-    "sentence": "We are delighted to have professor Robert to join our faculty.",
-    "time": 5,
-    "No": 53,
-    "fileName": 52
-  },
-  {
-    "fileName": 62,
-    "time": 5,
-    "sentence": "I can’t attend the lecture because I have a doctor’s appointment.",
-    "No": 54
-  },
-  {
-    "time": 5,
-    "fileName": 170,
-    "No": 55,
-    "sentence": "The hypothesis needs to be tested in a more rigorous way."
-  },
-  {
-    "sentence": "The small Indian state is a land of forests, valleys and snowy islands.",
-    "No": 56,
-    "fileName": 80,
-    "time": 5
-  },
-  {
-    "time": 5,
-    "sentence": "It is now acknowledged that his work is groundbreaking.",
-    "fileName": 118,
-    "No": 57
-  },
-  {
-    "fileName": 741,
-    "time": 5,
-    "sentence": "There is considerably less supervision at university.",
-    "No": 58
-  },
-  {
-    "fileName": 198,
-    "time": 5,
-    "No": 59,
-    "sentence": "Fishing is a sport and a means for surviving."
-  },
-  {
-    "time": 5,
-    "sentence": "The professor will be the last speaker this evening.",
-    "No": 60,
-    "fileName": 79
-  },
-  {
-    "No": 61,
-    "time": 5,
-    "fileName": 171,
-    "sentence": "Interpreters are not readily available in this department."
-  },
-  {
-    "sentence": "The sports team members often practice on weekdays and play games on weekends.",
-    "time": 5,
-    "No": 62,
-    "fileName": 175
-  }]
-}
+    "collection": [
+        {
+            "isNew": false,
+            "No": 3,
+            "repeatRate": 4,
+            "sentence": "Applicants for the course probably have a preference over English or journalism .",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 2,
+            "repeatRate": 4,
+            "sentence": "In marketing, short-term thinking leads to disasters.",
+            "time": 5
+        },{
+            "repeatRate": 3,
+            "time": 5,
+            "No": 1,
+            "isNew": true,
+            "sentence": "The puppets do comedy routines and there is some terrific formation dancing."
+        },
+        {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 2,
+            "isNew": true,
+            "sentence": "I am pleased to report that many topics have been involved in this lecture."
+        },
+        {
+            "isNew": false,
+            "No": 4,
+            "repeatRate": 4,
+            "sentence": "Globalization has been an overwhelming urban and urbanization phenomenon.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 5,
+            "repeatRate": 4,
+            "sentence": "In my free time, I would like to read current affairs and newspapers.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 6,
+            "repeatRate": 4,
+            "sentence": "Newspapers across the country reported stories of the president.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 7,
+            "repeatRate": 4,
+            "sentence": "Please sort and order the slides of the presentation according to topic and speech time.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 8,
+            "repeatRate": 4,
+            "sentence": "All of our accommodations are within a walking distance to the academic buildings.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 9,
+            "repeatRate": 4,
+            "sentence": "In marketing, short-term thinking leads to many problems.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 10,
+            "repeatRate": 4,
+            "sentence": "Even with the permit, finding a parking spot on campus is almost impossible.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 11,
+            "repeatRate": 4,
+            "sentence": "This is how we deliver health care to millions of people over the world.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 12,
+            "repeatRate": 4,
+            "sentence": "Applicants for the course preferably have a degree on English or journalism.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 13,
+            "repeatRate": 4,
+            "sentence": "Globalization has been an overwhelming urban and urbanisation phenomenon.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 14,
+            "repeatRate": 4,
+            "sentence": "I will be in my office every Tuesday and Thursday.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 15,
+            "repeatRate": 4,
+            "sentence": "In 1830, periodicals appeared in large numbers in America.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 16,
+            "repeatRate": 4,
+            "sentence": "I could not save my work as my computer was crashed.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 17,
+            "repeatRate": 4,
+            "sentence": "Applicants for the course should preferably have a degree in English or Journalism.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 18,
+            "repeatRate": 4,
+            "sentence": "Make sure you correctly cite all your sources.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 19,
+            "repeatRate": 4,
+            "sentence": "I could not save my work as my computer crashed.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 20,
+            "repeatRate": 4,
+            "sentence": "Newspapers across the world reported stories of presidents.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 21,
+            "repeatRate": 4,
+            "sentence": "This is how we deliver health care to millions of people all over the world.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 22,
+            "repeatRate": 4,
+            "sentence": "The office opens on Wednesday and Thursday.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 23,
+            "repeatRate": 4,
+            "sentence": "His objection to including scientific evidence has brought a lot of criticism to him.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 24,
+            "repeatRate": 4,
+            "sentence": "The university has a number of travel scholarships that students can apply for.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 25,
+            "repeatRate": 4,
+            "sentence": "The United States has the maximum production of chocolate.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 26,
+            "repeatRate": 4,
+            "sentence": "Applicants for the course preferably have a degree in English or journalism.",
+            "time": 5
+        },        {
+            "isNew": false,
+            "No": 1,
+            "repeatRate": 4,
+            "sentence": "The bookstore is located in the campus behind the library.",
+            "time": 5
+        },
 
+        {
+            "isNew": false,
+            "No": 27,
+            "repeatRate": 4,
+            "sentence": "The office opens on Mondays and Thursdays directly following the freshman induction seminar.",
+            "time": 5
+        },{
+            "repeatRate": 1,
+            "time": 5,
+            "No": 12,
+            "isNew": true,
+            "sentence": "They actually do have one key common ingredient."
+        },
+        {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 13,
+            "isNew": true,
+            "sentence": "That man is standing at the door, speaking with phone is your tutor."
+        },
+        {
+            "isNew": false,
+            "No": 28,
+            "repeatRate": 4,
+            "sentence": "Care needs to be taken for vulnerable groups during the periods of turmoil.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 29,
+            "repeatRate": 4,
+            "sentence": "your enrollment information, results and fee statements will be emailed to your faculty department.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 30,
+            "repeatRate": 4,
+            "sentence": "All of our accommodations are within a walking distance to teaching buildings.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 31,
+            "repeatRate": 4,
+            "sentence": "The bookstore is located on the main campus behind the library.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 32,
+            "repeatRate": 4,
+            "sentence": "Applicants for the course preferably have a preference on English and journalism.",
+            "time": 5
+        },
+        {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 6,
+            "isNew": true,
+            "sentence": "Residential enclosed to the academic building."
+        },
+        {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 7,
+            "isNew": true,
+            "sentence": "Water and earth are the two most common elements."
+        },
+        {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 8,
+            "isNew": true,
+            "sentence": "We don’t have any seminar on Wednesday evening this semester."
+        },
+        {
+            "isNew": false,
+            "No": 33,
+            "repeatRate": 4,
+            "sentence": "Please explain what the author means by sustainability.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 34,
+            "repeatRate": 4,
+            "sentence": "The United States has developed a coffee culture in recent years.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 35,
+            "repeatRate": 4,
+            "sentence": "Essays with few or no citations will raise the concern of the lecturers.",
+            "time": 5
+        },    {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 9,
+            "isNew": true,
+            "sentence": "Most of the visitors to the library are simply looking for hope and inspiration."
+        },
+        {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 10,
+            "isNew": true,
+            "sentence": "A new cafe is opening in the library’s basement."
+        },
+        {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 11,
+            "isNew": true,
+            "sentence": "A student discount card can be used only by the applicant."
+        },
+        {
+            "isNew": false,
+            "No": 36,
+            "repeatRate": 4,
+            "sentence": "Newspapers across the world are reporting stories of presidents.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 37,
+            "repeatRate": 4,
+            "sentence": "Please sort and order the slides of the presentation according to your topic and speech time.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 38,
+            "repeatRate": 4,
+            "sentence": "Essays with few or no citations will be regarded as invalid.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 39,
+            "repeatRate": 4,
+            "sentence": "All of our accommodation is within a walking distance to the academic buildings.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 40,
+            "repeatRate": 4,
+            "sentence": "His objection to include scientific evidence has brought a lot of controversy to him.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 41,
+            "repeatRate": 4,
+            "sentence": "Basketball was created in 1891 by a physician and a physical instructor.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 42,
+            "repeatRate": 4,
+            "sentence": "The maximum production of chocolate is in the United States.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 43,
+            "repeatRate": 4,
+            "sentence": "Even with the permit, finding a parking spot on campus is still impossible.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 44,
+            "repeatRate": 4,
+            "sentence": "The office opens on Mondays and Thursdays directly following the freshman seminar.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 45,
+            "repeatRate": 4,
+            "sentence": "Clear evidence between brain events and behavioral events is always fascinating.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 46,
+            "repeatRate": 4,
+            "sentence": "I will be in my office every day from ten to twelve.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 47,
+            "repeatRate": 4,
+            "sentence": "Elephant is the largest land living mammal.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 48,
+            "repeatRate": 4,
+            "sentence": "Your enrollment information, results and fees will be available online.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 49,
+            "repeatRate": 4,
+            "sentence": "Care needs to be taken for vulnerable groups in the times of something.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 50,
+            "repeatRate": 4,
+            "sentence": "Even with the permit, finding a parking slot on campus is still impossible.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 51,
+            "repeatRate": 4,
+            "sentence": "In my free time, I would like to read current events and newspapers.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 52,
+            "repeatRate": 4,
+            "sentence": "The student service center is located on the main campus behind the library.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 53,
+            "repeatRate": 4,
+            "sentence": "Fishing is a sport and a means for surviving.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 54,
+            "repeatRate": 4,
+            "sentence": "In 1830, periodicals appeared in large numbers in America.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 55,
+            "repeatRate": 4,
+            "sentence": "Once more under the pressure of economic necessity, practice outstripped theory.",
+            "time": 5
+        },
+        {
+            
+            "No": 257,
+            "sentence": "Acupuncture is a technique involved in traditional Chinese medicine",
+            "repeatRate": 2,
+            "isNew": true,
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 57,
+            "repeatRate": 4,
+            "sentence": "I could not save my work as my computer got crashed.",
+            "time": 5
+        },    {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 3,
+            "isNew": true,
+            "sentence": "There is a welcome party for all new students each term."
+        },
+        {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 4,
+            "isNew": true,
+            "sentence": "Now that the task is finished, let’s hear Helen’s theory."
+        },
+        {
+            "repeatRate": 1,
+            "time": 5,
+            "No": 5,
+            "isNew": true,
+            "sentence": "Talented people do special marketing."
+        },
+        {
+            "isNew": false,
+            "No": 58,
+            "repeatRate": 4,
+            "sentence": "You can download all lecture handouts from the course website.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 59,
+            "repeatRate": 4,
+            "sentence": "The university has a lot of travel scholarships available that students can apply for.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 60,
+            "repeatRate": 4,
+            "sentence": "I will be in my office every day from 11 o’clock to 2 o’clock.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 61,
+            "repeatRate": 4,
+            "sentence": "Care needs to be taken for vulnerable groups in the times of infection.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 62,
+            "repeatRate": 4,
+            "sentence": "The university has a number of scholarships that students can apply for.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 63,
+            "repeatRate": 4,
+            "sentence": "Elephant is the largest and the living mammal.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 64,
+            "repeatRate": 4,
+            "sentence": "The professor will be the last speaker this evening.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 65,
+            "repeatRate": 4,
+            "sentence": "Please explain what the author means by sustainability.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 66,
+            "repeatRate": 4,
+            "sentence": "His objection to include scientific evidence has brought a lot of criticisms to him.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 67,
+            "repeatRate": 3,
+            "sentence": "Arteries carry oxygenated blood from the heart to the other parts of the body.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 68,
+            "repeatRate": 3,
+            "sentence": "Knives and Forks should be placed next to the spoons on the edge of the table.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 69,
+            "repeatRate": 3,
+            "sentence": "Internet provides unusual opportunities for students and current events.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 70,
+            "repeatRate": 3,
+            "sentence": "Try to explain how your ideas are linked so that there is a logical flow.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 71,
+            "repeatRate": 3,
+            "sentence": "Students should book a library tour on the first week of the first semester.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 72,
+            "repeatRate": 3,
+            "sentence": "The residence hall is closed prior to the academic building at the end of the semester.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 73,
+            "repeatRate": 3,
+            "sentence": "Expertise in particular areas distinguishes you from other graduates in a job interview.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 74,
+            "repeatRate": 3,
+            "sentence": "Don’t hesitate to email me if you have any questions.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 75,
+            "repeatRate": 3,
+            "sentence": "The cafeteria closes soon but the snack machine is accessible throughout the night.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 76,
+            "repeatRate": 3,
+            "sentence": "Don’t forget to hand in your assignments by the end of next week.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 77,
+            "repeatRate": 3,
+            "sentence": "You should enquire about the direct deposit.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 78,
+            "repeatRate": 3,
+            "sentence": "Hypothetically, insufficient mastery in these areas slows future progress.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 79,
+            "repeatRate": 3,
+            "sentence": "Many of the university’s original buildings are still in use.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 80,
+            "repeatRate": 3,
+            "sentence": "We must put great care when analyzing data.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 81,
+            "repeatRate": 3,
+            "sentence": "You should go to the reception to get your student card.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 82,
+            "repeatRate": 3,
+            "sentence": "Children are not allowed to be in the lecture room at any time.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 83,
+            "repeatRate": 3,
+            "sentence": "Please prepare a PowerPoint presentation for tomorrow's meeting.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 84,
+            "repeatRate": 3,
+            "sentence": "The Psychology Department is looking for volunteers to be involved in research projects.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 85,
+            "repeatRate": 3,
+            "sentence": "Would you please put the materials on the table? 30.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 86,
+            "repeatRate": 3,
+            "sentence": "Would you please put the materials on the table.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 87,
+            "repeatRate": 3,
+            "sentence": "The clear evidence between brain events and behavioral events are always fascinating.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 88,
+            "repeatRate": 3,
+            "sentence": "Leading scientists speculate that numerous planets could support life forms.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 89,
+            "repeatRate": 3,
+            "sentence": "The real reason for global hunger is not the lack of food, but poverty.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 90,
+            "repeatRate": 3,
+            "sentence": "The first few sentences of an essay should capture the readers’ attention.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 91,
+            "repeatRate": 3,
+            "sentence": "In this library, the reserve collection of books can be borrowed for up to three hours.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 92,
+            "repeatRate": 3,
+            "sentence": "The theoretical proposal was challenged to grasp.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 93,
+            "repeatRate": 3,
+            "sentence": "Knives and forks should be placed next to the spoon on the edge of the table.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 94,
+            "repeatRate": 3,
+            "sentence": "Physics is a detailed subject of matter and energy.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 95,
+            "repeatRate": 3,
+            "sentence": "I used to have milk and sugar for my coffee.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 96,
+            "repeatRate": 3,
+            "sentence": "More muscles are used in swimming than other sports.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 97,
+            "repeatRate": 3,
+            "sentence": "You can find the student service centre on level one of Home Building.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 98,
+            "repeatRate": 3,
+            "sentence": "Don’t forget to hand in your assignment by next Tuesday.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 99,
+            "repeatRate": 3,
+            "sentence": "You can find the student service center on level one of the Home Building.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 100,
+            "repeatRate": 3,
+            "sentence": "Only those who are over 18 years of age are eligible to open a bank account in our bank.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 101,
+            "repeatRate": 3,
+            "sentence": "Negative discourse continues to be predominant in discussions about gender.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 102,
+            "repeatRate": 3,
+            "sentence": "Please make sure all works follow the department guidelines.",
+            "time": 5
+        },
+        {
+          "No": 258,
+          "sentence": "Lots of students had money and passports stolen especially at night",
+          "repeatRate": 2,
+          "isNew": true,
+          "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 104,
+            "repeatRate": 3,
+            "sentence": "You can retake the module if your marks are too low.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 105,
+            "repeatRate": 3,
+            "sentence": "We are delighted to have professor Robert to join our faculty.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 106,
+            "repeatRate": 3,
+            "sentence": "In Europe, the political pressure is similar regarding globalization.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 107,
+            "repeatRate": 3,
+            "sentence": "The university supplies a number of scholarships for those who have specific goals.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 108,
+            "repeatRate": 3,
+            "sentence": "You can find the student service center on level one of Home Building.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 109,
+            "repeatRate": 3,
+            "sentence": "In English, the first letter of the months of the year is always capitalized.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 110,
+            "repeatRate": 3,
+            "sentence": "The minimal mark for Distinction to be awarded is no less than 75%.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 111,
+            "repeatRate": 3,
+            "sentence": "Exam results will be available next week on the course website.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 112,
+            "repeatRate": 3,
+            "sentence": "Please prepare a PowerPoint presentation for tomorrow’s meeting.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 113,
+            "repeatRate": 3,
+            "sentence": "A preliminary bibliography is due the week before the spring break.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 114,
+            "repeatRate": 3,
+            "sentence": "The theoretical proposal was challenging to grasp.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 115,
+            "repeatRate": 3,
+            "sentence": "Contemporary commentators dismiss his idea as eccentric.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 116,
+            "repeatRate": 3,
+            "sentence": "Expertise in particular areas distinguishes you from other graduates.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 117,
+            "repeatRate": 3,
+            "sentence": "We must put great care when analyzing the data.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 118,
+            "repeatRate": 3,
+            "sentence": "Organic food is grown without applying chemicals and possesses no artificial additives.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 119,
+            "repeatRate": 3,
+            "sentence": "Exam results will be available next week on course website.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 120,
+            "repeatRate": 3,
+            "sentence": "You should raise your concern with the head of school.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 121,
+            "repeatRate": 3,
+            "sentence": "More muscles are used in swimming than in other sports.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 122,
+            "repeatRate": 3,
+            "sentence": "Student loans are now available for international students.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 123,
+            "repeatRate": 3,
+            "sentence": "Most printers in the library are out of ink.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 124,
+            "repeatRate": 3,
+            "sentence": "Anatomy is the study of internal and external body structures.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 125,
+            "repeatRate": 3,
+            "sentence": "Students should take advantage of the online resources before attending the lecture.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 126,
+            "repeatRate": 3,
+            "sentence": "Our class is divided into two groups.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 127,
+            "repeatRate": 3,
+            "sentence": "Would you please put the materials on the table?",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 128,
+            "repeatRate": 3,
+            "sentence": "Our capacity to respond to national needs will determine our ability to flourish.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 129,
+            "repeatRate": 3,
+            "sentence": "Arteries carry oxygenated blood from the heart to other parts of the body.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 130,
+            "repeatRate": 3,
+            "sentence": "Students should book a library tour in the first week of the first semester.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 131,
+            "repeatRate": 3,
+            "sentence": "Higher fees make students think more critically about what universities can offer.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 132,
+            "repeatRate": 3,
+            "sentence": "Don’t hesitate to email me if any questions.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 133,
+            "repeatRate": 3,
+            "sentence": "The professor has promised to put his lecture notes online.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 134,
+            "repeatRate": 3,
+            "sentence": "More muscles are used in swimming than any other sport.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 135,
+            "repeatRate": 3,
+            "sentence": "The clear evidence between brain events and behavioral events is fascinating.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 136,
+            "repeatRate": 3,
+            "sentence": "Most printers in the computer lab are out of ink.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 137,
+            "repeatRate": 3,
+            "sentence": "Hypothetically, insufficient mastery in the areas slows future progress.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 138,
+            "repeatRate": 3,
+            "sentence": "Biographical information should be removed prior to the publication of the results.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 139,
+            "repeatRate": 3,
+            "sentence": "Children are not allowed to be in the lab at any time.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 140,
+            "repeatRate": 3,
+            "sentence": "The Psychology department is looking for volunteers to be involved in research projects.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 141,
+            "repeatRate": 3,
+            "sentence": "Contemporary commentators dismissed his idea as eccentric.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 142,
+            "repeatRate": 3,
+            "sentence": "They have enough works to keep them going.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 143,
+            "repeatRate": 3,
+            "sentence": "Make sure the financial director knows the full details of the pay agreement.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 144,
+            "repeatRate": 3,
+            "sentence": "The United Kingdom is a constitutional monarchy and parliamentary democracy.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 145,
+            "repeatRate": 3,
+            "sentence": "The new English class will start next Monday morning.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 146,
+            "repeatRate": 3,
+            "sentence": "In consultation with your supervisor, your thesis is approved by the faculty committee.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 147,
+            "repeatRate": 3,
+            "sentence": "Number the beakers and put them away until tomorrow.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 148,
+            "repeatRate": 3,
+            "sentence": "Number the beakers and put them away before tomorrow.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 149,
+            "repeatRate": 3,
+            "sentence": "Make sure the Financial Director knows the full details of the Pay Agreement.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 150,
+            "repeatRate": 3,
+            "sentence": "Students who wish to apply for an extension should approach their tutors.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 151,
+            "repeatRate": 3,
+            "sentence": "Students should take advantages of the internet before attending the lecture.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 152,
+            "repeatRate": 3,
+            "sentence": "Organic food is grown without applying chemicals and the process is without artificial additives.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 153,
+            "repeatRate": 3,
+            "sentence": "To answer such a complex question with a simple yes or no is absolutely impossible.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 154,
+            "repeatRate": 3,
+            "sentence": "Students should take advantages of the online resources before attending the lecture.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 155,
+            "repeatRate": 3,
+            "sentence": "The first few sentences of an essay should capture the readers' attention.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 156,
+            "repeatRate": 3,
+            "sentence": "It is interesting to observe the development of the language skills of toddlers.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 157,
+            "repeatRate": 3,
+            "sentence": "The minimal mark for Distinction is no less than 75%.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 158,
+            "repeatRate": 3,
+            "sentence": "On this project, you will be asked to work as a group of three.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 159,
+            "repeatRate": 3,
+            "sentence": "Only those who are over eighteen years of age are eligible to open a bank account in our bank.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 160,
+            "repeatRate": 3,
+            "sentence": "The generic biology technology lab is located at the North Wing of the library.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 161,
+            "repeatRate": 3,
+            "sentence": "Many of the universities' original buildings are still in use.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 162,
+            "repeatRate": 3,
+            "sentence": "I used to have milk and one sugar in a cup of coffee.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 163,
+            "repeatRate": 3,
+            "sentence": "Feelings of nerves are common to all university freshers.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 164,
+            "repeatRate": 3,
+            "sentence": "Interpreters are not readily available in this department.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 165,
+            "repeatRate": 3,
+            "sentence": "Anatomy is the study of internal and external structures.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 166,
+            "repeatRate": 3,
+            "sentence": "Negative discourse continues to be predominant in discussion of gender.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 167,
+            "repeatRate": 3,
+            "sentence": "Biographical information should be removed before the publication of the results.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 168,
+            "repeatRate": 3,
+            "sentence": "Students will not be given credits for assignments submitted after the due date.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 169,
+            "repeatRate": 3,
+            "sentence": "Exam results will be available next week from the course office.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 170,
+            "repeatRate": 3,
+            "sentence": "Leading scientists speculate that numerous planets can support life forms.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 171,
+            "repeatRate": 3,
+            "sentence": "Many health workers think that pensioners are too old to understand.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 172,
+            "repeatRate": 3,
+            "sentence": "We would like a first draft of the assignment by Monday.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 173,
+            "repeatRate": 3,
+            "sentence": "There is varying plagiarism across different university departments.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 174,
+            "repeatRate": 3,
+            "sentence": "The hypothesis needs to be tested in a more rigorous way.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 175,
+            "repeatRate": 3,
+            "sentence": "A thorough bibliography is needed at the end of every assignment.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 176,
+            "repeatRate": 3,
+            "sentence": "Our fundamental realities, especially national needs, have seen the ability to flourish.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 177,
+            "repeatRate": 3,
+            "sentence": "In English, the first letters of the months of the year are always capitalized.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 178,
+            "repeatRate": 3,
+            "sentence": "The residence hall is closed prior to the academic building closing time at the end of the semester.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 179,
+            "repeatRate": 3,
+            "sentence": "Every living thing begins as a single cell.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 180,
+            "repeatRate": 3,
+            "sentence": "All undergraduate students should participate in the seminar.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 181,
+            "repeatRate": 3,
+            "sentence": "It is interesting to observe the development of language skills of toddlers.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 182,
+            "repeatRate": 3,
+            "sentence": "Our capacity to respond national needs will determine our ability to flourish.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 183,
+            "repeatRate": 3,
+            "sentence": "We are delighted to have Professor Robert to join our faculty.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 184,
+            "repeatRate": 3,
+            "sentence": "Organic food is growing without applying chemicals and no artificial additives.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 185,
+            "repeatRate": 3,
+            "sentence": "She doesn't even care about anything but what is honest and true.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 186,
+            "repeatRate": 3,
+            "sentence": "You should enquire about the Direct Deposit.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 187,
+            "repeatRate": 3,
+            "sentence": "Physics is a detailed study of matter and energy.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 188,
+            "repeatRate": 3,
+            "sentence": "Environmental friendliness is a new category in which campuses are competing.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 189,
+            "repeatRate": 3,
+            "sentence": "Higher fees cause the student to look more critically at what universities offer.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 190,
+            "repeatRate": 3,
+            "sentence": "The older equipment has been put at the back of the building.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 191,
+            "repeatRate": 2,
+            "sentence": "I would like tomato and cheese sandwiches on white bread and orange juice.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 192,
+            "repeatRate": 2,
+            "sentence": "Lots of students had money and passport stolen especially at night.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 193,
+            "repeatRate": 2,
+            "sentence": "We will study the following two pictures in the next lecture.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 194,
+            "repeatRate": 2,
+            "sentence": "There are a range of housing options near the university.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 195,
+            "repeatRate": 2,
+            "sentence": "The seminar on writing skills has been cancelled.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 196,
+            "repeatRate": 2,
+            "sentence": "Put the knife and fork next to the spoon near the edge of the table.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 197,
+            "repeatRate": 2,
+            "sentence": "We will discuss these two pictures in the next lecture.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 198,
+            "repeatRate": 2,
+            "sentence": "Journalism is the collection and publication or transmission of news.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 199,
+            "repeatRate": 2,
+            "sentence": "Generally, students have unusual problems in school.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 200,
+            "repeatRate": 2,
+            "sentence": "The lecture tomorrow will discuss the education policies in the United States.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 201,
+            "repeatRate": 2,
+            "sentence": "When the demand for the course rose, university authorities took on additional academic staff.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 202,
+            "repeatRate": 2,
+            "sentence": "The timetable for the next term will be available next week.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 203,
+            "repeatRate": 2,
+            "sentence": "All students and staff have access to the printers and scanners.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 204,
+            "repeatRate": 2,
+            "sentence": "The gap between the rich and the poor was not decreased rapidly as expected.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 205,
+            "repeatRate": 2,
+            "sentence": "Meteorology is a detailed study of earth’s atmosphere.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 206,
+            "repeatRate": 2,
+            "sentence": "The portfolio is due at the internal review office no later than Tuesday.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 207,
+            "repeatRate": 2,
+            "sentence": "Acupuncture is a technique involved in traditional Chinese medicine.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 208,
+            "repeatRate": 2,
+            "sentence": "We are not going to accept the assignment after due day on Friday.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 209,
+            "repeatRate": 2,
+            "sentence": "Being a vegan means not consuming any animal product.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 210,
+            "repeatRate": 2,
+            "sentence": "Our university has strong partnerships with industry as well as collaborative relationships with government bodies.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 211,
+            "repeatRate": 2,
+            "sentence": "The study of archaeology requires extensive international fieldwork.",
+            "time": 5
+        },
+        {
+            "isNew": false,
+            "No": 212,
+            "repeatRate": 2,
+            "sentence": "Those reference books are too old, while the others are OK.",
+            "time": 5
+        }
+    ]
+}

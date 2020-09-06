@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fEL-Jw-nZ3">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fEL-Jw-nZ3">
     <device id="appleTV" appearance="light"/>
     <dependencies>
         <deployment identifier="tvOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
                                         <rect key="frame" x="656.5" y="247" width="607" height="350"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpP-84-N5c">
-                                                <rect key="frame" x="25" y="22" width="90" height="32"/>
+                                                <rect key="frame" x="25" y="35" width="90" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="8FI-Ei-lAj"/>
                                                 </constraints>
@@ -36,7 +36,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beginning in 3 seconds." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GU-cT-Jk5">
-                                                <rect key="frame" x="135" y="22" width="447" height="32"/>
+                                                <rect key="frame" x="135" y="35" width="447" height="32"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -104,19 +104,29 @@
                                                     <constraint firstAttribute="height" constant="41" id="sJc-eS-dIw"/>
                                                 </constraints>
                                             </view>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="New" translatesAutoresizingMaskIntoConstraints="NO" id="OVs-Gx-32Y">
+                                                <rect key="frame" x="-142" y="-59" width="468" height="232"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="232" id="XS0-GK-tGe"/>
+                                                    <constraint firstAttribute="width" constant="468" id="k4l-f2-EUv"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="MS4-j3-a8Z" firstAttribute="centerY" secondItem="ubx-zA-4bo" secondAttribute="centerY" id="31u-Sk-jZ7"/>
                                             <constraint firstAttribute="trailing" secondItem="1GU-cT-Jk5" secondAttribute="trailing" constant="25" id="4xk-GQ-kcF"/>
                                             <constraint firstItem="1GU-cT-Jk5" firstAttribute="leading" secondItem="EpP-84-N5c" secondAttribute="trailing" constant="20" id="857-Rz-9HK"/>
                                             <constraint firstItem="Bn2-fa-0H2" firstAttribute="centerY" secondItem="ubx-zA-4bo" secondAttribute="centerY" id="8Mh-qs-M3u"/>
+                                            <constraint firstItem="OVs-Gx-32Y" firstAttribute="top" secondItem="ubx-zA-4bo" secondAttribute="top" constant="-59" id="GQs-Ph-6b1"/>
                                             <constraint firstAttribute="trailing" secondItem="vgi-xL-AY5" secondAttribute="trailing" constant="25" id="Gq7-7X-uVu"/>
                                             <constraint firstAttribute="trailing" secondItem="Bn2-fa-0H2" secondAttribute="trailing" constant="25" id="LDK-X2-nkV"/>
                                             <constraint firstItem="Bn2-fa-0H2" firstAttribute="leading" secondItem="MS4-j3-a8Z" secondAttribute="trailing" constant="28" id="LXG-sl-PMj"/>
-                                            <constraint firstItem="EpP-84-N5c" firstAttribute="top" secondItem="ubx-zA-4bo" secondAttribute="top" constant="22" id="XGC-fF-BLe"/>
+                                            <constraint firstItem="EpP-84-N5c" firstAttribute="top" secondItem="ubx-zA-4bo" secondAttribute="top" constant="35" id="XGC-fF-BLe"/>
                                             <constraint firstAttribute="height" constant="350" id="YXC-6O-3OO"/>
-                                            <constraint firstItem="1GU-cT-Jk5" firstAttribute="top" secondItem="ubx-zA-4bo" secondAttribute="top" constant="22" id="bzQ-dU-TDp"/>
+                                            <constraint firstItem="1GU-cT-Jk5" firstAttribute="top" secondItem="EpP-84-N5c" secondAttribute="top" id="aGB-5G-owv"/>
+                                            <constraint firstItem="OVs-Gx-32Y" firstAttribute="leading" secondItem="ubx-zA-4bo" secondAttribute="leading" constant="-142" id="bDo-EA-y54"/>
                                             <constraint firstItem="EpP-84-N5c" firstAttribute="leading" secondItem="ubx-zA-4bo" secondAttribute="leading" constant="25" id="fW9-G4-oPx"/>
                                             <constraint firstItem="vgi-xL-AY5" firstAttribute="leading" secondItem="ubx-zA-4bo" secondAttribute="leading" constant="25" id="gYz-GI-sCh"/>
                                             <constraint firstItem="vgi-xL-AY5" firstAttribute="top" secondItem="Bn2-fa-0H2" secondAttribute="bottom" constant="49" id="ipF-zB-Aj5"/>
@@ -125,7 +135,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqc-oE-moX">
-                                        <rect key="frame" x="100" y="100" width="1720" height="67"/>
+                                        <rect key="frame" x="100" y="80" width="1720" height="67"/>
                                         <string key="text">You will hear a sentence. Type the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="28"/>
                                         <nil key="textColor"/>
@@ -187,7 +197,7 @@
                                 <constraints>
                                     <constraint firstItem="ubx-zA-4bo" firstAttribute="centerX" secondItem="6wP-Uz-nSg" secondAttribute="centerX" id="3ho-a2-dmc"/>
                                     <constraint firstAttribute="bottom" secondItem="o3h-vO-oU8" secondAttribute="bottom" constant="130" id="8Bx-2u-YwS"/>
-                                    <constraint firstItem="ubx-zA-4bo" firstAttribute="top" secondItem="wqc-oE-moX" secondAttribute="bottom" constant="80" id="BRH-9H-EhX"/>
+                                    <constraint firstItem="ubx-zA-4bo" firstAttribute="top" secondItem="wqc-oE-moX" secondAttribute="bottom" constant="100" id="BRH-9H-EhX"/>
                                     <constraint firstItem="o3h-vO-oU8" firstAttribute="leading" secondItem="6wP-Uz-nSg" secondAttribute="leading" constant="90" id="FZx-OS-IkJ"/>
                                     <constraint firstAttribute="trailing" secondItem="sjO-37-R2d" secondAttribute="trailing" constant="70" id="MGy-fa-ucY"/>
                                     <constraint firstItem="sjO-37-R2d" firstAttribute="top" secondItem="6wP-Uz-nSg" secondAttribute="top" constant="30" id="REJ-Tu-73J"/>
@@ -197,7 +207,7 @@
                                     <constraint firstAttribute="trailing" secondItem="o3h-vO-oU8" secondAttribute="trailing" constant="90" id="eL2-NI-mhb"/>
                                     <constraint firstAttribute="trailing" secondItem="lnz-T0-kgB" secondAttribute="trailing" constant="100" id="rwM-gH-poT"/>
                                     <constraint firstAttribute="bottom" secondItem="Ud3-e6-WJv" secondAttribute="bottom" constant="-66" id="vCE-Fq-IIK"/>
-                                    <constraint firstItem="wqc-oE-moX" firstAttribute="top" secondItem="6wP-Uz-nSg" secondAttribute="top" constant="100" id="vQQ-XR-UNt"/>
+                                    <constraint firstItem="wqc-oE-moX" firstAttribute="top" secondItem="6wP-Uz-nSg" secondAttribute="top" constant="80" id="vQQ-XR-UNt"/>
                                     <constraint firstItem="wqc-oE-moX" firstAttribute="leading" secondItem="6wP-Uz-nSg" secondAttribute="leading" constant="100" id="wja-6L-Fdh"/>
                                 </constraints>
                             </view>
@@ -218,9 +228,12 @@
                         <outlet property="dotview" destination="KPM-KE-xen" id="G2i-m0-LZp"/>
                         <outlet property="indicatorLineview" destination="NGQ-e4-CXb" id="uxe-s0-f7U"/>
                         <outlet property="indicatorView" destination="SQy-Rg-Ke8" id="kjr-8b-dow"/>
+                        <outlet property="instructionLabel" destination="wqc-oE-moX" id="e0c-FZ-a2M"/>
+                        <outlet property="newImageview" destination="OVs-Gx-32Y" id="sLW-rK-9CC"/>
                         <outlet property="progressbarContainerView" destination="vgi-xL-AY5" id="Hmn-jI-9Un"/>
                         <outlet property="questionNumberLabel" destination="sjO-37-R2d" id="tjA-yq-mk2"/>
                         <outlet property="questionView" destination="6wP-Uz-nSg" id="hXc-dq-gRL"/>
+                        <outlet property="statusLeadingConstraints" destination="fW9-G4-oPx" id="PHe-n2-V1e"/>
                         <outlet property="timerLabel" destination="lnz-T0-kgB" id="ium-P7-Xtb"/>
                         <outlet property="topView" destination="ubx-zA-4bo" id="Kbx-C6-uIL"/>
                         <outlet property="topViewBeginningLabel" destination="1GU-cT-Jk5" id="glG-cd-tY9"/>
@@ -285,5 +298,6 @@
     </scenes>
     <resources>
         <image name="Logo" width="2878" height="686"/>
+        <image name="New" width="564" height="564"/>
     </resources>
 </document>

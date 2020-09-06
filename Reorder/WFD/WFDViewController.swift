@@ -15,6 +15,9 @@ class WFDViewController: UIViewController {
     var answerCount = 15
     let speech = Speech()
 
+    @IBOutlet weak var instructionLabel: UILabel!
+    @IBOutlet weak var statusLeadingConstraints: NSLayoutConstraint!
+    @IBOutlet weak var newImageview: UIImageView!
     @IBOutlet weak var dotview: UIView!
     @IBOutlet weak var progressbarContainerView: UIView!
     @IBOutlet weak var questionNumberLabel: UILabel!
@@ -42,6 +45,7 @@ class WFDViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if Manager.isListeningMock && Manager.isAnswerOnly {
+            questionNumberLabel.isHidden = true
             playAnswer()
         } else {
             changeQuestion()
@@ -72,7 +76,6 @@ class WFDViewController: UIViewController {
     }
     
     private func playAnswer() {
-        questionNumberLabel.isHidden = true
         answerLabel.isHidden = false
         wordCountLabel.isHidden = false
         answerLabel.text = viewModel.model.sentence
@@ -123,7 +126,7 @@ class WFDViewController: UIViewController {
     }
     
     private func speakNow() {
-        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 6])
+        speech.voiceOver(sentence: viewModel.model.sentence, language: languagues[viewModel.questionNumber % 5])
     }
     
     private func setupUI() {
@@ -161,6 +164,23 @@ class WFDViewController: UIViewController {
         } else {
             questionNumberLabel.text = "Question \(viewModel.questionNumber) of \(viewModel.total)"
         }
+        
+        if let isNew = viewModel.model.isNew, isNew {
+            newImageview.isHidden = false
+            statusLeadingConstraints.constant = 110
+            topView.layer.masksToBounds = true
+        }
+        
+        if let repeatRate = viewModel.model.repeatRate, let isnew = viewModel.model.isNew, !isnew {
+               let starView = StarRatingView(frame: CGRect(x: view.frame.size.width - 600, y: 200, width: 480, height: 60), starCount: repeatRate)
+               view.addSubview(starView)
+               starView.translatesAutoresizingMaskIntoConstraints = false
+               starView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+               starView.topAnchor.constraint(equalTo: instructionLabel.bottomAnchor, constant: 10).isActive = true
+               starView.widthAnchor.constraint(equalToConstant: 480).isActive = true
+               starView.heightAnchor.constraint(equalToConstant: 60).isActive = true
+               view.bringSubviewToFront(starView)
+           }
     }
     
     fileprivate func addIndicators(toView: UIView) {

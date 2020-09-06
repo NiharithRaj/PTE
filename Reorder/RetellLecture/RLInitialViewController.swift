@@ -17,9 +17,9 @@ class RLInitialViewController: UIViewController {
         super.viewDidLoad()
         
         if Manager.isMockText {
-            collection = ["R1","R2"]
+            collection = ["TR1","TR2"]
         } else {
-            for index in 151...180 {
+            for index in 164...183 {
                 collection.append("R\(index)")
             }
         }

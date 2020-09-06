@@ -12,6 +12,14 @@ class MultipleInitialViewController: UIViewController {
     
     var model: MultipleCollection!
     var currentIndex = 0
+    var callBack:(()->())?
+
+    enum MultipleType:String {
+        case single = "MCSA"
+        case multiple = "MCMA"
+    }
+    var fileName:MultipleType = .single
+
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
@@ -28,7 +36,12 @@ class MultipleInitialViewController: UIViewController {
     fileprivate func pushWFD() {
         let storyboard = UIStoryboard(name: "Multiple", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "MultipleViewController") as? MultipleViewController {
-            controller.viewModel = MultipleViewModel(model: model.collection[currentIndex],questionNumber: currentIndex + 1, total: model.collection.count)
+            var start = currentIndex + 1
+            if Manager.isReadingMock {
+                start =  Manager.singleandMultipleStart + currentIndex
+            }
+
+            controller.viewModel = MultipleViewModel(model: model.collection[currentIndex],questionNumber:start, total: model.collection.count, isSingle: fileName == .single)
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
@@ -37,7 +50,7 @@ class MultipleInitialViewController: UIViewController {
     }
 
     func parsefromJson() {
-        if let path = Bundle.main.path(forResource: "Multiple", ofType: "json") {
+        if let path = Bundle.main.path(forResource: fileName.rawValue, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 model = try JSONDecoder().decode(MultipleCollection.self, from: data)
@@ -56,7 +69,13 @@ extension MultipleInitialViewController : RSTimerDelegate {
             DispatchQueue.main.async {
                 self.pushWFD()
             }
-        }
+        } else {
+                   if let c = callBack {
+                       navigationController?.popViewController(animated: false)
+                       c()
+                   }
+               }
+
     }
 }
 
@@ -64,10 +83,12 @@ struct MultipleViewModel {
     let model: Multiple
     let questionNumber:Int
     let total:Int
-    init(model: Multiple, questionNumber:Int, total:Int) {
+    let isSingle:Bool
+    init(model: Multiple, questionNumber:Int, total:Int, isSingle:Bool) {
         self.model = model
         self.questionNumber = questionNumber
         self.total = total
+        self.isSingle = model.isSingle
     }
 }
 struct MultipleCollection: Decodable {
@@ -76,8 +97,9 @@ struct MultipleCollection: Decodable {
 struct Multiple: Decodable {
     let answer: String
     let question:String
-    let order: Int
+    let order: Int?
+    let isSingle:Bool
     let options: [String]
-    let title:String
+    let paragraph:String
 }
 

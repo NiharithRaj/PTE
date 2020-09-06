@@ -16,6 +16,7 @@ class WFDInitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         parsefromJson()
+//        model.collection.shuffle()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
             self.pushWFD()
         })

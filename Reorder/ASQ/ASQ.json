@@ -1,77 +1,749 @@
 {
-    "collection": [{
-        "question": "The people who protect the public from criminals are called?",
-        "fileName": 52,
-        "No": 448,
-        "answer": "Police"
+  "collection": [
+    {
+      "answer": " Recession",
+      "question": "What do you call a difficult time when economic activities slow down, and there are more people unemployed?",
+      "No": 1
     },
     {
-        "fileName": 16,
-        "answer": "Shoe",
-        "No": 449,
-        "question": "Dog, cat, horse, shoe—which is the odd one out?"
+      "answer": "ambassador",
+      "question": "What is the highest position in the embassy? ",
+      "No": 3
     },
     {
-        "No": 450,
-        "question": "What do we call a company or organization that gives money to a sport or art event in exchange for advertising?",
-        "fileName": 127,
-        "answer": "Sponsorship"
+      "answer": "fade",
+      "question": "What is the process where the color becomes lighter and lighter when exposed to sunlight for a long time? ",
+      "No": 4
     },
     {
-        "fileName": 48,
-        "answer": "Proposal",
-        "question": "What is the document you submit before your assignment at university?",
-        "No": 451
+      "answer": " Currency. ",
+      "question": "When we say \"Dollars, cents, pounds, euro\", What are these called? ",
+      "No": 5
     },
     {
-        "question": "Who left this footprint, a bear or a wolf / bird?",
-        "answer": "Bear",
-        "No": 452,
-        "fileName": 218
+      "answer": " Font. / Typeface.  ",
+      "question": "When you use Microsoft Word, which category does “Times New Roman” belong to? ",
+      "No": 6
     },
     {
-        "question": "What general part of the day is known as dawn?",
-        "No": 453,
-        "answer": "Sunrise",
-        "fileName": 54
+      "answer": " Gravity. ",
+      "question": "What’s the force that pushes everything to the earth? ",
+      "No": 7
     },
     {
-        "answer": "Century",
-        "fileName": 59,
-        "No": 454,
-        "question": "What do we call a period of 100 years?"
+      "answer": " Asia. ",
+      "question": "Which continent do China, India, and Japan belong to? ",
+      "No": 8
     },
     {
-        "question": "Profit means gain or loss?",
-        "answer": "Gain",
-        "No": 455,
-        "fileName": 134
+      "answer": " Nose/Nostril. ",
+      "question": "Which part of the body do we use the nasal spray in? ",
+      "No": 9
     },
     {
-        "fileName": 4,
-        "No": 456,
-        "answer": "The Nobel Prize",
-        "question": "What do we call the prize sponsored by Sweden which sets many prizes in literal and physics field?"
+      "answer": " Punctuation. ",
+      "question": "What is the collection of comma, period, colon, exclamation marks, and question marks? ",
+      "No": 10
     },
     {
-        "answer": "Radiology",
-        "No": 457,
-        "question": "Which hospital department would you go for an X-ray? radiology or cardiology?",
-        "fileName": 77
+      "answer": " By ship. ",
+      "question": "Before airplanes were invented, how did people travel from America to Europe? ",
+      "No": 11
     },
     {
-        "answer": "Ocean",
-        "question": "Where would you find a whale? tropical forest or ocean?",
-        "fileName": 49,
-        "No": 458
+      "answer": " Tomorrow ",
+      "question": "If a meeting is scheduled on Wednesday, and today is Tuesday, then will the meeting be held tomorrow, the day after tomorrow, or next week? ",
+      "No": 12
     },
     {
-        "fileName": 353,
-        "No": 459,
-        "answer": "signature",
-        "question": "If you are happy with the agreement, what would you like to put at the bottom of the contract with the date?"
-    }]
+      "answer": " Psychologist ",
+      "question": "If you want to study the human brain and behavior, what should you be? ",
+      "No": 13
+    },
+    {
+      "answer": " Historian ",
+      "question": "What are the people who study history and historical evidence? ",
+      "No": 14
+    },
+    {
+      "answer": " At the end (of the book). ",
+      "question": "Where can you normally find the index in a book? ",
+      "No": 15
+    },
+    {
+      "answer": " Twins. ",
+      "question": "How do you call the siblings who were born at the same time? ",
+      "No": 16
+    },
+    {
+      "answer": " A hybrid car. ",
+      "question": "What do we call a car that uses two types of fuels? ",
+      "No": 17
+    },
+    {
+      "answer": " Vertical ",
+      "question": "What is the antonym of horizontal? ",
+      "No": 18
+    },
+    {
+      "answer": " Nicotine ",
+      "question": "What is the main harmful content in tobacco that is often discouraged by a doctor? ",
+      "No": 19
+    },
+    {
+      "answer": " Glass. ",
+      "question": "What material are windows made of? ",
+      "No": 20
+    },
+    {
+      "answer": " Coordinate system. ",
+      "question": "What do you call the diagram which includes a horizontal line called X-axis and a vertical line called Y-axis? ",
+      "No": 21
+    },
+    {
+      "answer": " Cutlery.  ",
+      "question": "What do forks, spoons, and knives belong to? ",
+      "No": 22
+    },
+    {
+      "answer": " A pharmacist ",
+      "question": "Would you go to a pharmacist or a surgeon to get a prescription filled after visiting a doctor? ",
+      "No": 23
+    },
+    {
+      "answer": " Primary school/Elementary School. ",
+      "question": "What kind of educational institution does a 10-year-old child study in? ",
+      "No": 24
+    },
+    {
+      "answer": " Volcanoes. ",
+      "question": "What are the mountains that can erupt? ",
+      "No": 25
+    },
+    {
+      "answer": " Autobiography ",
+      "question": "What is the book that describes your own life story? ",
+      "No": 26
+    },
+    {
+      "answer": " Aridity. ",
+      "question": "Which one would you use to describe the desert, humidity or aridity? ",
+      "No": 27
+    },
+    {
+      "answer": " Altimeters.  ",
+      "question": "What device is used to measure the height of mountains? ",
+      "No": 28
+    },
+    {
+      "answer": " Quarterly ",
+      "question": "A newspaper is published everyday, and a journal is published every month. What do you call the publication that is published four times a year? ",
+      "No": 29
+    },
+    {
+      "answer": " Nostrils. ",
+      "question": "What are the two holes in your nose that you use to breathe? ",
+      "No": 30
+    },
+    {
+      "answer": " Attendance. ",
+      "question": "What is the act of students being present at school? ",
+      "No": 31
+    },
+    {
+      "answer": " Stone/pit/kernel ",
+      "question": "Fruits are protected by their skins. Then what is the hard object in the center of peaches, apples and pears? ",
+      "No": 32
+    },
+    {
+      "answer": " Heart. ",
+      "question": "Which organ is the blood pumped from? ",
+      "No": 33
+    },
+    {
+      "answer": " Three. ",
+      "question": "How many wheels does a tricycle have? ",
+      "No": 34
+    },
+    {
+      "answer": " Pollination ",
+      "question": "Why are bees important for agriculture? ",
+      "No": 35
+    },
+    {
+      "answer": " Nurse. ",
+      "question": "Who takes care of people who are sick and stay in hospital? ",
+      "No": 36
+    },
+    {
+      "answer": " Musician. ",
+      "question": "What do you call the person who plays musical instruments as a job? ",
+      "No": 37
+    },
+    {
+      "answer": " Four (times a year). ",
+      "question": "If a magazine is published quarterly, how many times a year is it published? ",
+      "No": 38
+    },
+    {
+      "answer": " Venom/poison. ",
+      "question": "What is contained in poisonous animals? ",
+      "No": 39
+    },
+    {
+      "answer": " Insomnia. ",
+      "question": "How do you call the condition of being unable to sleep? ",
+      "No": 40
+    },
+    {
+      "answer": " 12 . ",
+      "question": "How many eggs are there in a dozen? ",
+      "No": 41
+    },
+    {
+      "answer": " Black. ",
+      "question": "If there are 8 black balls and 1 white ball, and I randomly pick one, which color is most likely to be picked? ",
+      "No": 42
+    },
+    {
+      "answer": " Newspaper ",
+      "question": "Where would you normally see crosswords? ",
+      "No": 43
+    },
+    {
+      "answer": " After. ",
+      "question": "In the word ‘postgraduate’, what does ‘post’ mean? ",
+      "No": 44
+    },
+    {
+      "answer": " The 21st century ",
+      "question": "What century are we living in now? ",
+      "No": 45
+    },
+    {
+      "answer": " Binoculars ",
+      "question": "What device would you use to look at a distant object? ",
+      "No": 46
+    },
+    {
+      "answer": " Six. ",
+      "question": "How many sides does a hexagon have? ",
+      "No": 47
+    },
+    {
+      "answer": " Anchor. ",
+      "question": "What do you throw underwater to keep ships staying on rivers or oceans without drifting away? ",
+      "No": 48
+    },
+    {
+      "answer": " Stadium. ",
+      "question": "Where do people go to watch sports or games? ",
+      "No": 49
+    },
+    {
+      "answer": " Wood. ",
+      "question": "What natural resource is used by a carpenter? ",
+      "No": 50
+    },
+    {
+      "answer": " Fracture. ",
+      "question": "When your bone is injured and broken, what would you say you have? ­ ",
+      "No": 51
+    },
+    {
+      "answer": " Monologue. ",
+      "question": "What is the long speech that is spoken by only one actor in a film or play? ",
+      "No": 52
+    },
+    {
+      "answer": " Olympics (Games). ",
+      "question": "What do we call a festival which is held every four years gathering people together as a sporting event? ",
+      "No": 53
+    },
+    {
+      "answer": " Coke. ",
+      "question": "Apart from coffee and tea, what beverages also contain caffeine? ",
+      "No": 54
+    },
+    {
+      "answer": " Beneficial. ",
+      "question": "In medical terms, are antibodies harmful or beneficial for patients? ",
+      "No": 55
+    },
+    {
+      "answer": " Gravity. ",
+      "question": "What force makes humans stay on the earth? ",
+      "No": 56
+    },
+    {
+      "answer": " Flowers ",
+      "question": "What do the following belong to: roses, daisies, tulips, etc? ",
+      "No": 57
+    },
+    {
+      "answer": " Breast. ",
+      "question": "Which part of the body do mammals use to feed their next generations? ",
+      "No": 58
+    },
+    {
+      "answer": " Negative. ",
+      "question": "What is the opposite of ‘positive’? ",
+      "No": 59
+    },
+    {
+      "answer": " Division ",
+      "question": "Apart from addition, subtraction, and multiplication, what is the other mathematical calculation method? ",
+      "No": 60
+    },
+    {
+      "answer": " Driving. ",
+      "question": "When a person’s Blood Alcohol Content is higher than the standard range, what activity are they not allowed to do? ",
+      "No": 61
+    },
+    {
+      "answer": " Wednesday ",
+      "question": "Which day is between Tuesday and Thursday? ",
+      "No": 62
+    },
+    {
+      "answer": " Undergraduates. ",
+      "question": "What is the name for students in universities who have not yet graduated? ",
+      "No": 63
+    },
+    {
+      "answer": " The Sun. ",
+      "question": "What rises from the east in the morning and sets to the west in the evening everyday? ",
+      "No": 64
+    },
+    {
+      "answer": " Strings ",
+      "question": "What do guitars, violins and cellos have in common? ",
+      "No": 65
+    },
+    {
+      "answer": " Receive ",
+      "question": "Does a scapegoat receive or give a crime? ",
+      "No": 66
+    },
+    {
+      "answer": " Baker ",
+      "question": "Who is a person that makes bread, cakes and pastries? ",
+      "No": 67
+    },
+    {
+      "answer": " Bilingual. ",
+      "question": "How would you describe someone who can speak two languages? ",
+      "No": 68
+    },
+    {
+      "answer": " Tertiary. ",
+      "question": "When you have the primary, and the secondary, what do you have next? ",
+      "No": 69
+    },
+    {
+      "answer": " Narration. ",
+      "question": "What is the description of events that is spoken with background music during a film or a play? ",
+      "No": 70
+    },
+    {
+      "answer": " Extinct ",
+      "question": "How would you describe an animal that no longer exist on the earth? ",
+      "No": 71
+    },
+    {
+      "answer": " Natural. ",
+      "question": "What is the opposite of the word ‘artificial’? ",
+      "No": 72
+    },
+    {
+      "answer": " Every two years. ",
+      "question": "How often does a biennial convention take place? ",
+      "No": 73
+    },
+    {
+      "answer": " Theatre  ",
+      "question": "Where do people watch plays? ",
+      "No": 74
+    },
+    {
+      "answer": " Journal. / Academic journal. ",
+      "question": "What is the magazine that is dedicated to academic news? ",
+      "No": 75
+    },
+    {
+      "answer": " Multiplication ",
+      "question": "Apart from addition, subtraction, and division, what is the other mathematical calculation method? ",
+      "No": 76
+    },
+    {
+      "answer": " Went. ",
+      "question": "In the sentence: “He has been quite upset since he went back to school.” Which word uses a past tense? ",
+      "No": 77
+    },
+    {
+      "answer": " Week. ",
+      "question": "What is the term used to describe a period of seven days? ",
+      "No": 78
+    },
+    {
+      "answer": " Nails. ",
+      "question": "What is the hardest part of your hand? ",
+      "No": 79
+    },
+    {
+      "answer": " Smoking. ",
+      "question": "What is the activity of inhalation of tobacco substance that is harmful to our health? ",
+      "No": 80
+    },
+    {
+      "answer": " Full stop / period ",
+      "question": "Which symbol is used to complete a sentence? ",
+      "No": 81
+    },
+    {
+      "answer": " Desert.  ",
+      "question": "Where does a camel normally live? ",
+      "No": 82
+    },
+    {
+      "answer": " Wings. ",
+      "question": "Which part of a birds’ body is used for flying? ",
+      "No": 83
+    },
+    {
+      "answer": " Wick ",
+      "question": "What do we call the thread in the center of the candle? ",
+      "No": 84
+    },
+    {
+      "answer": " Multiplication. ",
+      "question": "What is the opposite of division in mathematics? ",
+      "No": 85
+    },
+    {
+      "answer": " Star ",
+      "question": "What shines at night in the sky and uses its own brightness? ",
+      "No": 86
+    },
+    {
+      "answer": " Water ",
+      "question": "What does the chemical symbol H2O stand for in chemistry? ",
+      "No": 87
+    },
+    {
+      "answer": " Car model. ",
+      "question": "Which of the following is not a means of transportation: plane, train, or car model? ",
+      "No": 88
+    },
+    {
+      "answer": " Newspaper ",
+      "question": "What publication reports current events every day? ",
+      "No": 89
+    },
+    {
+      "answer": " Pilot ",
+      "question": "Who sits in the cockpit of an airplane? ",
+      "No": 90
+    },
+    {
+      "answer": " Diameter. ",
+      "question": "How do you describe the line that divide a circle into the same half? ",
+      "No": 91
+    },
+    {
+      "answer": " Two. ",
+      "question": "If a couple have a pair of children, how many children do they have? ",
+      "No": 92
+    },
+    {
+      "answer": " 100 years ",
+      "question": "How many years are there in a century? ",
+      "No": 93
+    },
+    {
+      "answer": " Translator. ",
+      "question": "What is the occupation that transfers one language to another language? ",
+      "No": 94
+    },
+    {
+      "answer": " Doctor ",
+      "question": "Whose job is to treat people that are ill or have an injury at a hospital? ",
+      "No": 95
+    },
+    {
+      "answer": " Hiking outfit. ",
+      "question": "What kind of clothes and shoes do you wear to keep comfortable when hiking? ",
+      "No": 96
+    },
+    {
+      "answer": " A desert. ",
+      "question": "Which one has a low humidity, a desert or a rainforest? ",
+      "No": 97
+    },
+    {
+      "answer": " Weight ",
+      "question": "What do the following terms describe: kilograms, pounds, and ounces? ",
+      "No": 98
+    },
+    {
+      "answer": " Introduction ",
+      "question": "What is the first paragraph of an essay? ",
+      "No": 99
+    },
+    {
+      "answer": " Headline ",
+      "question": "What is the heading at the top of an article or page in a newspaper or magazine? ",
+      "No": 100
+    },
+    {
+      "answer": " Sundial. ",
+      "question": "What is the device that shows the time of the day according to the shadow of sunlight? ",
+      "No": 101
+    },
+    {
+      "answer": " Fictions/Novels. ",
+      "question": "If you want to read tragedies or comedies, what genre of book do you read? ",
+      "No": 102
+    },
+    {
+      "answer": " Crawling/Crawl ",
+      "question": "What movement can babies do before they can sit and walk? ",
+      "No": 103
+    },
+    {
+      "answer": " Submarine. ",
+      "question": "What is the ship that can travel underwater? ",
+      "No": 104
+    },
+    {
+      "answer": " Switch. ",
+      "question": "What is the device that controls electrical appliances on and off? ",
+      "No": 105
+    },
+    {
+      "answer": " Square ",
+      "question": "Which shape has four equal sides and four angles, and each angle is a right angle? ",
+      "No": 106
+    },
+    {
+      "answer": " Will ",
+      "question": "What do we call the legal document that states how people’s property should be allotted after their deaths? ",
+      "No": 107
+    },
+    {
+      "answer": " Wednesday. ",
+      "question": "Tomorrow’s lecture has been cancelled. If today is Tuesday, then on which day was the lecture cancelled? ",
+      "No": 108
+    },
+    {
+      "answer": " Pollen. ",
+      "question": "What do bees collect from the center of flowers? ",
+      "No": 109
+    },
+    {
+      "answer": " Thesaurus. ",
+      "question": "What is the dictionary of synonyms and antonyms? ",
+      "No": 110
+    },
+    {
+      "answer": " Moving/Running. ",
+      "question": "If a car is not stationary, what is it doing? ",
+      "No": 111
+    },
+    {
+      "answer": " Archaeologist/Palaeontologist.",
+      "question": "How would you call people who study ancient bones, rocks and plants? ",
+      "No": 112
+    },
+    {
+      "answer": " Army  ",
+      "question": "What is the ground military forces? ",
+      "No": 113
+    },
+    {
+      "answer": " Conclusion. ",
+      "question": "What is the last paragraph of an essay? ",
+      "No": 114
+    },
+    {
+      "answer": " Nephew. ",
+      "question": "What do you call the son of your sister or brother? ",
+      "No": 115
+    },
+    {
+      "answer": " Biennial. ",
+      "question": "How do you describe an event that is held every two years? ",
+      "No": 116
+    },
+    {
+      "answer": " Men. ",
+      "question": "Despite all the advances and qualities of sexes, would more men or women play professional football? ",
+      "No": 117
+    },
+    {
+      "answer": " East. ",
+      "question": "In which direction does the Sun rise from? ",
+      "No": 118
+    },
+    {
+      "answer": " Prelude ",
+      "question": "What is the short piece of music that comes before a longer piece, and is often used as an introduction? ",
+      "No": 119
+    },
+    {
+      "answer": " Every four years. ",
+      "question": "How often does February have one extra day? ",
+      "No": 120
+    },
+    {
+      "answer": " Ice ",
+      "question": "What do we call the frozen water? ",
+      "No": 121
+    },
+    {
+      "answer": " West. ",
+      "question": "What is the opposite direction to where the Sun rises? ",
+      "No": 122
+    },
+    {
+      "answer": " Stopwatch. ",
+      "question": "What device is used to measure a 200-meter sprint? ",
+      "No": 123
+    },
+    {
+      "answer": " Feather. ",
+      "question": "What protects birds on the outside of their bodies? ",
+      "No": 124
+    },
+    {
+      "answer": " Five ",
+      "question": "How many sides does a pentagon have? ",
+      "No": 125
+    },
+    {
+      "answer": "Predecessor ",
+      "question": "What is the opposite to “Successor”? ",
+      "No": 126
+    },
+    {
+      "answer": " Prescription. ",
+      "question": "What documents would a doctor give to a patient to buy medicines? ",
+      "No": 127
+    },
+    {
+      "answer": " Solar system ",
+      "question": "There are eight planets, such as Saturn, Jupiter, Uranus, and the Earth. What stellar system do these planets belong to? ",
+      "No": 128
+    },
+    {
+      "answer": " Chemistry. ",
+      "question": "What subject involves the study of the Periodic Table? ",
+      "No": 129
+    },
+    {
+      "answer": " Life savers. ",
+      "question": "What is the job title of someone who works at the beach and save people’s lives when they are in danger in the sea? ",
+      "No": 130
+    },
+    {
+      "answer": " Melting. ",
+      "question": "How would you describe the process by which snow becomes water? ",
+      "No": 131
+    },
+    {
+      "answer": " Spacecraft ",
+      "question": "What can bring astronauts to space? ",
+      "No": 132
+    },
+    {
+      "answer": " Two. ",
+      "question": "How many hemisphere does the equator split the earth into? ",
+      "No": 133
+    },
+    {
+      "answer": " Chord. ",
+      "question": "How do you describe the line that segment a circle? ",
+      "No": 134
+    },
+    {
+      "answer": " Scale. ",
+      "question": "What is the tool that you use to measure an adult’s weight? ",
+      "No": 135
+    },
+    {
+      "answer": " Length. ",
+      "question": "What do meter and millimeter measure: weight or length? ",
+      "No": 136
+    },
+    {
+      "answer": " Two. ",
+      "question": "When something is given in a pair, how many of them are there? ",
+      "No": 137
+    },
+    {
+      "answer": " Fruit salad ",
+      "question": "Which one would a vegetarian most likely eat, sandwiches or fruit salad? ",
+      "No": 138
+    },
+    {
+      "answer": " A gold medal. ",
+      "question": "What medal does a champion get? ",
+      "No": 139
+    },
+    {
+      "answer": " Two. ",
+      "question": "How many hemispheres does the equator divide the globe into? ",
+      "No": 140
+    },
+    {
+      "answer": " Golden. ",
+      "question": "What’s the color of the medal that a champion gets? ",
+      "No": 141
+    },
+    {
+      "answer": " Male and female ",
+      "question": "When you fill in a form, what are the two options for ‘gender’? ",
+      "No": 142
+    },
+    {
+      "answer": " Tunnel ",
+      "question": "When trains or cars need to go through a mountain, where do they enter the mountain? ",
+      "No": 143
+    },
+    {
+      "answer": " Alphabetical order. ",
+      "question": "What order is a bibliography usually listed in? ",
+      "No": 144
+    },
+    {
+      "answer": " Quick. ",
+      "question": "If someone’s response is simultaneous, is it quick or slow? ",
+      "No": 145
+    },
+    {
+      "answer": " Cast. ",
+      "question": "What is the list that shows the names of actors and actresses in a movie? ",
+      "No": 146
+    },
+    {
+      "answer": " Soundtrack. ",
+      "question": "What is the music that is recorded for a movie or a film? ",
+      "No": 147
+    },
+    {
+      "answer": " Two ",
+      "question": "If someone has a couple of kids, how many kids does he have? ",
+      "No": 148
+    },
+    {
+      "answer": " Taxation. ",
+      "question": "What's the process of people paying money to governments for public services? ",
+      "No": 149
+    },
+    {
+      "answer": " Bald. ",
+      "question": "How do you call some one with no hair?  ",
+      "No": 150
+    }
+  ]
 }
-
-
-

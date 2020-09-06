@@ -9,21 +9,13 @@
 import UIKit
 
 class SSTInitialViewController: UIViewController {
-    var collection:[String] = []
+//    var collection:[String] = []
     var currentIndex = 0
     var callBack:(()->())?
-
+    var model:SSTCollection!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if Manager.isListeningMock {
-            collection = ["L1","L2"]
-        } else {
-            for index in 151...180 {
-                collection.append("R\(index)")
-            }
-        }
-
+        parsefromJson()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
             self.pushRepeatSentence()
         })
@@ -37,7 +29,7 @@ class SSTInitialViewController: UIViewController {
     fileprivate func pushRepeatSentence() {
         let storyboard = UIStoryboard(name: "SST", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "SSTViewController") as? SSTViewController {
-            controller.viewModel = RLViewModel(fileName: collection[currentIndex], qnumber: Manager.isListeningMock ? Manager.sstStart + currentIndex : currentIndex + 1, total: collection.count)
+            controller.viewModel = SSTViewModel(qnumber: Manager.isListeningMock ? Manager.sstStart + currentIndex : currentIndex + 1, total: model.collection.count, sst: model.collection[currentIndex])
             controller.delegate = self
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
                 self.navigationController?.present(controller, animated: true, completion: nil)
@@ -45,23 +37,23 @@ class SSTInitialViewController: UIViewController {
         }
     }
     
-//    func parsefromJson() {
-//        if let path = Bundle.main.path(forResource: "RS", ofType: "json") {
-//            do {
-//                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-//                model = try JSONDecoder().decode(RepeatSentenceCollection.self, from: data)
-//            } catch {
-//                print(error)
-//            }
-//        }
-//    }
+    func parsefromJson() {
+        if let path = Bundle.main.path(forResource: "SST", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                model = try JSONDecoder().decode(SSTCollection.self, from: data)
+            } catch {
+                print(error)
+            }
+        }
+    }
     
 }
 
 extension SSTInitialViewController: RSTimerDelegate {
     func didCompleted() {
         currentIndex += 1
-        if collection.count > currentIndex {
+        if model.collection.count > currentIndex {
             DispatchQueue.main.async {
                 self.pushRepeatSentence()
             }
@@ -71,5 +63,26 @@ extension SSTInitialViewController: RSTimerDelegate {
                 c()
             }
         }
+    }
+}
+
+struct SSTCollection: Decodable {
+    let collection: [SST]
+}
+
+struct SST: Decodable {
+    let qno: String
+    let question: String
+    let answer:String
+}
+
+struct SSTViewModel {
+    var questionNumber:Int = 0
+    let total:Int
+    let sst:SST
+    init(qnumber:Int, total:Int, sst:SST) {
+        questionNumber = qnumber
+        self.sst = sst
+        self.total = total
     }
 }

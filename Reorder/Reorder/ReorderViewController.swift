@@ -7,24 +7,23 @@
 //
 //NEws
 import UIKit
-import GTProgressBar
 protocol ReorderViewDelegate:class {
     func didReorderCompleted()
 }
-var timeDuration = 120
-var answerDuration = 10
+var timeDuration = 3
+var answerDuration = 2
 class ReorderViewController: UIViewController {
     var viewModel:ReorderViewModel!
     @IBOutlet weak var stackview: UIStackView!
     @IBOutlet weak var progressContainerView: UIView!
     var timer:Timer?
 
+    @IBOutlet weak var reorderTextLabel: UILabel!
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var questionNoText: UILabel!
     @IBOutlet weak var paragraphTitle: UILabel!
     var count = 60
-    let progressBar = GTProgressBar()
     weak var delegate:ReorderViewDelegate?
     var arrangedSubviews:[UIView] = []
     override func viewDidLoad() {
@@ -34,8 +33,16 @@ class ReorderViewController: UIViewController {
         view.backgroundColor = .white
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         paragraphTitle.text = viewModel.model.paragraphTitle
-        questionNoText.text = "Question \(viewModel.questionSet) of \(viewModel.total)"
+        count = Manager.isReadingMock ? 90 : 90
+        if Manager.isReadingMock {
+            reorderTextLabel.textColor = UIColor.black
+            questionNoText.textColor = UIColor.black
+            questionNoText.text = "Question \(viewModel.questionSet) of \(Manager.totalReadingQuestions)"
+        }else {
+            questionNoText.text = "Question \(viewModel.questionSet) of \(viewModel.total)"
+        }
         answerLabel.isHidden = true
+        setupUI()
     }
     
     @objc private func updateTimer() {
@@ -43,7 +50,14 @@ class ReorderViewController: UIViewController {
         countDownLabel.text = timeFormatted(count) // will show timer
         if count == 0 {
             timer?.invalidate()
-            correctArrage()
+            if Manager.isReadingMock {
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) { [weak self] in
+                    self?.dismiss(animated: false, completion: nil)
+                    self?.delegate?.didReorderCompleted()
+                }
+            }else {
+                correctArrage()
+            }
         }
     }
 
@@ -51,19 +65,70 @@ class ReorderViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if Manager.isReadingMock && Manager.isAnswerOnly {
+            countDownLabel.isHidden = true
+            correctArrage()
+        }
+    }
+    
+    private func setupUI() {
         createStackView()
-        stackview.distribution = .fill
         arrangedSubviews = stackview.arrangedSubviews
         arrangedSubviews = arrangedSubviews.sorted(by: { $0.tag < $1.tag })
     }
     
     private func createStackView() {
+        stackview.alignment = .fill
+        stackview.distribution = .fill
+        stackview.spacing = 10
+        var index = 0
         for content in viewModel.model.content {
             let view = createView(string: content.readingDescription)
             view.tag = content.position
+//            view.backgroundColor = .red
             stackview.addArrangedSubview(view)
-            stackview.alignment = .fill
+            view.layoutIfNeeded()
+            print(view.frame)
+            view.translatesAutoresizingMaskIntoConstraints = false
+            view.heightAnchor.constraint(equalToConstant: view.frame.height + 70).isActive = true
+//            view.leadingAnchor.constraint(equalTo: stackview.leadingAnchor, constant: 20).isActive = true
+//            view.trailingAnchor.constraint(equalTo: stackview.trailingAnchor, constant: -20).isActive = true
+//            view.topAnchor.constraint(equalTo:     index == 0 ? stackview.topAnchor : stackview.arrangedSubviews[index].topAnchor, constant: 10).isActive = true
+//            view.backgroundColor = .white
+//            if  index == viewModel.model.content.count - 1 {
+//                view.bottomAnchor.constraint(equalTo: stackview.bottomAnchor, constant: 10).isActive = true
+//            }
+            view.layoutIfNeeded()
+            view.layer.shadowColor = rgb(r: 148, g: 181, b: 246).cgColor
+            view.layer.shadowOpacity = 0.5
+            view.layer.shadowOffset = CGSize(width: 10, height: 10)
+            view.layer.shadowRadius = 5
+            view.layer.masksToBounds = false
+            view.backgroundColor = .white
+            index += 1
        }
+        stackview.layoutIfNeeded()
+        print(stackview.frame.size.height)
+        if stackview.frame.height > 800 {
+            for v in stackview.subviews {
+                let label = (v.subviews[0] as! UILabel)
+                label.font = UIFont(name: label.font.fontName, size: label.font.pointSize - 3)
+                v.translatesAutoresizingMaskIntoConstraints = false
+                v.heightAnchor.constraint(equalToConstant: v.frame.height - 20).isActive = true
+            }
+        }
+        stackview.layoutIfNeeded()
+        print(stackview.frame.size.height)
+        
+        if stackview.frame.height > 800 {
+            for v in stackview.subviews {
+                let label = (v.subviews[0] as! UILabel)
+                label.font = UIFont(name: label.font.fontName, size: label.font.pointSize - 3)
+                v.translatesAutoresizingMaskIntoConstraints = false
+                v.heightAnchor.constraint(equalToConstant: v.frame.height - 10).isActive = true
+            }
+        }
+
     }
     
     private func correctArrage() {
@@ -97,22 +162,24 @@ class ReorderViewController: UIViewController {
         view.layer.shadowOffset = CGSize(width: 10, height: 10)
         view.layer.shadowRadius = 5
         view.layer.masksToBounds = false
+        view.tag = 98
         let label = UILabel()
         label.numberOfLines = 0
 //        view.backgroundColor = .red
         view.addSubview(label)
-        var string = string + "\n"
+//        let string = string + "\n"
         label.attributedText = NSAttributedString(string:string,
                                                   attributes:[NSAttributedString.Key.foregroundColor: rgb(r: 36, g: 36, b: 36),
-                                                              NSAttributedString.Key.font: UIFont(name: "Times New Roman", size: CGFloat(viewModel.model.fontSize ?? 40)) as Any])
-            label.attributedText = label.attributedText?.paragraphStyle(lineSpace: 5.0, textAlignment: .left)
+                                                              NSAttributedString.Key.font: UIFont(name: "Times New Roman", size: CGFloat(35)) as Any])
+        label.attributedText = label.attributedText?.paragraphStyle(lineSpace: 10.0, textAlignment: .left)
+        label.layoutIfNeeded()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
-        label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10).isActive = true
+        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+        label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         label.backgroundColor = .white
-
+        label.tag = 99
         return view
     }
     
@@ -187,6 +254,14 @@ extension NSAttributedString {
         mutableAttributedString.addAttributes([.paragraphStyle: paragraphStyle], range: NSMakeRange(0, self.length))
         return mutableAttributedString
     }
+    
+    func lineHeightParagraphStyle(height: CGFloat = 0.0, textAlignment: NSTextAlignment = .center) -> NSAttributedString {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineHeightMultiple = height
+        paragraphStyle.alignment = textAlignment
+        return NSAttributedString(string: self.string, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
+    }
+
 }
 
 func timeFormatted(_ totalSeconds: Int) -> String {

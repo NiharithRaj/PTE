@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import Hero
 class ViewController: UIViewController {
     var model: ReorderCollection!
-    var currentReorder:Int = 29
-    var questionSet = 29 + 1
+    var currentReorder:Int = 0
+    var questionSet = 0
+    var callBack:(()->())?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,13 +29,18 @@ class ViewController: UIViewController {
         parsefromJson()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "ReorderViewController") as? ReorderViewController {
-            controller.hero.isEnabled = true
-            controller.viewModel = ReorderViewModel(collection: model.collection[currentReorder], set: questionSet, total: model.collection.count)
+//            controller.hero.isEnabled = true
+            var start = currentReorder + 1
+            if Manager.isReadingMock {
+                start =  Manager.ropStart + currentReorder
+            }
+
+            controller.viewModel = ReorderViewModel(collection: model.collection[currentReorder], set: start, total: model.collection.count)
             controller.delegate = self
             controller.modalTransitionStyle = .coverVertical
 //            controller.hero.modalAnimationType = .selectBy(presenting: .pageIn(direction: .left), dismissing: .pageOut(direction: .right))
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) {
-                self.navigationController?.present(controller, animated: true, completion: nil)
+                self.navigationController?.present(controller, animated: false, completion: nil)
             }
         }
     }
@@ -76,7 +81,12 @@ extension ViewController: ReorderViewDelegate {
         currentReorder += 1
         questionSet += 1
         if model.collection.count > currentReorder {
-                pushReorderVC()
+            pushReorderVC()
+        } else {
+            if let c = callBack {
+                navigationController?.popViewController(animated: false)
+                c()
+            }
         }
     }
 }

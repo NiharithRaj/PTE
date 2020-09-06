@@ -13,6 +13,7 @@ struct Manager {
     static var isMockText = false
     static var isAnswerOnly = false
     static var isListeningMock = false
+    static var isReadingMock = false
     static let totalQuestions = readAloudCount + rsCount + DICount + RetellCount + ASQCount
     static let readAloudCount = 6
     static let rsCount = 12
@@ -31,10 +32,22 @@ struct Manager {
     static let fib = 3
     static let hiw = 2
     static let wfd = 4
-    static let sstStart = 1
-    static let fibstart = sst + 1
-    static let hiwstart = sst + fib + 1
-    static let wfdstart = sst + fib + hiw + 1
+    static let fibstart =  1
+    static let hiwstart = fib + 1
+    static let wfdstart = fib + hiw + 1
+    static let sstStart = wfd + fib + hiw + 1
+
+    static let totalReadingQuestions = dropdown + draganddrop + rop + singleandMultiple
+    static let dropdown = 5
+    static let draganddrop = 5
+    static let rop = 2
+    static let singleandMultiple = 6
+    static let dropdownStart = 1
+    static let draganddropStart = dropdown + 1
+    static let ropStart = dropdown + draganddrop + 1
+    static let singleandMultipleStart = dropdown + draganddrop + rop + 1
+
+    
 
 
 }

@@ -13,7 +13,7 @@ class ASQinitialViewController: UIViewController {
     @IBOutlet weak var tipsimg: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     var model: ASQCollection!
-    var currentIndex = 0
+    var currentIndex = 124
     var callBack:(()->())?
 
     override func viewDidLoad() {

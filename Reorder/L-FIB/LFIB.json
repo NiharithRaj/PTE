@@ -1,39 +1,44 @@
 {
-  "collection": [{
-    "order": 90,
-    "speech": "Well 3D printing started in the 1980s. At that time it used to be referred to as rapid prototyping where companies were able to use it, for instance, to visualise the shape of the component or a component they’re about to make. But then during the last ten years the technology has evolved from the prototyping level to the manufacturing level, specifically when it started to move from plastics to metallic materials. My interest specifically is in the field of high value additive manufacturing , meaning that we use additive manufacturing to produce components for aeroplanes or for cars.",
-    "question": "Well 3D printing started in the 1980s. At that time it used to be referred to as _______ prototyping where companies were able to use it, for instance, to visualise the _______ of the component or a component they’re about to make. But then during the last ten years the technology has _______ from the prototyping level to the manufacturing level, specifically when it started to move from _______ to metallic materials. My interest specifically is in the field of high value additive manufacturing , meaning that we use additive manufacturing to produce _______ for aeroplanes or for cars.",
-    "No": 2,
+  "collection": [
+  {
+    "No": 56,
+    "order": 61,
     "answer": [
-      "rapid",
-      "shape",
-      "evolved",
-      "plastics",
-      "components"
-    ]
+      "unsuspecting",
+      "resistant",
+      "catastrophe",
+      "impervious",
+      "authorities"
+    ],
+    "question": "In that month or six weeks, the patient may feel perfectly well. He may even travel around the world spending hours packed into crowded airplanes with _______ fellow passengers. That's bad enough with regular TB or with strains that are _______ to two or three mainline drugs used to treat the disease. But it's a potential public health _______ with the new strain called XDR-TB, for extensively drug-resistant tuberculosis. The strain is _______ to a wide array of first and second-line drugs. That's why 30 percent or more of its victims die. And that's why people like Lawrence Gostin are rethinking what public health _______ should do about people with suspected XDR-TB in the weeks before the diagnosis is in.",
+    "speech": "In that month or six weeks, the patient may feel perfectly well. He may even travel around the world spending hours packed into crowded airplanes with unsuspecting fellow passengers. That's bad enough with regular TB or with strains that are resistant to two or three mainline drugs used to treat the disease. But it's a potential public health catastrophe with the new strain called XDR-TB, for extensively drug-resistant tuberculosis. The strain is impervious to a wide array of first and second-line drugs. That's why 30 percent or more of its victims die. And that's why people like Lawrence Gostin are rethinking what public health authorities should do about people with suspected XDR-TB in the weeks before the diagnosis is in."
   },
   {
-    "order": 83,
-    "speech": "The question that most people want to ask at this point is, how do we speed up the transition? If it's a good idea to have fewer people in the world, which may or may not be the case, then how might we move towards a situation in which population growth rates are reduced? How might we speed up the transition, the demographic transition that I've talked about? And I think there are probably four kinds of answers. I'm not going to suggest that all the kinds of answers but those are the most obvious ones.",
-    "question": "The question that most people want to ask at this point is, how do we _______ up the transition? If it's a good idea to have fewer people in the world, which may or may not be the case, then how might we move towards a _______ in which population growth rates are reduced? How might we speed up the transition, the _______ transition that I've talked about? And I think there are probably four kinds of answers. I'm not going to suggest that all the kinds of answers but those are the most _______ ones.",
-    "No": 3,
+    "No": 57,
+    "order": 81,
     "answer": [
-      "speed",
-      "situation",
-      "demographic",
-      "obvious"
-    ]
+      "categorized",
+      "technology",
+      "realists",
+      "lessons",
+      "mate"
+    ],
+    "question": "Bruch and her colleague Mark Newman studied who swapped messages with whom on a popular online dating platform in the month of January 2014. They _______ users by desirability using PageRank, one of the algorithms behind search _______. Essentially, if you receive a dozen messages from desirable users, you must be more desirable than someone who receives the same number of messages from average users. Then they asked: How far \"out of their league\" do online daters tend to go when pursuing a partner? \"I think people are optimistic _______.\" In other words, they found that both men and women tended to pursue mates just 25 percent more desirable than themselves. \"So they're being optimistic, but they're also taking into account their own relative position within this overall desirability hierarchy.\" (All the graphs and charts are in the journal Science Advances) And the study did have a few more _______ for people on the market: \"I think one of the take-home messages from this study is that women could probably afford to be more aspirational in their _______ pursuit.\"",
+    "speech": "Bruch and her colleague Mark Newman studied who swapped messages with whom on a popular online dating platform in the month of January 2014. They categorized users by desirability using PageRank, one of the algorithms behind search technology. Essentially, if you receive a dozen messages from desirable users, you must be more desirable than someone who receives the same number of messages from average users. Then they asked: How far \"out of their league\" do online daters tend to go when pursuing a partner? \"I think people are optimistic realists.\" In other words, they found that both men and women tended to pursue mates just 25 percent more desirable than themselves. \"So they're being optimistic, but they're also taking into account their own relative position within this overall desirability hierarchy.\" (All the graphs and charts are in the journal Science Advances) And the study did have a few more lessons for people on the market: \"I think one of the take-home messages from this study is that women could probably afford to be more aspirational in their mate pursuit.\""
   },
   {
-    "order": 87,
-    "speech": "Now that story's been scotched, as only part of contingency planning. But it was a symptom of the dramatic turn of events in South Australia, and it flushed out other remarks from water academics and people like Tim Flannery, indicating that things were really much worse than had been foreshadowed, even earlier this year. So is Adelaide, let alone some whole regions of South Australia, in serious bother? Considering that the vast amount of its drinking water comes from the beleaguered Murray, something many of us outside the State may not have quite realised. Is their predicament something we have to face up to as a nation?",
-    "question": "Now that story's been scotched, as only part of contingency planning. But it was a symptom of the dramatic turn of events in South Australia, and it flushed out other remarks from water _______ and people like Tim Flannery, indicating that things were really much worse than had been _______, even earlier this year. So is Adelaide, let alone some whole _______ of South Australia, in serious bother? Considering that the vast amount of its drinking water comes from the beleaguered Murray, something many of us outside the State may not have quite realised. Is their _______ something we have to face up to as a nation?",
-    "No": 4,
+    "No": 59,
+    "order": 78,
     "answer": [
-      "academics",
-      "foreshadowed",
-      "regions",
-      "predicament"
-    ]
+      "clarify",
+      "computer",
+      "types",
+      "protocols",
+      "right",
+      "theories"
+    ],
+    "question": "So there are too many different ways to _______ people in their lives. Some of them are engineers just trying to get a task done, trying to get the _______ to do the dance. That's all they were interested in. And other people are doing it for psychological purposes. But they aren't two completely separate _______. Because after all, if you are what have called an engineer, and AI engineer, and you're trying to get something to translate or interpret _______, whatever it is, how are you going to do it? When your first ideas usually are going to come from your intuitions, which may or may not be _______, of course, but your intuitions about how you think people do it, or accurately probably how you think you do it. So in fact, a lot of the people who do AI for these purely technological purposes, are actually riding on the back of psychological _______. But the point is, they don't care if they sort of fall off the back of that horse, as long as they keep tracking.",
+    "speech": "So there are too many different ways to clarify people in their lives. Some of them are engineers just trying to get a task done, trying to get the computer to do the dance. That's all they were interested in. And other people are doing it for psychological purposes. But they aren't two completely separate types. Because after all, if you are what have called an engineer, and AI engineer, and you're trying to get something to translate or interpret protocols, whatever it is, how are you going to do it? When your first ideas usually are going to come from your intuitions, which may or may not be right, of course, but your intuitions about how you think people do it, or accurately probably how you think you do it. So in fact, a lot of the people who do AI for these purely technological purposes, are actually riding on the back of psychological theories. But the point is, they don't care if they sort of fall off the back of that horse, as long as they keep tracking."
   }]
 }
+
